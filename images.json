@@ -62,16 +62,16 @@
    "file": "the-girl-and-the-whale-page20-riding-the-whale"
   },
   {
-   "id": "anna-meets-the-whale-20260830",
+   "id": "anna-meets-the-whale-20260907",
    "book": "The Girl and The Whale",
    "group": "The Girl and The Whale",
    "slug": "girl-whale",
    "asin": "B0HCB7V9C9",
    "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
    "caption": "Meeting the whale on the reef",
-   "alt": "A girl underwater reaching out to touch the nose of an enormous purple starfield whale, among turtles and coral.",
-   "clean": "gds/girl-whale/anna-meets-the-whale-20260830",
-   "branded": "gds-share/girl-whale/anna-meets-the-whale-20260830",
+   "alt": "Anna, a girl of about thirteen in a floral sundress with long dark hair, underwater at a coral reef reaching to touch the nose of an enormous purple starfield whale, among turtles and fish.",
+   "clean": "gds/girl-whale/anna-meets-the-whale-20260907",
+   "branded": "gds-share/girl-whale/anna-meets-the-whale-20260907",
    "w": 1080,
    "h": 1872,
    "bands": [
@@ -82,16 +82,16 @@
    "file": "the-girl-and-the-whale-anna-meets-the-whale"
   },
   {
-   "id": "launch-bundle-v2-20260830",
+   "id": "on-the-outrigger-20260907",
    "book": "The Girl and The Whale",
    "group": "The Girl and The Whale",
    "slug": "girl-whale",
    "asin": "B0HCB7V9C9",
    "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
    "caption": "Above and below the water",
-   "alt": "A girl standing arms wide on an outrigger canoe at sunset, with a starfield whale swimming beneath the water.",
-   "clean": "gds/girl-whale/launch-bundle-v2-20260830",
-   "branded": "gds-share/girl-whale/launch-bundle-v2-20260830",
+   "alt": "Anna standing arms wide on a small outrigger canoe at sunset, with an enormous purple starfield whale gliding beneath the water below her.",
+   "clean": "gds/girl-whale/on-the-outrigger-20260907",
+   "branded": "gds-share/girl-whale/on-the-outrigger-20260907",
    "w": 1080,
    "h": 1872,
    "bands": [
@@ -99,7 +99,7 @@
     "Grades 1\u20136",
     "Story reader"
    ],
-   "file": "the-girl-and-the-whale-launch-bundle-v2"
+   "file": "the-girl-and-the-whale-on-the-outrigger"
   },
   {
    "id": "cosmic-whale-night-20260906",
@@ -122,16 +122,16 @@
    "file": "the-girl-and-the-whale-cosmic-whale-night"
   },
   {
-   "id": "golden-shore-20260902",
+   "id": "golden-shore-20260907",
    "book": "The Girl and The Whale",
    "group": "The Girl and The Whale",
    "slug": "girl-whale",
    "asin": "B0HCB7V9C9",
    "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
    "caption": "The shoreline at golden hour",
-   "alt": "A girl in a turquoise dress standing barefoot on volcanic rock at sunset, looking out to sea.",
-   "clean": "gds/girl-whale/golden-shore-20260902",
-   "branded": "gds-share/girl-whale/golden-shore-20260902",
+   "alt": "Anna standing barefoot on volcanic rock at a Hawaiian shoreline at golden hour, green mountains and red hibiscus behind her, looking out to sea.",
+   "clean": "gds/girl-whale/golden-shore-20260907",
+   "branded": "gds-share/girl-whale/golden-shore-20260907",
    "w": 1080,
    "h": 1872,
    "bands": [
@@ -142,16 +142,16 @@
    "file": "the-girl-and-the-whale-golden-shore"
   },
   {
-   "id": "reef-at-sunset-20260828",
+   "id": "reef-at-sunset-20260907",
    "book": "The Girl and The Whale",
    "group": "The Girl and The Whale",
    "slug": "girl-whale",
    "asin": "B0HCB7V9C9",
    "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
    "caption": "The reef at sunset",
-   "alt": "A girl on a coral reef at sunset watching a large purple whale rise out of the water.",
-   "clean": "gds/girl-whale/reef-at-sunset-20260828",
-   "branded": "gds-share/girl-whale/reef-at-sunset-20260828",
+   "alt": "Anna standing in shallow water over a coral reef at sunset, one hand raised, as a glowing purple starfield whale rises out of the water in front of her.",
+   "clean": "gds/girl-whale/reef-at-sunset-20260907",
+   "branded": "gds-share/girl-whale/reef-at-sunset-20260907",
    "w": 1080,
    "h": 1872,
    "bands": [
@@ -162,18 +162,18 @@
    "file": "the-girl-and-the-whale-reef-at-sunset"
   },
   {
-   "id": "beach-at-sunset-20260825",
+   "id": "beach-at-sunset-20260907",
    "book": "The Girl and The Whale",
    "group": "The Girl and The Whale",
    "slug": "girl-whale",
    "asin": "B0HCB7V9C9",
    "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
    "caption": "The beach at sunset",
-   "alt": "A watercolour of a girl on a pale beach watching a whale spout offshore at sunset.",
-   "clean": "gds/girl-whale/beach-at-sunset-20260825",
-   "branded": "gds-share/girl-whale/beach-at-sunset-20260825",
+   "alt": "A soft watercolour of Anna walking barefoot along a pale sand beach at sunset, looking out to where a whale spouts far offshore.",
+   "clean": "gds/girl-whale/beach-at-sunset-20260907",
+   "branded": "gds-share/girl-whale/beach-at-sunset-20260907",
    "w": 1080,
-   "h": 972,
+   "h": 1872,
    "bands": [
     "Ages 6\u201312",
     "Grades 1\u20136",
@@ -481,5 +481,12 @@
    ],
    "file": "all-things-bahamian-lower-crayons-table"
   }
+ ],
+ "retired": [
+  "gds-share/girl-whale/anna-meets-the-whale-20260830",
+  "gds-share/girl-whale/launch-bundle-v2-20260830",
+  "gds-share/girl-whale/golden-shore-20260902",
+  "gds-share/girl-whale/reef-at-sunset-20260828",
+  "gds-share/girl-whale/beach-at-sunset-20260825"
  ]
 }

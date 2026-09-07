@@ -144,8 +144,10 @@ footer strong{color:var(--ink)}
     'regatta':'Going To The Regatta','regatta-activity':'Regatta activity book',
     'atb-upper':'All Things Bahamian 4–6','atb-lower':'All Things Bahamian 1–3'};
 
+  var RETIRED = {};
   fetch('images.json').then(function(r){ return r.json(); }).then(function(data){
     CLOUD = data.cloud; ALL = data.images;
+    (data.retired || []).forEach(function(p){ RETIRED[p] = 1; });
     var order = ['girl-whale','girl-whale-activity','regatta','regatta-activity','atb-upper','atb-lower'];
     var present = order.filter(function(s){ return ALL.some(function(i){ return i.slug === s; }); });
     buildFilters(present.map(function(s){ return {slug: s, short: SHORT[s] || s}; }));
@@ -163,7 +165,10 @@ footer strong{color:var(--ink)}
       .then(function(live){
         var known = {}; ALL.forEach(function(i){ known[i.branded] = 1; });
         var added = (live.resources || []).filter(function(r){
-          return !known[r.public_id] && r.public_id.indexOf('gds-share/') === 0;
+          // superseded artwork stays in Cloudinary because unsigned uploads
+          // cannot delete; the manifest's retired list keeps it off the page.
+          return !known[r.public_id] && !RETIRED[r.public_id]
+                 && r.public_id.indexOf('gds-share/') === 0;
         }).map(function(r){
           var slug = r.public_id.split('/')[1];
           var sib = ALL.filter(function(i){ return i.slug === slug; })[0] || {};
