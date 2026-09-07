@@ -1,0 +1,38 @@
+[
+ {
+  "book": "The Girl and The Whale",
+  "slug": "girl-whale",
+  "asin": "B0HCB7V9C9",
+  "group": "The Girl and The Whale"
+ },
+ {
+  "book": "The Girl and The Whale Coloring and Activity Book",
+  "slug": "girl-whale-activity",
+  "asin": "B0HG8NKYV2",
+  "group": "The Girl and The Whale"
+ },
+ {
+  "book": "Going To The Regatta: Nicholas\u2019 Long Island Family Adventure",
+  "slug": "regatta",
+  "asin": "B0HGKNTNDD",
+  "group": "Going To The Regatta"
+ },
+ {
+  "book": "Going To The Regatta Coloring and Activity Book",
+  "slug": "regatta-activity",
+  "asin": "B0HH8PVQZ9",
+  "group": "Going To The Regatta"
+ },
+ {
+  "book": "All Things Bahamian: Upper Elementary",
+  "slug": "atb-upper",
+  "asin": "B0HC1PJ4DS",
+  "group": "All Things Bahamian"
+ },
+ {
+  "book": "All Things Bahamian: My First Cultural Coloring Book",
+  "slug": "atb-lower",
+  "asin": "B0HBNFLDQP",
+  "group": "All Things Bahamian"
+ }
+]
