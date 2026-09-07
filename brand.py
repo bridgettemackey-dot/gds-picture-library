@@ -66,3 +66,37 @@ def brand(src, out, title, url):
 
     canvas.save(out, "PNG")
     return canvas.size
+
+
+# ---------------------------------------------------------------- CLI
+if __name__ == "__main__":
+    import argparse, json, subprocess, sys
+    p = argparse.ArgumentParser(description="Add a caption band and QR code, then publish to the picture library.")
+    p.add_argument("--image",  required=True, help="local source image")
+    p.add_argument("--title",  required=True, help="book title printed on the band")
+    p.add_argument("--url",    required=True, help="Amazon link the QR points at")
+    p.add_argument("--slug",   required=True, choices=list(
+        ["girl-whale","girl-whale-activity","regatta","regatta-activity","atb-upper","atb-lower"]))
+    p.add_argument("--name",   required=True, help="asset name, e.g. souse-and-johnnycake-20260906")
+    p.add_argument("--out",    default=None, help="where to write the branded png")
+    p.add_argument("--upload", action="store_true", help="upload to Cloudinary and tag for the site")
+    a = p.parse_args()
+
+    out = a.out or ("branded-%s.png" % a.name)
+    brand(a.image, out, a.title, a.url)
+    print("branded ->", out)
+
+    if a.upload:
+        cn = os.environ["CLOUDINARY_CLOUD_NAME"]; pr = os.environ["CLOUDINARY_UPLOAD_PRESET"]
+        code = {"girl-whale":"gw","girl-whale-activity":"gwa","regatta":"reg",
+                "regatta-activity":"rega","atb-upper":"atbu","atb-lower":"atbl"}[a.slug]
+        pid = "gds-share/%s/%s" % (a.slug, a.name)
+        r = subprocess.run(["curl","-sS","-X","POST",
+            "https://api.cloudinary.com/v1_1/%s/image/upload" % cn,
+            "-F","file=@"+out,"-F","upload_preset="+pr,"-F","public_id="+pid,
+            "-F","tags=gdsshelf,book-%s" % code], capture_output=True, text=True)
+        d = json.loads(r.stdout)
+        if "error" in d:
+            print("UPLOAD FAILED:", d["error"], file=sys.stderr); sys.exit(1)
+        print("uploaded ->", d["public_id"])
+        print("the picture library will show it on the next page load")
