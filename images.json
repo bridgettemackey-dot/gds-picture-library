@@ -480,11 +480,53 @@
     "First colouring book"
    ],
    "file": "all-things-bahamian-lower-crayons-table"
+  },
+  {
+   "id": "conch-and-starfish-20260909",
+   "book": "All Things Bahamian: My First Cultural Coloring Book",
+   "group": "All Things Bahamian",
+   "slug": "atb-lower",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "caption": "A conch shell and two starfish",
+   "alt": "A large pink queen conch shell and two orange starfish on white sand at the edge of clear turquoise water, with green sea grape leaves at one side.",
+   "clean": "gds/atb-lower/conch-and-starfish-20260909",
+   "branded": "gds-share/atb-lower/conch-and-starfish-20260909-lib",
+   "w": 1080,
+   "h": 1964,
+   "bands": [
+    "Ages 5\u20138",
+    "Grades 1\u20133",
+    "First colouring book"
+   ],
+   "file": "all-things-bahamian-lower-conch-and-starfish"
+  },
+  {
+   "id": "straw-market-20260909",
+   "book": "All Things Bahamian: My First Cultural Coloring Book",
+   "group": "All Things Bahamian",
+   "slug": "atb-lower",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "caption": "Straw work at the market",
+   "alt": "A Bahamian straw market stall close up, with woven baskets, a wide straw sun hat and a coiled mat decorated with pink and orange raffia flowers, the sea behind.",
+   "clean": "gds/atb-lower/straw-market-20260909",
+   "branded": "gds-share/atb-lower/straw-market-20260909-lib",
+   "w": 1080,
+   "h": 1964,
+   "bands": [
+    "Ages 5\u20138",
+    "Grades 1\u20133",
+    "First colouring book"
+   ],
+   "file": "all-things-bahamian-lower-straw-market"
   }
  ],
  "retired": [
+  "gds-share/atb-lower/conch-and-starfish-20260909",
   "gds-share/atb-lower/crayons-table-20260902",
   "gds-share/atb-lower/flamingo-seagrape-20260902",
+  "gds-share/atb-lower/straw-market-20260909",
   "gds-share/atb-upper/junkanoo-detail-20260902",
   "gds-share/atb-upper/page-island-life-20260830",
   "gds-share/atb-upper/page-junkanoo-rush-20260830",
