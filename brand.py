@@ -7,10 +7,12 @@ from PIL import Image, ImageDraw, ImageFont
 W      = 1080          # every branded file is this wide
 BAND   = 344           # caption band height
 PAD    = 30
-QRFRAC = 0.26          # QR width as a fraction of image width. Measured, not guessed:
-                       # the library URL is 63 characters, which needs 45 modules, and
-                       # below ~0.26 it stops decoding once a platform recompresses it.
+QRFRAC = 0.26          # QR width as a fraction of image width. Measured, not guessed.
+                       # The book-page URL is 35 characters and needs 29 modules; held at
+                       # the same 0.26 the old 37-module code used, each square is now
+                       # ~23% wider, which is what survives a shared, recompressed copy.
 SITE   = "https://pictures.gdsbahamas.com/"
+HOST   = "pictures.gdsbahamas.com"   # printed in type for readers who will not scan
 CODE   = {"girl-whale":"gw","girl-whale-activity":"gwa","regatta":"reg",
           "regatta-activity":"rega","atb-upper":"atbu","atb-lower":"atbl"}
 CREAM, INK, SOFT, GOLD, SEA = (244,242,236), (20,32,31), (77,93,91), (167,111,22), (13,109,107)
@@ -61,13 +63,15 @@ def brand(src, out, title, url):
     lines = wrap(d, title, ft, textw)
     if len(lines) > 2:
         ft = F(38, LSB); lines = wrap(d, title, ft, textw)[:2]
-    block = len(lines)*(ft.size+8) + 12 + 34 + 36
+    fh, fa, fs = F(32, LSB), F(26), F(26)
+    block = len(lines)*(ft.size+8) + 10 + 32 + 8 + fh.size + 8 + 30
     y = h + (BAND - block)//2
     for ln in lines:
         d.text((PAD, y), ln, font=ft, fill=INK); y += ft.size + 8
-    y += 12
-    d.text((PAD, y), "GDS Publications  ·  Nassau, The Bahamas", font=F(28), fill=SOFT); y += 36
-    d.text((PAD, y), "Scan for more free pictures, and where to buy the book", font=F(28), fill=SEA)
+    y += 10
+    d.text((PAD, y), "GDS Publications  ·  Nassau, The Bahamas", font=fa, fill=SOFT); y += 32 + 8
+    d.text((PAD, y), HOST, font=fh, fill=SEA); y += fh.size + 8
+    d.text((PAD, y), "Free pictures, and where to buy the book", font=fs, fill=SOFT)
 
     canvas.save(out, "PNG")
     return canvas.size
