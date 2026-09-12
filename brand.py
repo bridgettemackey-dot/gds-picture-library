@@ -10,7 +10,7 @@ PAD    = 30
 QRFRAC = 0.26          # QR width as a fraction of image width. Measured, not guessed:
                        # the library URL is 63 characters, which needs 45 modules, and
                        # below ~0.26 it stops decoding once a platform recompresses it.
-SITE   = "https://bridgettemackey-dot.github.io/gds-picture-library/"
+SITE   = "https://pictures.gdsbahamas.com/"
 CODE   = {"girl-whale":"gw","girl-whale-activity":"gwa","regatta":"reg",
           "regatta-activity":"rega","atb-upper":"atbu","atb-lower":"atbl"}
 CREAM, INK, SOFT, GOLD, SEA = (244,242,236), (20,32,31), (77,93,91), (167,111,22), (13,109,107)

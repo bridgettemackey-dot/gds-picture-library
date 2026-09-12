@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bridgettemackey-dot.github.io/gds-picture-library/sitemap.xml
+Sitemap: https://pictures.gdsbahamas.com/sitemap.xml

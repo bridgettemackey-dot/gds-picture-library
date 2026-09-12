@@ -1,7 +1,7 @@
 # GDS Picture Library
 
 A public download site for artwork from the GDS Publications children's books.
-Live at https://bridgettemackey-dot.github.io/gds-picture-library/
+Live at https://pictures.gdsbahamas.com/
 
 Every downloadable file has a caption band added underneath the artwork carrying the
 book's title and a QR code that opens that book's Amazon page. A raster image cannot

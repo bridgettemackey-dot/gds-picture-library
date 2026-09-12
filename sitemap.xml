@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://bridgettemackey-dot.github.io/gds-picture-library/</loc>
+    <loc>https://pictures.gdsbahamas.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://res.cloudinary.com/icezd9sn/image/upload/gds-share/girl-whale/cover-20260825-lib.png</image:loc><image:title>The cover — The Girl and The Whale</image:title></image:image>
@@ -32,32 +32,32 @@
     <image:image><image:loc>https://res.cloudinary.com/icezd9sn/image/upload/gds-share/atb-lower/straw-market-20260909-lib.png</image:loc><image:title>Straw work at the market — All Things Bahamian: My First Cultural Coloring Book</image:title></image:image>
   </url>
   <url>
-    <loc>https://bridgettemackey-dot.github.io/gds-picture-library/b/gw/</loc>
+    <loc>https://pictures.gdsbahamas.com/b/gw/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bridgettemackey-dot.github.io/gds-picture-library/b/gwa/</loc>
+    <loc>https://pictures.gdsbahamas.com/b/gwa/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bridgettemackey-dot.github.io/gds-picture-library/b/reg/</loc>
+    <loc>https://pictures.gdsbahamas.com/b/reg/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bridgettemackey-dot.github.io/gds-picture-library/b/rega/</loc>
+    <loc>https://pictures.gdsbahamas.com/b/rega/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bridgettemackey-dot.github.io/gds-picture-library/b/atbu/</loc>
+    <loc>https://pictures.gdsbahamas.com/b/atbu/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bridgettemackey-dot.github.io/gds-picture-library/b/atbl/</loc>
+    <loc>https://pictures.gdsbahamas.com/b/atbl/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
