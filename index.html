@@ -3,11 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GDS Picture Library</title>
-<meta name="description" content="Free pictures from the GDS Publications children's books. Download any of them and share them anywhere.">
+<title>GDS Picture Library — free artwork from six Bahamian children's books</title>
+<meta name="description" content="Free artwork from six Bahamian children&#x27;s books by GDS Publications in Nassau: The Girl and The Whale, Going To The Regatta, and All Things Bahamian. Download any picture and share it anywhere.">
+<link rel="canonical" href="https://bridgettemackey-dot.github.io/gds-picture-library/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GDS Publications">
 <meta property="og:title" content="GDS Picture Library">
-<meta property="og:description" content="Free pictures from six Bahamian children's books. Download and share.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐋</text></svg>">
+<meta property="og:description" content="Free artwork from six Bahamian children&#x27;s books by GDS Publications in Nassau: The Girl and The Whale, Going To The Regatta, and All Things Bahamian. Download any picture and share it anywhere.">
+<meta property="og:url" content="https://bridgettemackey-dot.github.io/gds-picture-library/">
+<meta property="og:image" content="https://res.cloudinary.com/icezd9sn/image/upload/gds-share/_meta/og-preview-20260912b.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Six pictures from the GDS Publications children's books beneath the words GDS Picture Library.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GDS Picture Library">
+<meta name="twitter:description" content="Free artwork from six Bahamian children&#x27;s books by GDS Publications in Nassau: The Girl and The Whale, Going To The Regatta, and All Things Bahamian. Download any picture and share it anywhere.">
+<meta name="twitter:image" content="https://res.cloudinary.com/icezd9sn/image/upload/gds-share/_meta/og-preview-20260912b.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128011;</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap">
@@ -63,24 +75,193 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,3rem);lin
 footer{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--ink-soft)}
 footer strong{color:var(--ink)}
 .err{padding:1rem;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+.card.is-hidden{display:none}
+.intro{margin:0 0 1.5rem;max-width:44rem;color:var(--ink-soft);font-size:.95rem}
+.intro ul{margin:.5rem 0 0;padding-left:1.1rem}
+.intro li{margin:.12rem 0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
-  <p class="brand">GDS Publications · Nassau, The Bahamas</p>
+  <p class="brand">GDS Publications &middot; Nassau, The Bahamas</p>
   <h1>Take a picture, share it anywhere</h1>
   <p class="sub">Artwork from six Bahamian children's books. All of it is free to download and free to
-     repost — on WhatsApp, on Instagram, in a classroom newsletter, anywhere you like.</p>
+     repost &mdash; on WhatsApp, on Instagram, in a classroom newsletter, anywhere you like.</p>
   <p class="how"><strong>Every picture carries a code.</strong> Underneath each one is a strip with the
      book's name and a square code. Anyone who scans that code goes straight to the book on Amazon. That is
      how a picture keeps working after you have shared it, so please leave the strip on.</p>
 </header>
 
-<div class="filters" id="filters"></div>
-<p class="count" id="count"></p>
-<div class="grid" id="grid"></div>
+<div class="intro">
+  <p>24 pictures, from these six titles:</p>
+  <ul>
+<li><a href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">The Girl and The Whale</a></li>
+<li><a href="https://www.amazon.com/dp/B0HG8NKYV2" rel="noopener">The Girl and The Whale Coloring and Activity Book</a></li>
+<li><a href="https://www.amazon.com/dp/B0HGKNTNDD" rel="noopener">Going To The Regatta: Nicholas’ Long Island Family Adventure</a></li>
+<li><a href="https://www.amazon.com/dp/B0HH8PVQZ9" rel="noopener">Going To The Regatta Coloring and Activity Book</a></li>
+<li><a href="https://www.amazon.com/dp/B0HC1PJ4DS" rel="noopener">All Things Bahamian: Upper Elementary</a></li>
+<li><a href="https://www.amazon.com/dp/B0HBNFLDQP" rel="noopener">All Things Bahamian: My First Cultural Coloring Book</a></li>
+  </ul>
+</div>
+
+<div class="filters" id="filters">
+<button class="f" type="button" data-slug="all" aria-pressed="true">Everything</button>
+<button class="f" type="button" data-slug="girl-whale" aria-pressed="false">The Girl and The Whale</button>
+<button class="f" type="button" data-slug="girl-whale-activity" aria-pressed="false">Whale activity book</button>
+<button class="f" type="button" data-slug="regatta" aria-pressed="false">Going To The Regatta</button>
+<button class="f" type="button" data-slug="regatta-activity" aria-pressed="false">Regatta activity book</button>
+<button class="f" type="button" data-slug="atb-upper" aria-pressed="false">All Things Bahamian 4–6</button>
+<button class="f" type="button" data-slug="atb-lower" aria-pressed="false">All Things Bahamian 1–3</button>
+</div>
+<p class="count" id="count">24 pictures</p>
+<div class="grid" id="grid">
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/cover-20260825.png" alt="The cover of The Girl and The Whale: a girl riding a purple starfield whale through the night sky above an island." width="520" height="641" loading="lazy"></div>
+<p class="cap">The cover</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-cover/gds-share/girl-whale/cover-20260825.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/page12-anna-20260828.png" alt="Anna, a Black girl in a floral sundress and shell necklace, standing on a beach with green mountains behind her." width="520" height="641" loading="lazy"></div>
+<p class="cap">Anna, page 12</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-page12-anna/gds-share/girl-whale/page12-anna-20260828.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/page20-riding-the-whale-20260826.png" alt="A girl sitting astride a glowing purple whale flying above a lit island at night." width="520" height="641" loading="lazy"></div>
+<p class="cap">Page 20, riding the whale</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-page20-riding-the-whale/gds-share/girl-whale/page20-riding-the-whale-20260826.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/anna-meets-the-whale-20260907.png" alt="Anna, a girl of about thirteen in a floral sundress with long dark hair, underwater at a coral reef reaching to touch the nose of an enormous purple starfield whale, among turtles and fish." width="520" height="901" loading="lazy"></div>
+<p class="cap">Meeting the whale on the reef</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-anna-meets-the-whale/gds-share/girl-whale/anna-meets-the-whale-20260907.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/on-the-outrigger-20260907.png" alt="Anna standing arms wide on a small outrigger canoe at sunset, with an enormous purple starfield whale gliding beneath the water below her." width="520" height="901" loading="lazy"></div>
+<p class="cap">Above and below the water</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-on-the-outrigger/gds-share/girl-whale/on-the-outrigger-20260907.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/cosmic-whale-night-20260906.png" alt="A humpback whale made of purple starfield swimming through the night sky above a moonlit island." width="520" height="901" loading="lazy"></div>
+<p class="cap">The whale in the night sky</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-cosmic-whale-night/gds-share/girl-whale/cosmic-whale-night-20260906.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/golden-shore-20260907.png" alt="Anna standing barefoot on volcanic rock at a Hawaiian shoreline at golden hour, green mountains and red hibiscus behind her, looking out to sea." width="520" height="901" loading="lazy"></div>
+<p class="cap">The shoreline at golden hour</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-golden-shore/gds-share/girl-whale/golden-shore-20260907.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/reef-at-sunset-20260907.png" alt="Anna standing in shallow water over a coral reef at sunset, one hand raised, as a glowing purple starfield whale rises out of the water in front of her." width="520" height="901" loading="lazy"></div>
+<p class="cap">The reef at sunset</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-reef-at-sunset/gds-share/girl-whale/reef-at-sunset-20260907.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale/beach-at-sunset-20260907.png" alt="A soft watercolour of Anna walking barefoot along a pale sand beach at sunset, looking out to where a whale spouts far offshore." width="520" height="901" loading="lazy"></div>
+<p class="cap">The beach at sunset</p>
+<p class="bk">The Girl and The Whale</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:the-girl-and-the-whale-beach-at-sunset/gds-share/girl-whale/beach-at-sunset-20260907.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HCB7V9C9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale-activity">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale-activity/title-page-20260826.png" alt="The title page of The Girl and The Whale Coloring and Activity Book, with a whale outline to colour." width="520" height="794" loading="lazy"></div>
+<p class="cap">The title page</p>
+<p class="bk">The Girl and The Whale Coloring and Activity Book</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:girl-and-whale-activity-book-title-page/gds-share/girl-whale-activity/title-page-20260826.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HG8NKYV2" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="girl-whale-activity">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/girl-whale-activity/reading-corner-20260902.png" alt="A reading corner with a woven mat, coloured pencils, a whale bookmark and a jar of seashells." width="520" height="901" loading="lazy"></div>
+<p class="cap">A reading corner</p>
+<p class="bk">The Girl and The Whale Coloring and Activity Book</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:girl-and-whale-activity-book-reading-corner/gds-share/girl-whale-activity/reading-corner-20260902.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HG8NKYV2" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="regatta">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/regatta/writers-desk-longisland-v2-20260905.png" alt="A writer’s desk at night with a hand-drawn ink map of Long Island, a conch shell and a straw fan." width="520" height="901" loading="lazy"></div>
+<p class="cap">A map of Long Island</p>
+<p class="bk">Going To The Regatta: Nicholas’ Long Island Family Adventure</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:going-to-the-regatta-writers-desk-longisland-v2/gds-share/regatta/writers-desk-longisland-v2-20260905.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HGKNTNDD" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="regatta">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/regatta/sloops-at-salt-pond-20260830.png" alt="Three Bahamian sloops under full sail racing past a line of festival tents." width="520" height="901" loading="lazy"></div>
+<p class="cap">Sloops racing at Salt Pond</p>
+<p class="bk">Going To The Regatta: Nicholas’ Long Island Family Adventure</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:going-to-the-regatta-sloops-at-salt-pond/gds-share/regatta/sloops-at-salt-pond-20260830.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HGKNTNDD" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="regatta">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/regatta/souse-and-johnnycake-20260906.png" alt="A bowl of chicken souse with lime, a golden johnny cake and a dish of red bird peppers on a table by the sea." width="520" height="901" loading="lazy"></div>
+<p class="cap">Souse and johnny cake</p>
+<p class="bk">Going To The Regatta: Nicholas’ Long Island Family Adventure</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:going-to-the-regatta-souse-and-johnnycake/gds-share/regatta/souse-and-johnnycake-20260906.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HGKNTNDD" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="regatta">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/regatta/page-watching-the-race-20260830.png" alt="A colouring page: a boy on a rocky shore watching a crewed sloop race past." width="520" height="901" loading="lazy"></div>
+<p class="cap">Colouring page: watching the race</p>
+<p class="bk">Going To The Regatta: Nicholas’ Long Island Family Adventure</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:going-to-the-regatta-page-watching-the-race/gds-share/regatta/page-watching-the-race-20260830.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HGKNTNDD" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="regatta-activity">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/regatta-activity/deans-blue-hole-20260831.png" alt="Dean’s Blue Hole, a deep circle of dark water inside a pale turquoise bay ringed by limestone." width="520" height="901" loading="lazy"></div>
+<p class="cap">Dean’s Blue Hole</p>
+<p class="bk">Going To The Regatta Coloring and Activity Book</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:regatta-activity-book-deans-blue-hole/gds-share/regatta-activity/deans-blue-hole-20260831.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HH8PVQZ9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="regatta-activity">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/regatta-activity/nature-study-desk-20260906.png" alt="A school desk with blank drawing paper, coloured pencils, a conch shell and a magnifying glass." width="520" height="901" loading="lazy"></div>
+<p class="cap">A nature study table</p>
+<p class="bk">Going To The Regatta Coloring and Activity Book</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:regatta-activity-book-nature-study-desk/gds-share/regatta-activity/nature-study-desk-20260906.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HH8PVQZ9" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="atb-upper">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/atb-upper/page-junkanoo-rush-20260830.png" alt="A colouring page: a Junkanoo rush out on Bay Street, Nassau, with drummers and a feathered costume." width="520" height="901" loading="lazy"></div>
+<p class="cap">Colouring page: Junkanoo on Bay Street</p>
+<p class="bk">All Things Bahamian: Upper Elementary</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:all-things-bahamian-upper-page-junkanoo-rush/gds-share/atb-upper/page-junkanoo-rush-20260830.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HC1PJ4DS" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="atb-upper">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/atb-upper/page-island-life-20260830.png" alt="A colouring page: a family standing together at an island festival by the water." width="520" height="901" loading="lazy"></div>
+<p class="cap">Colouring page: a day out on the island</p>
+<p class="bk">All Things Bahamian: Upper Elementary</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:all-things-bahamian-upper-page-island-life/gds-share/atb-upper/page-island-life-20260830.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HC1PJ4DS" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="atb-upper">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/atb-upper/junkanoo-detail-20260902.png" alt="A close-up of a Junkanoo costume in fringed crepe paper, beside a goatskin drum and a cowbell." width="520" height="901" loading="lazy"></div>
+<p class="cap">A Junkanoo costume up close</p>
+<p class="bk">All Things Bahamian: Upper Elementary</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:all-things-bahamian-upper-junkanoo-detail/gds-share/atb-upper/junkanoo-detail-20260902.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HC1PJ4DS" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="atb-upper">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/atb-upper/pencils-sloop-drawing-20260906.png" alt="An outline drawing of a single-masted Bahamian sloop, half filled in with coloured pencil." width="520" height="901" loading="lazy"></div>
+<p class="cap">A sloop, half coloured</p>
+<p class="bk">All Things Bahamian: Upper Elementary</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:all-things-bahamian-upper-pencils-sloop-drawing/gds-share/atb-upper/pencils-sloop-drawing-20260906.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HC1PJ4DS" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="atb-upper">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/atb-upper/worktable-sketches-20260830.png" alt="A work table of Bahamian pencil sketches, a Junkanoo headdress, a conch shell and a model sloop." width="520" height="901" loading="lazy"></div>
+<p class="cap">The illustrator’s work table</p>
+<p class="bk">All Things Bahamian: Upper Elementary</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:all-things-bahamian-upper-worktable-sketches/gds-share/atb-upper/worktable-sketches-20260830.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HC1PJ4DS" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="atb-lower">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/atb-lower/flamingo-seagrape-20260902.png" alt="A bright painterly flamingo standing in shallow turquoise water among green sea grape leaves." width="520" height="901" loading="lazy"></div>
+<p class="cap">A flamingo in the shallows</p>
+<p class="bk">All Things Bahamian: My First Cultural Coloring Book</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:all-things-bahamian-lower-flamingo-seagrape/gds-share/atb-lower/flamingo-seagrape-20260902.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HBNFLDQP" rel="noopener">Buy the book</a></div>
+</article>
+<article class="card" data-slug="atb-lower">
+<div class="frame"><img src="https://res.cloudinary.com/icezd9sn/image/upload/c_fit,w_520,f_auto,q_auto/gds-share/atb-lower/crayons-table-20260902.png" alt="Crayons and a part-coloured flamingo drawing on a light wooden table." width="520" height="901" loading="lazy"></div>
+<p class="cap">Crayons on the table</p>
+<p class="bk">All Things Bahamian: My First Cultural Coloring Book</p>
+<div class="acts"><a class="dl" href="https://res.cloudinary.com/icezd9sn/image/upload/fl_attachment:all-things-bahamian-lower-crayons-table/gds-share/atb-lower/crayons-table-20260902.png">Download</a><a class="buy2" href="https://www.amazon.com/dp/B0HBNFLDQP" rel="noopener">Buy the book</a></div>
+</article>
+</div>
 
 <footer>
   <p><strong>GDS Publications</strong> is the publishing arm of The GDS Group of Companies, Nassau, The Bahamas.
@@ -90,98 +271,54 @@ footer strong{color:var(--ink)}
 
 <script>
 (function(){
-  var grid = document.getElementById('grid'),
-      filters = document.getElementById('filters'),
-      countEl = document.getElementById('count'),
-      CLOUD = null, ALL = [], active = 'all';
+  var CLOUD = "icezd9sn", grid = document.getElementById('grid'),
+      filters = document.getElementById('filters'), countEl = document.getElementById('count');
 
-  function url(pid, tf){ return 'https://res.cloudinary.com/' + CLOUD + '/image/upload/' + (tf ? tf + '/' : '') + pid + '.png'; }
-  function dl(pid, name){ return url(pid, 'fl_attachment:' + name); }
+  function shown(){ return grid.querySelectorAll('.card:not(.is-hidden)').length; }
+  function setCount(){ var n = shown(); countEl.textContent = n + (n === 1 ? ' picture' : ' pictures'); }
 
-  function render(){
-    var list = active === 'all' ? ALL : ALL.filter(function(i){ return i.slug === active; });
-    countEl.textContent = list.length + (list.length === 1 ? ' picture' : ' pictures');
-    grid.innerHTML = '';
-    list.forEach(function(i){
-      var c = document.createElement('div'); c.className = 'card';
-      var f = document.createElement('div'); f.className = 'frame';
-      var im = document.createElement('img');
-      im.src = url(i.branded, 'c_fit,w_520,f_auto,q_auto');
-      im.alt = i.alt || i.caption; im.loading = 'lazy';
-      im.width = 520; im.height = Math.round(520 * (i.h || 1872) / (i.w || 1080));
-      f.appendChild(im);
-      var cap = document.createElement('p'); cap.className = 'cap'; cap.textContent = i.caption;
-      var bk = document.createElement('p'); bk.className = 'bk'; bk.textContent = i.book;
-      var a = document.createElement('div'); a.className = 'acts';
-      var d = document.createElement('a'); d.className = 'dl';
-      d.href = dl(i.branded, i.file || i.id); d.textContent = 'Download';
-      var b = document.createElement('a'); b.className = 'buy2';
-      b.href = i.amazon; b.rel = 'noopener'; b.textContent = 'Buy the book';
-      a.appendChild(d); a.appendChild(b);
-      c.appendChild(f); c.appendChild(cap); c.appendChild(bk); c.appendChild(a);
-      grid.appendChild(c);
+  filters.addEventListener('click', function(ev){
+    var b = ev.target.closest('.f'); if (!b) return;
+    var slug = b.getAttribute('data-slug');
+    Array.prototype.forEach.call(filters.children, function(x){ x.setAttribute('aria-pressed', x === b); });
+    Array.prototype.forEach.call(grid.children, function(c){
+      c.classList.toggle('is-hidden', slug !== 'all' && c.getAttribute('data-slug') !== slug);
     });
-  }
-
-  function buildFilters(books){
-    var mk = function(label, slug){
-      var b = document.createElement('button');
-      b.className = 'f'; b.type = 'button'; b.textContent = label;
-      b.setAttribute('aria-pressed', slug === active);
-      b.addEventListener('click', function(){
-        active = slug;
-        Array.prototype.forEach.call(filters.children, function(x){ x.setAttribute('aria-pressed', 'false'); });
-        b.setAttribute('aria-pressed', 'true');
-        render();
-      });
-      return b;
-    };
-    filters.appendChild(mk('Everything', 'all'));
-    books.forEach(function(bk){ filters.appendChild(mk(bk.short, bk.slug)); });
-  }
-
-  var SHORT = {'girl-whale':'The Girl and The Whale','girl-whale-activity':'Whale activity book',
-    'regatta':'Going To The Regatta','regatta-activity':'Regatta activity book',
-    'atb-upper':'All Things Bahamian 4–6','atb-lower':'All Things Bahamian 1–3'};
-
-  var RETIRED = {};
-  fetch('images.json').then(function(r){ return r.json(); }).then(function(data){
-    CLOUD = data.cloud; ALL = data.images;
-    (data.retired || []).forEach(function(p){ RETIRED[p] = 1; });
-    var order = ['girl-whale','girl-whale-activity','regatta','regatta-activity','atb-upper','atb-lower'];
-    var present = order.filter(function(s){ return ALL.some(function(i){ return i.slug === s; }); });
-    buildFilters(present.map(function(s){ return {slug: s, short: SHORT[s] || s}; }));
-    render();
-    return refresh();
-  }).catch(function(){
-    grid.innerHTML = '<p class="err">The pictures could not be loaded just now. Please try again in a moment.</p>';
+    setCount();
   });
 
-  // If Cloudinary's public resource list is switched on, pick up anything
-  // tagged gdsshelf that is not already in the bundled manifest.
-  function refresh(){
+  // Newly tagged artwork appears without a redeploy. The cards above are already
+  // in the HTML, so this only ever adds to them.
+  fetch('images.json').then(function(r){ return r.json(); }).then(function(data){
+    var known = {}, retired = {};
+    data.images.forEach(function(i){ known[i.branded] = 1; });
+    (data.retired || []).forEach(function(p){ retired[p] = 1; });
     return fetch('https://res.cloudinary.com/' + CLOUD + '/image/list/gdsshelf.json')
       .then(function(r){ if (!r.ok) throw 0; return r.json(); })
       .then(function(live){
-        var known = {}; ALL.forEach(function(i){ known[i.branded] = 1; });
-        var added = (live.resources || []).filter(function(r){
-          // superseded artwork stays in Cloudinary because unsigned uploads
-          // cannot delete; the manifest's retired list keeps it off the page.
-          return !known[r.public_id] && !RETIRED[r.public_id]
-                 && r.public_id.indexOf('gds-share/') === 0;
-        }).map(function(r){
-          var slug = r.public_id.split('/')[1];
-          var sib = ALL.filter(function(i){ return i.slug === slug; })[0] || {};
-          var name = r.public_id.split('/').pop().replace(/-\d{8}$/, '').replace(/-/g, ' ');
-          return {id: r.public_id.split('/').pop(), slug: slug, branded: r.public_id,
-                  caption: name.charAt(0).toUpperCase() + name.slice(1),
-                  book: sib.book || '', amazon: sib.amazon || '#', alt: '',
-                  file: r.public_id.split('/').pop(), w: 1080, h: 1872};
+        (live.resources || []).forEach(function(r){
+          var p = r.public_id;
+          if (known[p] || retired[p] || p.indexOf('gds-share/') !== 0) return;
+          var slug = p.split('/')[1], sib = data.images.filter(function(i){ return i.slug === slug; })[0] || {};
+          var name = p.split('/').pop().replace(/-\d{8}$/, '').replace(/-/g, ' ');
+          var base = 'https://res.cloudinary.com/' + CLOUD + '/image/upload/';
+          var c = document.createElement('article');
+          c.className = 'card'; c.setAttribute('data-slug', slug);
+          c.innerHTML = '<div class="frame"><img loading="lazy" alt=""></div>'
+            + '<p class="cap"></p><p class="bk"></p>'
+            + '<div class="acts"><a class="dl">Download</a><a class="buy2" rel="noopener">Buy the book</a></div>';
+          var im = c.querySelector('img');
+          im.src = base + 'c_fit,w_520,f_auto,q_auto/' + p + '.png';
+          im.alt = name;
+          c.querySelector('.cap').textContent = name.charAt(0).toUpperCase() + name.slice(1);
+          c.querySelector('.bk').textContent = sib.book || '';
+          c.querySelector('.dl').href = base + 'fl_attachment:' + p.split('/').pop() + '/' + p + '.png';
+          c.querySelector('.buy2').href = sib.amazon || '#';
+          grid.insertBefore(c, grid.firstChild);
         });
-        if (added.length){ ALL = added.concat(ALL); render(); }
-      })
-      .catch(function(){ /* list endpoint off — the bundled manifest is fine */ });
-  }
+        setCount();
+      });
+  }).catch(function(){ /* the baked-in gallery stands on its own */ });
 })();
 </script>
 </body>

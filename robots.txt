@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bridgettemackey-dot.github.io/gds-picture-library/sitemap.xml
