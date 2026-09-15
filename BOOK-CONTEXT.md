@@ -173,20 +173,126 @@ notice, learn, and remember when he finally gets there".
 
 ---
 
-## THE GAP — ALL THINGS BAHAMIAN, both editions
+## ALL THINGS BAHAMIAN — both editions
 
-Both interior PDFs are image-only (no text layer) and far too large to pull through
-the Drive connector, so nothing here is sourced from them. What we have is three real
-colouring pages already in Cloudinary — Junkanoo rush on Bay Street, island life at a
-festival, and the family portrait page — plus the audience bands: Upper Elementary is
-grades 4–6, ages 9–12; Lower Elementary is grades 1–3, ages 5–8, and the two are six
-years apart and never interchangeable.
+Read 2026-09-15 from the Sample Editions (20 pages each) rendered page by page and
+looked at. The sample is a selection from each full book, and each page carries its
+real page number from the full edition, so the structure below is the published one.
 
-To close this, Bridge would need to export a page list or a set of page images.
-Until then, write All Things Bahamian captions ONLY about pages we can actually see,
-and never describe a page from its filename.
+### THE MOST IMPORTANT FACT: THE TWO BOOKS SHARE THEIR ARTWORK
 
----
+Same seven sections in the same order, and — on every page checked — **the same
+colouring illustrations**. Eleuthera's Glass Window Bridge is page 25 in Upper and
+page 17 in Lower, identical drawing. Queen Conch: page 63 and page 41. Boxing Day
+Junkanoo Parade: page 86 and page 63. The Historic Places opener and the closing
+"Proud to be Bahamian!" page are identical too.
+
+What actually differs is the WRITTEN work around the pictures:
+
+| | Upper Elementary | Lower Elementary |
+|---|---|---|
+| Pages | 109 | 83 |
+| Cover says | AGES 9-12 · GRADES 4-6 | AGES 6-9 · GRADES 1-3 |
+| Extra pages | "Key Settlements and Communities" — five named communities per island with a line of description each, and "EXPLORE MORE!" pages of three written-response questions | "Colouring Tips", and simpler design activities such as "Design Your Own Junkanoo Costume" |
+
+**So never write that a page is exclusive to one edition.** "A real page from All
+Things Bahamian: Upper Elementary" is true, but the same picture is in the Lower book.
+Say what the page shows and name the edition you are selling; do not claim uniqueness.
+
+The two editions remain NOT interchangeable on audience and written content — six
+years separate them — but that difference lives in the text, not the art.
+
+**AUDIENCE DISCREPANCY:** the Lower cover reads AGES 6-9, while the routine brief and
+past captions say ages 5-8. The Upper cover reads AGES 9-12, which matches. Bridge has
+not yet been asked which to use for the Lower edition.
+
+### The seven sections
+1. **Bahamian National Symbols** (Upper 1-8, Lower 1-7) — flag, coat of arms, national
+   tree, national flower, national bird, national fish.
+2. **Our Beautiful Islands** (Upper 9-49, Lower 8-28) — maps and island scenes.
+3. **Historic Places and Landmarks** (Upper 50-59, Lower 29-37) — forts, monuments,
+   lighthouses.
+4. **Life in Our Bahamian Seas** (Upper 60-75, Lower 38-52) — reefs, conch, turtles,
+   sharks, fish.
+5. **Junkanoo: Music, Movement and Mas** (Upper 76-87, Lower 53-63).
+6. **Fruits of The Bahamas** (Upper 88-104, Lower 64-79) — where each fruit grows and
+   when it is in season.
+7. **My Bahamas** (Upper 105-109, Lower 80-83) — draw, design, celebrate.
+
+### Pages seen, described from the page itself
+
+**The covers (full colour, not line art).** Upper: four Bahamian children about ten to
+thirteen — a boy with binoculars, a girl holding an open map, a girl with a pencil and
+notebook, a boy holding a cup of coloured pencils — against turquoise water, cays, a
+lighthouse, a sailing boat, a flamingo, a conch and a pineapple. Lower: three younger
+children, about six to nine, at a beach table holding crayons, showing a half-finished
+colouring page; flamingo, sailboat, pastel harbour houses, pineapple and conch around
+them. **Neither cover is catalogued in Cloudinary yet. Both are strong assets.**
+
+**Map of The Bahamas** (Upper p10). A real, correctly labelled line map of the whole
+archipelago: Grand Cay, West and East Grand Bahama, Freeport, North/Central/South
+Abaco, Green Turtle Cay, Hope Town, Moore's Island, Berry Islands, Bimini, Spanish
+Wells, Harbour Island, North/Central/South Eleuthera, New Providence, North/Central/
+South Andros, Mangrove Cay, Black Point, Exumas, Cat Island, San Salvador, Rum Cay,
+Long Island, Crooked Island, Acklins, Ragged Island, Mayaguana, Inagua. Mercator note,
+north arrow, scale bar in km and miles. **This is the Bahamas map asset.** Rule 3
+forbids generating a map; this one is real and correct, so use it.
+
+**Eleuthera** (Upper p25 / Lower p17). The Glass Window Bridge from above: a narrow
+road on a thin ribbon of rock with a single car on it, dark choppy Atlantic on one
+side and calm banks on the other. Caption: "At the Glass Window Bridge, the Atlantic
+Ocean and the calm Bight of Eleuthera lie on opposite sides of a narrow strip of rock."
+
+**The Bahamian Flag** (Upper p2). The flag on a pole, three bands with the triangle at
+the hoist. Fact: "Our flag uses aquamarine, gold and black."
+
+**The Queen's Staircase** (Upper p51). A family of four on the steps — a woman in a
+tiered dress with a shoulder bag, a man in a floral shirt, a girl and a boy between
+them, all turned back toward the viewer, with the cut limestone walls and ferns rising
+either side. Fact: "also called the 66 Steps."
+
+**Queen Conch** (Upper p63 / Lower p41). A single large queen conch on the sea floor
+with the animal's foot and eyestalks out of the shell, sea grass and small corals
+around it. Fact: "A queen conch carries its strong shell wherever it goes."
+
+**Boxing Day Junkanoo Parade** (Upper p86 / Lower p63). A rush on Bay Street: a lead
+dancer in a huge fanned headdress mid-stride, drummers, cowbell shakers and horn
+players behind, a crowd along the balconied buildings and street lamps either side.
+Fact: "Junkanoo fills Bay Street with music, movement and colour." This is almost
+certainly the page catalogued as `page-junkanoo-rush-20260830`.
+
+**Eleuthera Pineapple** (Upper p101). A whole pineapple growing in its plant with a
+cut half beside it. Facts: "Eleuthera is famous for its sweet Sugar Loaf pineapples.
+Where it grows: sunny, rocky red-soil fields in Eleuthera. In season: late spring to
+early summer (May-June)."
+
+**Fruits of The Bahamas opener** (Upper p88). Two children behind a big basket holding
+a mango, a pineapple, a soursop, a halved coconut, a sugar apple and grapes.
+
+**Proud to be Bahamian!** (Upper p108 / Lower p83). Nine children of mixed ages on a
+beach, all waving, two holding Bahamian flags, palms and sea behind.
+
+**Design Your Own Junkanoo Costume** (Lower p82). A blank child figure in a plain
+costume base with a collar and headband, four empty geometric shapes around it to fill
+in. Tip: "Junkanoo artists build costumes with cardboard, paste and colourful crepe
+paper."
+
+**Section openers** each show four thumbnails of that section's artwork with an ABOUT
+THIS SECTION box.
+
+### Written material worth a post
+- Upper's EXPLORE MORE questions, e.g. "Explain how music, movement and costume design
+  work together during a rush-out", "Explain how rainfall, soil and island location
+  might affect a fruit harvest."
+- Upper's settlement pages, e.g. Eleuthera: Governor's Harbour (administrative, historic
+  homes), Gregory Town (pineapple farming and the annual Pineapple Festival), Rock
+  Sound (Ocean Hole), Tarpum Bay (fishing traditions), Hatchet Bay (protected harbour).
+
+### Children in these books
+Children appear drawn on many pages — the covers, the Queen's Staircase, the fruit
+basket, the Junkanoo parade, "Proud to be Bahamian!". These are ILLUSTRATIONS, not
+photographs, so Rule 1 does not restrict them. Rule 1 is about photographs of the
+family's own children.
 
 ## THE RULE THIS DOCUMENT EXISTS TO ENFORCE
 
