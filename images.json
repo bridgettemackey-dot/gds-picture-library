@@ -342,7 +342,7 @@
    "file": "regatta-activity-book-nature-study-desk"
   },
   {
-   "id": "page-junkanoo-rush-20260830",
+   "id": "page-junkanoo-rush-rgb-20260915",
    "book": "All Things Bahamian: Upper Elementary",
    "group": "All Things Bahamian",
    "slug": "atb-upper",
@@ -350,8 +350,8 @@
    "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
    "caption": "Colouring page: Junkanoo on Bay Street",
    "alt": "A colouring page: a Junkanoo rush out on Bay Street, Nassau, with drummers and a feathered costume.",
-   "clean": "gds/atb-upper/page-junkanoo-rush-20260830",
-   "branded": "gds-share/atb-upper/page-junkanoo-rush-20260830-bhm",
+   "clean": "gds/atb-upper/page-junkanoo-rush-rgb-20260915",
+   "branded": "gds-share/atb-upper/page-junkanoo-rush-rgb-20260915",
    "w": 1080,
    "h": 1964,
    "bands": [
@@ -639,6 +639,7 @@
   "gds-share/atb-lower/flamingo-seagrape-20260902-lib",
   "gds-share/atb-lower/crayons-table-20260902-lib",
   "gds-share/atb-lower/conch-and-starfish-20260909-lib",
-  "gds-share/atb-lower/straw-market-20260909-lib"
+  "gds-share/atb-lower/straw-market-20260909-lib",
+  "gds-share/atb-upper/page-junkanoo-rush-20260830-bhm"
  ]
 }

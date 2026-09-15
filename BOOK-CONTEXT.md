@@ -304,3 +304,39 @@ one child and he is holding a flag. Both were invented from the filename
 
 LOOK AT THE PICTURE. Describe what is in it. Alt text especially — a blind reader has
 only that.
+
+---
+
+## INSTAGRAM WILL NOT TAKE THE LOW-RESOLUTION COLOURING PAGES
+
+Recorded 2026-09-15 after a fourth lost Instagram post.
+
+Three assets have failed on Instagram EVERY time they were tried, on derived and plain
+URLs alike — `page-island-life-20260830`, `page-junkanoo-rush-20260830` and
+`page-watching-the-race-20260830`. All three are 564x846 greyscale scans that Cloudinary
+delivers as single-channel JPEGs. Meanwhile 22 of 23 Instagram posts sourced from RGB
+images published without trouble.
+
+That is a correlation, not a proven cause. The JPEG structure of a failing file is
+identical to a working one — same progressive encoding, same markers — and one greyscale
+delivery did publish once. Do not write it up as the explanation.
+
+What to do:
+- Use the RGB replacements: `page-junkanoo-rush-rgb-20260915` (re-rendered from the book
+  PDF at 220dpi, genuinely sharper than the scan), `page-island-life-rgb-20260915` and
+  `page-watching-the-race-rgb-20260915` (the same scans converted to RGB and upscaled —
+  no new detail, but they leave the failing profile).
+- For any book page or line art going to Instagram, letterbox onto a faint tint so the
+  delivered file stays three-channel: `c_pad,b_rgb:fffef8,w_1080,h_1350,f_jpg,q_85`.
+- Check before scheduling: download the URL and confirm the image reports mode RGB.
+
+Better source files would fix this properly. The Junkanoo page is now genuine because
+the ATB sample PDF contained it. The island-life and sloop-race pages are not in any PDF
+we hold, so they remain upscales; a page export from those two books would improve them.
+
+## IMAGE MODEL
+
+`gpt-image-2.5-sunburst` from 2026-09-15, at Bridge's request. `gpt-image-2.5-flare`
+returns HTTP 500 on every attempt and must not be used. 2.5 draws Anna noticeably older
+than GPT Image 2 did, so the age instruction has to describe the body, not name a number
+— see the ANNA rules in the routine brief.
