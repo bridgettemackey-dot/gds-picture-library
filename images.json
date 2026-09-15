@@ -520,6 +520,66 @@
     "First colouring book"
    ],
    "file": "all-things-bahamian-lower-straw-market"
+  },
+  {
+   "id": "cover-20260915",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "slug": "atb-upper",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "caption": "The cover",
+   "alt": "The cover of All Things Bahamian: Upper Elementary — four Bahamian children with binoculars, an open map, a notebook and a cup of coloured pencils, in front of turquoise water, small cays, a lighthouse and a flamingo.",
+   "clean": "gds/atb-upper/cover-20260915",
+   "branded": "gds-share/atb-upper/cover-20260915",
+   "w": 1080,
+   "h": 1742,
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Colour & discover"
+   ],
+   "file": "all-things-bahamian-upper-cover"
+  },
+  {
+   "id": "map-of-the-bahamas-20260915",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "slug": "atb-upper",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "caption": "Map of The Bahamas",
+   "alt": "A colouring page: an outline map of the whole Bahamian archipelago with every island and cay named, from Grand Bahama and Abaco down to Inagua, with a north arrow and a scale bar.",
+   "clean": "gds/atb-upper/map-of-the-bahamas-20260915",
+   "branded": "gds-share/atb-upper/map-of-the-bahamas-20260915",
+   "w": 1080,
+   "h": 1742,
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Every island named"
+   ],
+   "file": "all-things-bahamian-upper-map-of-the-bahamas"
+  },
+  {
+   "id": "cover-20260915",
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "slug": "atb-lower",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "caption": "The cover",
+   "alt": "The cover of All Things Bahamian: My First Cultural Coloring Book — three young Bahamian children at a beach table holding crayons and showing a half-finished colouring page, with a flamingo, a sailing boat and pastel harbour houses behind them.",
+   "clean": "gds/atb-lower/cover-20260915",
+   "branded": "gds-share/atb-lower/cover-20260915",
+   "w": 1080,
+   "h": 1742,
+   "bands": [
+    "Ages 5–9",
+    "Grades 1–3",
+    "First colouring book"
+   ],
+   "file": "all-things-bahamian-lower-cover"
   }
  ],
  "retired": [
