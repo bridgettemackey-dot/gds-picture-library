@@ -1,0 +1,519 @@
+<title>GDS Post Activity</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f4f6f4; --card:#ffffff; --card-2:#fafbfa;
+  --ink:#131817; --ink-2:#4b5654; --ink-3:#798482;
+  --line:#e0e5e2; --line-2:#eef1ee;
+  --sea:#0f4b50; --sea-soft:#e6efee;
+  --fb:#2a78d6; --ig:#eb6834; --pin:#1baf7a;
+  --warn:#9a5a00; --warn-bg:#fdf3e2; --warn-line:#e8cf9f;
+  --good:#136b4a;
+  --shadow:0 1px 2px rgba(19,24,23,.05),0 4px 14px rgba(19,24,23,.05);
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --paper:#121513; --card:#1b201d; --card-2:#20261f;
+  --ink:#f1f4f0; --ink-2:#b4bdb7; --ink-3:#848d88;
+  --line:#2c332e; --line-2:#242a26;
+  --sea:#8fd5cf; --sea-soft:#1c2a29;
+  --fb:#3987e5; --ig:#d95926; --pin:#199e70;
+  --warn:#e6b25e; --warn-bg:#2a2418; --warn-line:#4a3f24;
+  --good:#5fc79a;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  --paper:#121513; --card:#1b201d; --card-2:#20261f;
+  --ink:#f1f4f0; --ink-2:#b4bdb7; --ink-3:#848d88;
+  --line:#2c332e; --line-2:#242a26;
+  --sea:#8fd5cf; --sea-soft:#1c2a29;
+  --fb:#3987e5; --ig:#d95926; --pin:#199e70;
+  --warn:#e6b25e; --warn-bg:#2a2418; --warn-line:#4a3f24;
+  --good:#5fc79a;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+  font:400 15px/1.55 "Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:36px 72px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif;margin:0;text-wrap:balance;letter-spacing:-.015em}
+h1{font-weight:800;font-size:clamp(28px,5.2vw,42px);line-height:1.08}
+h2{font-weight:700;font-size:clamp(19px,2.6vw,24px);line-height:1.2}
+h3{font-weight:600;font-size:16px;line-height:1.3}
+p{margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+a{color:var(--sea)}
+
+/* ---- header ---- */
+header{display:flex;flex-direction:column;gap:14px;padding-bottom:28px;border-bottom:2px solid var(--ink);margin-bottom:28px}
+.lede{color:var(--ink-2);max-width:64ch;font-size:16px}
+.stamp{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline}
+
+/* ---- sections ---- */
+section{margin-top:44px;scroll-margin-top:20px}
+.shead{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.shead p{color:var(--ink-2);max-width:66ch}
+
+/* ---- callout ---- */
+.callout{background:var(--warn-bg);border:1px solid var(--warn-line);border-left:4px solid var(--warn);
+  border-radius:3px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.callout h3{color:var(--warn)}
+.callout p{color:var(--ink-2);font-size:14.5px;max-width:70ch}
+
+/* ---- headline stats ---- */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.tile{background:var(--card);padding:18px 18px 16px;display:flex;flex-direction:column;gap:3px}
+.tile .n{font-family:"IBM Plex Mono",monospace;font-size:30px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.tile .k{font-size:13px;color:var(--ink-2)}
+.tile .sub{font-size:12px;color:var(--ink-3);margin-top:2px}
+
+/* ---- channel strip ---- */
+.chans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.chan{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 18px 18px;
+  display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow)}
+.chan-top{display:flex;align-items:center;gap:9px}
+.dot{width:11px;height:11px;border-radius:50%;flex:none}
+.chan-n{font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.chan-lbl{font-size:12.5px;color:var(--ink-2)}
+.kv{display:flex;flex-direction:column;gap:5px;border-top:1px solid var(--line-2);padding-top:11px}
+.kv div{display:flex;justify-content:space-between;gap:12px;font-size:13px}
+.kv span:first-child{color:var(--ink-2)}
+.kv span:last-child{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:500}
+.kv .zero span:last-child{color:var(--ink-3)}
+.chan.alert{border-color:var(--warn);border-left:4px solid var(--warn)}
+.state{font-size:12.5px;font-weight:600}
+.state.ok{color:var(--good)} .state.alert{color:var(--warn)}
+.since{font-size:12.5px;color:var(--ink-2)}
+
+/* ---- charts ---- */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px;box-shadow:var(--shadow)}
+.facets{display:flex;flex-direction:column;gap:20px}
+.facets>div{min-width:0}
+.facet-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:7px}
+.facet-h .who{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600}
+.facet-h .peak{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+svg{display:block;width:100%;height:auto}
+.facet-svg{overflow-x:auto;max-width:100%}
+.gridline{stroke:var(--line);stroke-width:1}
+.axlbl{font-family:"IBM Plex Mono",monospace;font-size:10.5px;fill:var(--ink-3)}
+.barval{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;fill:var(--ink)}
+.barval.dim{fill:var(--ink-3);font-weight:400}
+
+/* ---- glossary ---- */
+.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px}
+.gitem{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 18px;
+  display:flex;flex-direction:column;gap:10px}
+.gtop{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.gtop h3{font-size:17px}
+.unit{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);border:1px solid var(--line);
+  border-radius:2px;padding:1px 5px;letter-spacing:.04em}
+.gwho{display:flex;gap:6px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;border:1px solid var(--line);
+  border-radius:99px;padding:2px 9px 2px 7px;color:var(--ink-2);background:var(--card-2)}
+.pill .dot{width:7px;height:7px}
+.gdef{font-size:14px;color:var(--ink-2)}
+.gnote{font-size:13.5px;border-top:1px dashed var(--line);padding-top:10px;color:var(--ink)}
+.gnote b{font-weight:600}
+.gnum{font-family:"IBM Plex Mono",monospace;font-weight:600}
+
+/* ---- controls ---- */
+.controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:14px;
+  padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:4px}
+.cgroup{display:flex;align-items:center;gap:7px;flex-wrap:wrap;min-width:0}
+.cgroup>.eyebrow{margin-right:2px}
+.btn{font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--line);background:var(--card-2);
+  color:var(--ink-2);border-radius:3px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--ink-3);color:var(--ink)}
+.btn[aria-pressed="true"]{background:var(--sea);border-color:var(--sea);color:var(--paper);font-weight:600}
+:root[data-theme="dark"] .btn[aria-pressed="true"],
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn[aria-pressed="true"]{color:#121513}}
+.btn:focus-visible,select:focus-visible{outline:2px solid var(--sea);outline-offset:2px}
+select{font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--line);border-radius:3px;
+  background:var(--card-2);color:var(--ink)}
+.count{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);margin-left:auto}
+@media (max-width:620px){.count{margin-left:0}}
+
+/* ---- post table ---- */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th{text-align:left;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;padding:11px 12px;
+  border-bottom:1px solid var(--line);white-space:nowrap;background:var(--card-2)}
+th.num{text-align:right}
+td{padding:11px 12px;border-bottom:1px solid var(--line-2);vertical-align:top;font-size:13.5px}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--card-2)}
+td.num{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+.thumb{width:46px;height:46px;object-fit:cover;border-radius:3px;border:1px solid var(--line);display:block;background:var(--card-2)}
+.noimg{width:46px;height:46px;border-radius:3px;border:1px dashed var(--line)}
+.pdate{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.pbook{font-size:12px;color:var(--ink-3);margin-top:2px}
+.ptxt{color:var(--ink-2);max-width:38ch;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:10.5px;border:1px solid var(--line);border-radius:2px;
+  padding:1px 5px;color:var(--ink-2);white-space:nowrap;background:var(--card-2)}
+.chip b{font-weight:600;color:var(--ink)}
+.dash{color:var(--ink-3)}
+.empty{padding:40px 20px;text-align:center;color:var(--ink-3);font-size:14px}
+footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:var(--ink-3);font-size:12.5px;
+  display:flex;flex-direction:column;gap:6px}
+@media (max-width:560px){ .wrap{padding-block:26px 56px} .ptxt{display:none} }
+</style>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">GDS Publications &middot; Buffer &middot; Facebook, Instagram, Pinterest</p>
+  <h1>What the posts actually did</h1>
+  <p class="lede">Every post Buffer has published for GDS, with the activity each network reported back.
+    Nine kinds of activity are counted, and they do not mean the same thing on every channel &mdash;
+    <a href="#glossary">what each one counts</a> is spelled out below the charts.</p>
+  <div class="stamp">
+    <span class="eyebrow">Figures as of <span class="mono" id="asof"></span></span>
+    <span class="eyebrow">Rebuilt <span class="mono" id="built"></span></span>
+    <span class="eyebrow" id="scope-stamp"></span>
+  </div>
+</header>
+
+<div class="callout">
+  <h3>Read the small numbers as small</h3>
+  <p id="callout-body"></p>
+</div>
+
+<section id="status">
+  <div class="shead">
+    <h2>Reporting health</h2>
+    <p>Each channel's run of consecutive posts that came back with nothing at all. A short run is
+       ordinary quiet; a long one means the channel has stopped reporting, stopped distributing, or both.</p>
+  </div>
+  <div class="chans" id="status-cards"></div>
+</section>
+
+<section id="totals">
+  <div class="shead">
+    <h2>The campaign in five numbers</h2>
+    <p id="totals-sub"></p>
+  </div>
+  <div class="tiles" id="tiles"></div>
+</section>
+
+<section id="channels">
+  <div class="shead">
+    <h2>Each channel, on its own terms</h2>
+    <p>The networks do not report the same things, so these columns are not a like-for-like race.
+       Facebook and Pinterest count <em>impressions</em>; Instagram counts <em>views</em> and <em>reach</em>.
+       A dash means the network never reports that figure for this account.</p>
+  </div>
+  <div class="chans" id="chans"></div>
+</section>
+
+<section id="trend">
+  <div class="shead">
+    <h2>Week by week</h2>
+    <p>Three separate scales, one per channel &mdash; Pinterest's numbers are two orders of magnitude
+       larger, so a shared axis would flatten the other two to nothing. Each row states its own peak.</p>
+  </div>
+  <div class="panel facets" id="facets"></div>
+</section>
+
+<section id="glossary">
+  <div class="shead">
+    <h2>The nine kinds of activity</h2>
+    <p>The definition under each heading is the network's own, as Buffer reports it. The line beneath
+       is what it has actually meant for GDS so far.</p>
+  </div>
+  <div class="gloss" id="gloss"></div>
+  <div class="callout" style="margin-top:16px">
+    <h3>A zero is not always a zero</h3>
+    <p>Buffer's API fills in <span class="mono">0</span> both when nobody did the thing <em>and</em> when the
+      network never reported it. The two are indistinguishable from the outside. Instagram saves, shares and
+      follows read <span class="mono">0</span> on all 52 posts ever published there &mdash; that is far more
+      likely to be Meta not reporting them through the API than 52 posts nobody ever saved. Treat a flat zero
+      column as &ldquo;no data&rdquo;, and a number that moves as real.</p>
+  </div>
+</section>
+
+<section id="posts">
+  <div class="shead">
+    <h2>Post by post</h2>
+    <p>Sorted by interactions first. Hover a row to read it; every figure is the network's own count.</p>
+  </div>
+  <div class="controls">
+    <div class="cgroup"><span class="eyebrow">Period</span>
+      <button class="btn" data-era="campaign" aria-pressed="true">Reading series</button>
+      <button class="btn" data-era="all" aria-pressed="false">All time</button>
+    </div>
+    <div class="cgroup"><span class="eyebrow">Channel</span>
+      <button class="btn" data-ch="all" aria-pressed="true">All</button>
+      <button class="btn" data-ch="facebook" aria-pressed="false"><i class="dot" style="background:var(--fb)"></i>Facebook</button>
+      <button class="btn" data-ch="instagram" aria-pressed="false"><i class="dot" style="background:var(--ig)"></i>Instagram</button>
+      <button class="btn" data-ch="pinterest" aria-pressed="false"><i class="dot" style="background:var(--pin)"></i>Pinterest</button>
+    </div>
+    <div class="cgroup"><span class="eyebrow">Show</span>
+      <select id="filt-act">
+        <option value="act">Posts with activity</option>
+        <option value="all">Every post</option>
+      </select>
+      <select id="sort">
+        <option value="inter">Most interactions</option>
+        <option value="shown">Most times shown</option>
+        <option value="date">Newest first</option>
+      </select>
+    </div>
+    <span class="count" id="rowcount"></span>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th style="width:60px">Image</th><th>Published</th><th>Post</th>
+        <th class="num">Shown</th><th class="num">Interactions</th><th>Detail</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="empty" id="empty" hidden>No posts match those filters.</div>
+  </div>
+</section>
+
+<footer>
+  <span>Source: Buffer post metrics for organisation GDS Publications, pulled 22 September 2026.
+    Buffer refreshes network figures once a day, so posts from the last day or two may still read zero.</span>
+  <span>Pinterest keeps circulating a pin for weeks, so a Pinterest post&rsquo;s impressions keep climbing
+    after it is published. Facebook and Instagram figures settle within a day or two.</span>
+</footer>
+</div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+  var DB = JSON.parse(document.getElementById('data').textContent);
+  var POSTS = DB.posts, CAMPAIGN_START = '2026-08-01';
+  var CH = {facebook:{n:'Facebook',c:'var(--fb)'}, instagram:{n:'Instagram',c:'var(--ig)'}, pinterest:{n:'Pinterest',c:'var(--pin)'}};
+  var SHOWN = {facebook:'impressions', pinterest:'impressions', instagram:'views'};
+  var INTER = ['reactions','comments','shares','saves','clicks','follows'];
+  var NAMES = {impressions:'Impressions',reach:'Reach',views:'Views',reactions:'Reactions',
+    comments:'Comments',shares:'Shares',saves:'Saves',clicks:'Clicks',follows:'Follows',engagementRate:'Eng. rate'};
+  var fmt = function(n){ return n.toLocaleString('en-US'); };
+  var shown = function(p){ return p.m[SHOWN[p.ch]] || 0; };
+  var inter = function(p){ var t=0; INTER.forEach(function(k){ t += p.m[k]||0; }); return t; };
+
+  document.getElementById('asof').textContent = DB.meta.fresh.slice(0,10);
+  document.getElementById('built').textContent = (DB.meta.built || '\u2014');
+  var camp = POSTS.filter(function(p){ return p.d >= CAMPAIGN_START; });
+  document.getElementById('scope-stamp').textContent =
+    POSTS.length + ' posts published in total · ' + camp.length + ' of them for the six-book reading series';
+
+  /* ---------- reporting health ---------- */
+  var QUIET_ALERT = 8;   // a run this long is no longer ordinary quiet
+  var quiet = DB.meta.quiet || {};
+  document.getElementById('status-cards').innerHTML = ['pinterest','facebook','instagram'].map(function(ch){
+    var q = quiet[ch] || {silent:0,last:null,total:0};
+    var bad = q.silent >= QUIET_ALERT;
+    var lastTxt = q.last ? ('last figure of any kind: ' + q.last)
+                         : 'nothing has ever been reported for this channel';
+    return '<div class="chan' + (bad?' alert':'') + '">'
+      + '<div class="chan-top"><i class="dot" style="background:'+CH[ch].c+'"></i><h3>'+CH[ch].n+'</h3></div>'
+      + '<div><div class="chan-n">'+q.silent+'</div>'
+      + '<div class="chan-lbl">consecutive posts reporting nothing</div></div>'
+      + '<div class="kv"><div><span class="state '+(bad?'alert':'ok')+'">'
+      + (bad ? 'Not reporting' : (q.silent ? 'Quiet' : 'Reporting normally'))
+      + '</span></div><div><span class="since">'+lastTxt+'</span></div></div></div>';
+  }).join('');
+
+  /* ---------- totals ---------- */
+  function sum(list, key){ var t=0; list.forEach(function(p){ t += p.m[key]||0; }); return t; }
+  var pinImp = sum(camp.filter(function(p){return p.ch==='pinterest';}), 'impressions');
+  var fbImp  = sum(camp.filter(function(p){return p.ch==='facebook';}), 'impressions');
+  var igView = sum(camp.filter(function(p){return p.ch==='instagram';}), 'views');
+  var allShown = pinImp + fbImp + igView;
+  var allInter = camp.reduce(function(a,p){ return a + inter(p); }, 0);
+  var pinSaves = sum(camp.filter(function(p){return p.ch==='pinterest';}), 'saves');
+  var active = camp.filter(function(p){ return Object.keys(p.m).length > 0; }).length;
+
+  document.getElementById('totals-sub').textContent =
+    'The six-book reading series only — ' + camp.length + ' posts published since 1 August 2026. '
+    + 'Older GDS posts going back to 2020 are in the table under “All time”.';
+
+  var tiles = [
+    {n: fmt(camp.length), k:'Posts published', sub:'Facebook, Instagram and Pinterest'},
+    {n: fmt(allShown),    k:'Times a post was put in front of someone', sub: Math.round(pinImp/allShown*100)+'% of it Pinterest'},
+    {n: fmt(allInter),    k:'Interactions of any kind', sub:'reactions, comments, saves, shares, clicks'},
+    {n: fmt(pinSaves),    k:'Pinterest saves', sub:'the strongest genuine signal so far'},
+    {n: active + ' / ' + camp.length, k:'Posts with any activity at all', sub: (camp.length-active) + ' came back completely empty'}
+  ];
+  document.getElementById('tiles').innerHTML = tiles.map(function(t){
+    return '<div class="tile"><span class="n">'+t.n+'</span><span class="k">'+t.k+'</span><span class="sub">'+t.sub+'</span></div>';
+  }).join('');
+
+  document.getElementById('callout-body').innerHTML =
+    'Across the whole reading-series campaign the three channels have shown these posts <b class="mono">'+fmt(allShown)+'</b> times, '
+    + 'and <b class="mono">'+fmt(pinImp)+'</b> of that is Pinterest. Facebook has managed <b class="mono">'+fmt(fbImp)+'</b> impressions '
+    + 'and Instagram <b class="mono">'+fmt(igView)+'</b> views in seven weeks. At that scale the engagement-rate percentage stops meaning '
+    + 'anything — one Instagram post reads <span class="mono">500%</span> because five interactions landed on a reach of one person. '
+    + 'Judge posts on the raw counts, not the rate.';
+
+  /* ---------- channel cards ---------- */
+  var chanSpec = {
+    facebook:  [['impressions','Impressions'],['reactions','Reactions'],['comments','Comments'],['shares','Shares'],['clicks','Clicks']],
+    instagram: [['views','Views'],['reach','Reach'],['reactions','Reactions'],['comments','Comments'],['saves','Saves'],['shares','Shares'],['follows','Follows']],
+    pinterest: [['impressions','Impressions'],['saves','Saves'],['reactions','Reactions'],['comments','Comments']]
+  };
+  document.getElementById('chans').innerHTML = ['pinterest','facebook','instagram'].map(function(ch){
+    var list = camp.filter(function(p){ return p.ch===ch; });
+    var head = sum(list, SHOWN[ch]);
+    var rows = chanSpec[ch].map(function(pair){
+      var v = sum(list, pair[0]);
+      return '<div class="'+(v?'':'zero')+'"><span>'+pair[1]+'</span><span>'+(v?fmt(v):'—')+'</span></div>';
+    }).join('');
+    return '<div class="chan"><div class="chan-top"><i class="dot" style="background:'+CH[ch].c+'"></i>'
+      + '<h3>'+CH[ch].n+'</h3></div>'
+      + '<div><div class="chan-n">'+fmt(head)+'</div><div class="chan-lbl">'
+      + (ch==='instagram'?'views':'impressions') + ' across ' + list.length + ' posts</div></div>'
+      + '<div class="kv">'+rows+'</div></div>';
+  }).join('');
+
+  /* ---------- weekly facets ---------- */
+  function monday(iso){ var d=new Date(iso+'T00:00:00Z'); var wd=(d.getUTCDay()+6)%7;
+    d.setUTCDate(d.getUTCDate()-wd); return d.toISOString().slice(0,10); }
+  var weeks = []; camp.forEach(function(p){ var w=monday(p.d); if(weeks.indexOf(w)<0) weeks.push(w); });
+  weeks.sort();
+  var facetHTML = ['pinterest','facebook','instagram'].map(function(ch){
+    var vals = weeks.map(function(w){
+      var t=0; camp.forEach(function(p){ if(p.ch===ch && monday(p.d)===w) t += p.m[SHOWN[ch]]||0; }); return t; });
+    var peak = Math.max.apply(null, vals.concat([1]));
+    var W=640, H=104, PL=6, PR=6, PB=26, PT=16, n=vals.length;
+    var band=(W-PL-PR)/n, bw=Math.min(54, band-12);
+    var bars = vals.map(function(v,i){
+      var h = v===0 ? 0 : Math.max(2, (v/peak)*(H-PT-PB));
+      var x = PL + i*band + (band-bw)/2, y = H-PB-h;
+      var lbl = '<text class="barval'+(v?'':' dim')+'" x="'+(x+bw/2)+'" y="'+(v? y-5 : H-PB-5)+'" text-anchor="middle">'+(v?fmt(v):'0')+'</text>';
+      var rect = v? '<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+h+'" rx="3" fill="'+CH[ch].c+'"/>' : '';
+      var d = new Date(weeks[i]+'T00:00:00Z');
+      var tick = '<text class="axlbl" x="'+(x+bw/2)+'" y="'+(H-8)+'" text-anchor="middle">'
+        + d.getUTCDate() + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()] + '</text>';
+      return rect + lbl + tick;
+    }).join('');
+    return '<div><div class="facet-h"><span class="who"><i class="dot" style="background:'+CH[ch].c+'"></i>'
+      + CH[ch].n + ' — ' + (ch==='instagram'?'views':'impressions') + ' per week</span>'
+      + '<span class="peak">peak ' + fmt(peak) + '</span></div>'
+      + '<div class="facet-svg"><svg viewBox="0 0 '+W+' '+H+'" style="min-width:520px" role="img" aria-label="'+CH[ch].n+' weekly figures: '
+      + weeks.map(function(w,i){return w+' '+vals[i];}).join(', ') + '">'
+      + '<line class="gridline" x1="'+PL+'" y1="'+(H-PB)+'" x2="'+(W-PR)+'" y2="'+(H-PB)+'"/>'
+      + bars + '</svg></div></div>';
+  }).join('');
+  document.getElementById('facets').innerHTML = facetHTML;
+
+  /* ---------- glossary ---------- */
+  var allTime = function(ch,k){ return sum(POSTS.filter(function(p){return p.ch===ch;}), k); };
+  /* Buffer supplies each metric's name, unit, definition and which channels report it.
+     Only the GDS-specific note below is ours, and it recomputes from whatever data is current. */
+  var ORDER = ['impressions','reach','views','reactions','comments','saves','shares','clicks','follows','engagementRate'];
+  var pinC = camp.filter(function(p){return p.ch==='pinterest';});
+  var fbC  = camp.filter(function(p){return p.ch==='facebook';});
+  var igC  = camp.filter(function(p){return p.ch==='instagram';});
+  var NOTE = {
+    impressions: function(){ return 'Nearly all the exposure this campaign has had. Pinterest <span class="gnum">'
+      + fmt(sum(pinC,'impressions')) + '</span> across ' + pinC.length + ' pins; Facebook <span class="gnum">'
+      + fmt(sum(fbC,'impressions')) + '</span> across ' + fbC.length + ' posts. A Pinterest pin keeps earning '
+      + 'impressions for weeks after it goes out; a Facebook post is finished within a day.'; },
+    reach: function(){ var best = Math.max.apply(null, igC.map(function(p){return p.m.reach||0;}).concat([0]));
+      return 'Instagram only. The best any single post has managed is <span class="gnum">' + best
+      + '</span> people, and the campaign total is <span class="gnum">' + fmt(sum(igC,'reach'))
+      + '</span>. This is the number that says the Instagram account has no audience yet.'; },
+    views: function(){ return 'Instagram\u2019s nearest equivalent to impressions, and the figure used for '
+      + 'Instagram in the charts above. <span class="gnum">' + fmt(sum(igC,'views')) + '</span> for the campaign.'; },
+    reactions: function(){ return 'Buffer supplies no real definition for Pinterest reactions \u2014 it reports a '
+      + 'number without saying what it counts, so read Pinterest\u2019s <span class="gnum">' + fmt(sum(pinC,'reactions'))
+      + '</span> with caution. Facebook <span class="gnum">' + fmt(sum(fbC,'reactions'))
+      + '</span>, Instagram <span class="gnum">' + fmt(sum(igC,'reactions')) + '</span> for the campaign.'; },
+    comments: function(){ return 'Because Instagram counts replies as well as comments, <em>your own</em> answers '
+      + 'inflate it. Instagram shows <span class="gnum">' + fmt(sum(igC,'comments')) + '</span> comments against a '
+      + 'total reach of <span class="gnum">' + fmt(sum(igC,'reach')) + '</span> people \u2014 more comments than '
+      + 'people reached, so most of them are not readers.'; },
+    saves: function(){ return 'The most meaningful figure on this page. <span class="gnum">' + fmt(sum(pinC,'saves'))
+      + '</span> people have pinned a GDS image to a board of their own \u2014 strangers choosing to keep it. '
+      + 'Instagram reports <span class="gnum">0</span> saves on every post ever, which is far more likely to be '
+      + 'Meta not reporting than nobody ever saving.'; },
+    shares: function(){ return '<span class="gnum">' + fmt(sum(fbC,'shares')) + '</span> on Facebook for the whole '
+      + 'reading-series campaign, against <span class="gnum">' + fmt(allTime('facebook','shares'))
+      + '</span> on older GDS posts going back to 2020. Instagram reports <span class="gnum">0</span> always.'; },
+    clicks: function(){ return 'Facebook only \u2014 neither Instagram nor Pinterest reports it, so there is no click '
+      + 'figure for the Amazon links on those channels. All time reads <span class="gnum">'
+      + fmt(allTime('facebook','clicks')) + '</span>, but <span class="gnum">7,345</span> of those come from one '
+      + 'boosted GLAT course post in May 2021. The reading series has earned <span class="gnum">'
+      + fmt(sum(fbC,'clicks')) + '</span>.'; },
+    follows: function(){ return '<span class="gnum">0</span> on every Instagram post ever published. Given Instagram\u2019s '
+      + 'reach is a handful of people, both readings \u2014 nothing reported, or nothing happened \u2014 point the same way.'; },
+    engagementRate: function(){ var over = POSTS.filter(function(p){return (p.m.engagementRate||0)>=100;}).length;
+      var pr = pinC.map(function(p){return p.m.engagementRate;}).filter(Boolean);
+      var lo = pr.length? Math.min.apply(null,pr):0, hi = pr.length? Math.max.apply(null,pr):0;
+      return '<b>Ignore this one below about a hundred impressions.</b> It is interactions divided by people reached, '
+      + 'so on a post seen by one person, five interactions read as <span class="gnum">500%</span>. <span class="gnum">'
+      + over + '</span> GDS posts read over 100%. The Pinterest rates, computed over hundreds of impressions, are the '
+      + 'only ones worth reading \u2014 and they sit between <span class="gnum">' + lo + '%</span> and <span class="gnum">'
+      + hi + '%</span>.'; }
+  };
+  var GL = DB.glossary || {};
+  var G = ORDER.filter(function(k){ return GL[k]; }).map(function(k){
+    return {t: GL[k].name, u: GL[k].unit, ch: GL[k].channels.slice().sort(),
+            def: GL[k].description, note: (NOTE[k] ? NOTE[k]() : '')};
+  });
+  document.getElementById('gloss').innerHTML = G.map(function(g){
+    return '<div class="gitem"><div class="gtop"><h3>'+g.t+'</h3><span class="unit">'+g.u+'</span></div>'
+      + '<div class="gwho">'+g.ch.map(function(c){ return '<span class="pill"><i class="dot" style="background:'+CH[c].c+'"></i>'+CH[c].n+'</span>'; }).join('')+'</div>'
+      + '<p class="gdef">'+g.def+'</p><p class="gnote">'+g.note+'</p></div>';
+  }).join('');
+
+  /* ---------- table ---------- */
+  var state = {era:'campaign', ch:'all', act:'act', sort:'inter'};
+  function current(){
+    var list = state.era==='campaign' ? POSTS.filter(function(p){return p.d>=CAMPAIGN_START;}) : POSTS.slice();
+    if(state.ch!=='all') list = list.filter(function(p){ return p.ch===state.ch; });
+    if(state.act==='act') list = list.filter(function(p){ return inter(p)>0 || shown(p)>0 || (p.m.reach||0)>0; });
+    list.sort(function(a,b){
+      if(state.sort==='date') return a.d<b.d?1:a.d>b.d?-1:0;
+      if(state.sort==='shown'){ var s=shown(b)-shown(a); return s || (inter(b)-inter(a)) || (a.d<b.d?1:-1); }
+      var i=inter(b)-inter(a); return i || (shown(b)-shown(a)) || (a.d<b.d?1:-1);
+    });
+    return list;
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function render(){
+    var list = current(), body = document.getElementById('rows');
+    document.getElementById('rowcount').textContent = list.length + ' post' + (list.length===1?'':'s');
+    document.getElementById('empty').hidden = list.length>0;
+    body.innerHTML = list.map(function(p){
+      var chips = Object.keys(p.m).filter(function(k){ return k!=='engagementRate'; })
+        .sort(function(a,b){ return (p.m[b]||0)-(p.m[a]||0); })
+        .map(function(k){ return '<span class="chip">'+NAMES[k]+' <b>'+fmt(p.m[k])+'</b></span>'; });
+      if(p.m.engagementRate) chips.push('<span class="chip">Eng. rate <b>'+p.m.engagementRate+'%</b></span>');
+      var img = p.th ? '<img class="thumb" src="'+p.th+'" alt="">' : '<div class="noimg"></div>';
+      var s = shown(p), i = inter(p);
+      var title = p.url ? '<a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+CH[p.ch].n+'</a>' : CH[p.ch].n;
+      return '<tr><td>'+img+'</td>'
+        + '<td><div class="pdate">'+p.d+'</div><div class="pbook"><i class="dot" style="display:inline-block;background:'
+        + CH[p.ch].c+';margin-right:5px"></i>'+title+'</div></td>'
+        + '<td><div class="pbook" style="color:var(--ink);font-weight:500;margin:0 0 3px">'+esc(p.book||'—')+'</div>'
+        + '<div class="ptxt">'+esc(p.txt)+'</div></td>'
+        + '<td class="num">'+(s?fmt(s):'<span class="dash">0</span>')+'</td>'
+        + '<td class="num">'+(i?fmt(i):'<span class="dash">0</span>')+'</td>'
+        + '<td><div class="chips">'+(chips.length?chips.join(''):'<span class="dash">nothing reported</span>')+'</div></td></tr>';
+    }).join('');
+  }
+  function wire(attr, key){
+    document.querySelectorAll('[data-'+attr+']').forEach(function(b){
+      b.addEventListener('click', function(){
+        state[key] = b.getAttribute('data-'+attr);
+        document.querySelectorAll('[data-'+attr+']').forEach(function(o){
+          o.setAttribute('aria-pressed', String(o===b)); });
+        render();
+      });
+    });
+  }
+  wire('era','era'); wire('ch','ch');
+  document.getElementById('filt-act').addEventListener('change', function(e){ state.act=e.target.value; render(); });
+  document.getElementById('sort').addEventListener('change', function(e){ state.sort=e.target.value; render(); });
+  render();
+})();
+</script>
