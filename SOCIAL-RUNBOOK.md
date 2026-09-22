@@ -205,18 +205,36 @@ The actual record, which is what to go on:
 USE DERIVED URLS. They are what works. Do not "fix" it by changing the URL form again
 without evidence stronger than this.
 
-A FOURTH FAILURE on Sep 15, 2026 produced the clearest pattern yet. Checking the colour
-mode of every Instagram image ever posted:
+A FOURTH FAILURE on Sep 15, 2026 looked like a pattern — every Instagram image from an
+RGB source had published, and only three low-resolution greyscale colouring pages had
+failed. That reading was written up here as "the clearest pattern yet".
 
-    images from an RGB source:              22 published, 0 failed
-    three low-resolution greyscale pages:    0 published, failed EVERY attempt
+IT IS WRONG, AND IT WAS DISPROVED ON Sep 21, 2026. `the-empty-docks-20260921` failed with
+the same "media could not be fetched" error. It is a newly generated full-colour
+illustration on a derived c_fill URL, and the delivered file was checked from three
+separate requests:
 
-Those three are gds/atb-upper/page-island-life-20260830,
-gds/atb-upper/page-junkanoo-rush-20260830 and
-gds/regatta/page-watching-the-race-20260830 — all 564x846 greyscale scans that
-Cloudinary delivers as single-channel greyscale JPEGs. The JPEG structure of a failing
-file is identical to a working one, and one greyscale delivery did publish once, so
-greyscale is a correlation and NOT a demonstrated cause. Do not state it as one.
+    HTTP 200 · image/jpeg · 266,598 bytes · mode RGB · 1080x1350 · ratio 0.80
+    progressive JPEG · ttfb 0.18-0.40s · identical bytes every time
+
+That is exactly the profile this file previously called reliable. The same picture
+published on Facebook at 14:00 and on Pinterest at 14:40 the same afternoon.
+
+THE HONEST STATE OF IT: there is no measured property — file size, colour mode,
+dimensions, ratio, encoding, response time, URL form — that separates a failing
+Instagram publish from a succeeding one. Four diagnoses have been offered (size,
+derived URLs, greyscale, and the RGB-always-works corollary) and all four were wrong.
+It fails intermittently, at roughly 7 failures in 30 attempts through September.
+
+THE RULE IS THEREFORE OPERATIONAL, NOT DIAGNOSTIC:
+- Check for errored posts the morning after every publishing day.
+- Re-queue a failure into the next free slot, with a different encode of the same crop
+  (q_85 instead of q_auto:good) so the delivered bytes are not byte-identical to the
+  file Meta refused. That is a cheap hedge, not a known fix.
+- Do NOT redesign the URL scheme, the image pipeline, or the manifest in response to a
+  single failure. Every attempt to do so has cost more posts than it saved.
+- The three 564x846 greyscale originals still have a 0-for-N record, so keep using their
+  -rgb-20260915 replacements — but on the evidence of a poor record, not a proven cause.
 
 What to do about it:
 - Never put those three originals on Instagram. RGB replacements exist and are in the
@@ -478,7 +496,7 @@ Known constraints, each one learned from a real failure:
 - Facebook posts fail without `metadata.facebook.type`.
 - Instagram and Pinterest reject a post with no image — drafts included. There is no way to park a half-finished one. Get the Cloudinary URL first.
 - Pinterest rejects alt text over 500 characters, at publish time, not at scheduling time.
-- Instagram intermittently fails to fetch an image even when the URL is healthy. Use the DERIVED URL, confirm the delivered file is mode RGB, and never use the three greyscale originals. Re-queue a failure; do not redesign the URL form.
+- Instagram intermittently fails to fetch an image even when the URL is provably healthy, and NO measured property predicts it — an RGB 1080x1350 progressive JPEG on a derived URL failed on Sep 21. Use the DERIVED URL, avoid the three greyscale originals, check for errors the morning after every publishing day, and re-queue a failure with a different encode. Do not redesign the pipeline.
 - Never publish immediately — always `customScheduled` with an explicit `dueAt`.
 
 Post times: late morning or early evening in America/Nassau tends to perform best. Stagger the three platforms within a day rather than firing them at the same minute. When a day carries two slots, separate them by several hours rather than stacking them. A pattern that works: first slot at 14:00 / 14:20 / 14:40 UTC for Facebook / Instagram / Pinterest, second slot at 19:00 / 19:20 / 19:40 UTC.

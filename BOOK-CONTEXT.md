@@ -307,22 +307,33 @@ only that.
 
 ---
 
-## INSTAGRAM WILL NOT TAKE THE LOW-RESOLUTION COLOURING PAGES
+## INSTAGRAM FAILS INTERMITTENTLY AND NOTHING PREDICTS IT
 
-Recorded 2026-09-15 after a fourth lost Instagram post.
+Recorded 2026-09-15, corrected 2026-09-21.
 
-Three assets have failed on Instagram EVERY time they were tried, on derived and plain
+Three assets have failed on Instagram every time they were tried, on derived and plain
 URLs alike — `page-island-life-20260830`, `page-junkanoo-rush-20260830` and
-`page-watching-the-race-20260830`. All three are 564x846 greyscale scans that Cloudinary
-delivers as single-channel JPEGs. Meanwhile 22 of 23 Instagram posts sourced from RGB
-images published without trouble.
+`page-watching-the-race-20260830`, all 564x846 greyscale scans. On 15 Sept that looked
+like the explanation, because every Instagram post sourced from an RGB image had
+published.
 
-That is a correlation, not a proven cause. The JPEG structure of a failing file is
-identical to a working one — same progressive encoding, same markers — and one greyscale
-delivery did publish once. Do not write it up as the explanation.
+THAT READING IS DISPROVED. On 21 Sept `the-empty-docks-20260921` failed with the same
+"media could not be fetched" error. It is a newly generated full-colour illustration,
+delivered on a derived c_fill URL as HTTP 200, image/jpeg, mode RGB, 1080x1350, 266,598
+bytes, progressive, in under half a second, identical on three requests. The same
+picture published fine to Facebook and Pinterest that afternoon.
+
+No measured property — size, colour mode, dimensions, ratio, encoding, latency, URL
+form — separates a failing Instagram publish from a succeeding one. Roughly 7 of 30
+attempts failed in September. Treat it as intermittent and handle it operationally.
 
 What to do:
-- Use the RGB replacements: `page-junkanoo-rush-rgb-20260915` (re-rendered from the book
+- Check for errored posts the morning after every publishing day and re-queue any
+  failure into the next free slot, using a different encode of the same crop (`q_85`
+  instead of `q_auto:good`) so the bytes differ from the file Meta refused. A hedge,
+  not a known fix. Never redesign the pipeline over one failure.
+- Keep avoiding the three greyscale originals — their record is 0-for-N. Use the RGB
+  replacements: `page-junkanoo-rush-rgb-20260915` (re-rendered from the book
   PDF at 220dpi, genuinely sharper than the scan), `page-island-life-rgb-20260915` and
   `page-watching-the-race-rgb-20260915` (the same scans converted to RGB and upscaled —
   no new detail, but they leave the failing profile).
