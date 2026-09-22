@@ -542,50 +542,51 @@ Optimise the summary for fast scanning — Bridge should be able to work top to 
 
 Timing note: this routine fires at 22:00 UTC, which is 6pm Eastern during EDT. Daylight saving ends Nov 1, 2026, after which 22:00 UTC is 5pm Eastern. If this run is on or after Nov 1 and the cron is still `0 22 * * 0,3`, say so in your summary — it should move to `0 23 * * 0,3`.
 
---- PINTEREST HAS REPORTED NOTHING SINCE 11 SEPTEMBER 2026 (STILL OPEN) ---
+--- PINTEREST STOPPED DISTRIBUTING NEW PINS ON 11 SEPTEMBER 2026 (SETTLED) ---
 
-Every pin published from 2026-09-11 onward reports exactly zero impressions, saves
-and reactions - seventeen consecutive pins over twelve days.
+Every pin published from 2026-09-11 onward has earned nothing. Eighteen consecutive
+pins and counting.
 
-THE ACCOUNT-LEVEL CHART DOES NOT SETTLE THIS. On 22 September Pinterest's own
-analytics were checked and show daily impressions rising through the same window,
-roughly 200 to 290 a day. That was briefly written up here as proof that Buffer was
-under-reporting. IT IS NOT PROOF, and that entry was wrong. Pinterest's chart is
-ACCOUNT-LEVEL: it counts every pin the account has ever posted, not just the new ones.
-Two Buffer snapshots one refresh apart show the older pins gaining +203 impressions
-between them, with not one post-11-Sep pin moving. That +203/day accounts for
-essentially the whole of Pinterest's 200-290/day curve. The older pins explain the
-chart on their own.
+THIS IS REAL. Settled 22 September against Pinterest's OWN PER-PIN analytics, which
+show zero for those pins as well. Buffer has been reporting accurately throughout.
+The pins publish fine and are publicly live. Pins from August and early September are
+still circulating and still gaining - they added 203 impressions in one day, which
+accounts for the entire rising curve on Pinterest's account-level chart.
 
-SO BOTH READINGS ARE STILL LIVE:
-(a) Pinterest has stopped distributing new pins from this account. Older pins keep
-    the reach they already had, which is exactly the observed pattern.
-(b) Buffer has stopped receiving figures for pins created after 11 September.
+So: the account keeps the distribution it already built, and anything new goes
+nowhere. That is an ACCOUNT-LEVEL action by Pinterest, not a fault in any pin.
 
-THE CHECK THAT ACTUALLY DECIDES IT, which only Bridge can run: open Pinterest's own
-analytics and look at a SINGLE PIN published after 11 September - per-pin, not the
-account total. Pin analytics showing impressions means Buffer is at fault (b). Pin
-analytics showing zero means distribution has stalled (a). The account chart cannot
-answer this and must not be used for it again.
+RULED OUT, with evidence, and not worth re-testing: publishing (all pins live, HTTP
+200); the Buffer pipeline (older pins demonstrably still gaining); a Buffer outage
+(Facebook and Instagram reported normally throughout); the Buffer channel connection
+(isDisconnected/isLocked/isQueuePaused all false); pin titles; boards; destination
+links; image aspect ratio (post-11-Sep pins at the favoured 2:3 1024x1536 score zero
+alongside the square ones).
 
-Ruled out along the way, with evidence, and NOT worth re-testing:
-- Publishing: all 42 campaign pins are live; each externalLink returns HTTP 200.
-- The metrics pipeline in general: Buffer refreshed every post the day it was checked,
-  and older pins are demonstrably still gaining.
-- A Buffer-wide outage: Facebook kept accruing through the same interval (+7 across
-  three posts between the two snapshots) and Instagram reported normally on 16 and
-  18 September. Only Pinterest shows a hard, total, sustained zero.
-- The channel connection as Buffer sees it: isDisconnected false, isLocked false,
-  isQueuePaused false.
-- Pin titles. An earlier reading blamed missing titles and was WRONG - several
-  post-11-Sep pins carry their full title and still report zero.
-- Boards and destination links: identical on both sides of the cutoff.
+THREE WRONG CALLS WERE MADE BEFORE THIS ONE STUCK:
+  1. "Missing pin titles" - several post-11-Sep pins carry full titles and still
+     score zero.
+  2. "Buffer is under-reporting" - inferred from Pinterest's ACCOUNT-LEVEL chart,
+     which the older pins explain entirely on their own.
+  3. Recommending a Buffer reconnect as the fix. Harmless, but not the problem.
+Each came from reading a correlation as a cause, and each was corrected only because
+a further check was run. The lesson for this file: an account-level total can never
+settle a per-item question. Get the per-item number.
 
-TWO WRONG CALLS WERE MADE ON THIS ALREADY - missing titles, then "Buffer is
-under-reporting". Both were made by reading a correlation as a cause. Do not make a
-third. Nothing further can be settled from Buffer's data; it has all been checked.
+WHAT TO ACTUALLY DO - none of these is proven as the trigger, all are things that
+make a small commercial account look like spam to Pinterest:
+- Check for a Pinterest notice or email dated around 10-11 September. An account
+  action usually comes with one. If there is one, appeal it; that is the direct route.
+- CLAIM gdsbahamas.com in Pinterest settings. GDS owns the domain now. A claimed
+  domain is the single biggest trust signal Pinterest offers a publisher.
+- STOP PINNING STRAIGHT TO AMAZON. Six amazon.com/dp/ links cycling daily from a
+  small account is the classic affiliate-spam signature. The per-book landing pages
+  already exist and are live: https://pictures.gdsbahamas.com/b/{gw,gwa,reg,rega,
+  atbu,atbl}/ - all return 200. Pin to those; they carry the buy link onward.
+- No duplicate images. Five were pinned twice, and Pinterest merged one (the 16 Sep
+  pin of writers-desk-longisland-v2 displays the 7 Sep pin's title).
+- Ease the cadence. One to two pins every single day from a new small account is
+  aggressive. Drop to three or four a week until distribution returns.
 
-Housekeeping worth doing regardless, none of it demonstrated as a cause: five images
-were pinned twice (Pinterest merged one duplicate - the 16 Sep pin of
-writers-desk-longisland-v2 displays the 7 Sep pin's title), and the same six Amazon
-/dp/ links cycle daily.
+WATCH FOR: the day a pin published on or after 11 September first shows a non-zero
+figure. That is recovery. The dashboard tracks it.

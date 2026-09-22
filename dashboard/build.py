@@ -24,15 +24,15 @@ BOOK = {'girl-whale':'The Girl and The Whale','girl-whale-activity':'Girl & Whal
 CAVEATS = [{
     'channel': 'pinterest',
     'from': '2026-09-11',
-    'title': 'Pinterest has published nothing that earns impressions since 11 September',
-    'body': "Every pin published since 11 September reports exactly zero \u2014 seventeen in a row \u2014 "
-            "while pins from August and early September are still gaining. In one Buffer refresh those "
-            "older pins added 203 impressions between them, and not one newer pin moved. "
-            "Pinterest's own account chart shows roughly 200 to 290 impressions a day through the same "
-            "period, which those older pins account for almost exactly, so the chart does NOT show the "
-            "new pins earning anything. Two readings remain open: Pinterest has stopped distributing new "
-            "pins from this account, or Buffer has stopped receiving figures for pins created after that "
-            "date. The deciding check is Pinterest's own per-pin analytics, not its account total.",
+    'title': 'Pinterest stopped distributing new pins on 11 September',
+    'body': "Every pin published since 11 September has earned nothing \u2014 seventeen in a row. "
+            "This is REAL, not a reporting gap: Pinterest's own per-pin analytics show zero for those "
+            "pins too, checked on 22 September. Buffer is reporting accurately. The pins publish fine "
+            "and are publicly live, and pins from August and early September are still circulating and "
+            "still gaining \u2014 they added 203 impressions in a single day, which is the whole of the "
+            "rising curve on Pinterest's account chart. So the account keeps the reach it already built "
+            "while anything new goes nowhere. That is an account-level distribution problem, not a "
+            "problem with any individual pin.",
 }]
 
 KEY = os.environ.get('BUFFER_API_KEY')
