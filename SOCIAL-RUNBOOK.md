@@ -542,51 +542,64 @@ Optimise the summary for fast scanning — Bridge should be able to work top to 
 
 Timing note: this routine fires at 22:00 UTC, which is 6pm Eastern during EDT. Daylight saving ends Nov 1, 2026, after which 22:00 UTC is 5pm Eastern. If this run is on or after Nov 1 and the cron is still `0 22 * * 0,3`, say so in your summary — it should move to `0 23 * * 0,3`.
 
---- PINTEREST STOPPED DISTRIBUTING NEW PINS ON 11 SEPTEMBER 2026 (SETTLED) ---
+--- PINTEREST PINS STOPPED BEING PICKED UP ON 11 SEPTEMBER 2026 (SETTLED) ---
 
-Every pin published from 2026-09-11 onward has earned nothing. Eighteen consecutive
-pins and counting.
+Buffer shows a flat zero for all 17 pins published from 2026-09-11 onward. Pinterest's
+own PER-PIN analytics show about two or three impressions each. So a trickle
+continues and Buffer is missing it - but at that size the difference does not matter,
+and Buffer is close enough to right.
 
-THIS IS REAL. Settled 22 September against Pinterest's OWN PER-PIN analytics, which
-show zero for those pins as well. Buffer has been reporting accurately throughout.
-The pins publish fine and are publicly live. Pins from August and early September are
-still circulating and still gaining - they added 203 impressions in one day, which
-accounts for the entire rising curve on Pinterest's account-level chart.
+WHAT ACTUALLY CHANGED IS AMPLIFICATION, not distribution outright. Buffer's figures
+for the 25 pins before the cutoff:
 
-So: the account keeps the distribution it already built, and anything new goes
-nowhere. That is an ACCOUNT-LEVEL action by Pinterest, not a fault in any pin.
+    1, 2, 3, 3, 3, 4, 7, 8, 8, 13, 21, 26, 29, 29, 29, 48,
+    141, 141, 147, 150, 217, 249, 249, 255, 657
 
-RULED OUT, with evidence, and not worth re-testing: publishing (all pins live, HTTP
-200); the Buffer pipeline (older pins demonstrably still gaining); a Buffer outage
-(Facebook and Instagram reported normally throughout); the Buffer channel connection
+    median 29 · nine pins over 100 · nine pins under 10
+
+Since the cutoff: seventeen pins, none above single figures.
+
+Note the shape carefully. The quiet baseline was ALWAYS there - nine of those
+twenty-five pre-cutoff pins earned under ten impressions as well. What has stopped is
+the breakout: roughly a third of pins used to get picked up and carried to a few
+hundred people, and none has since. Older pins are still circulating and still gaining
+(+203 in one day), which is what keeps Pinterest's account-level chart rising.
+
+RULED OUT, with evidence, not worth re-testing: publishing (all pins live, HTTP 200);
+the Buffer pipeline (older pins demonstrably still gaining); a Buffer outage (Facebook
+and Instagram reported normally throughout); the Buffer channel connection
 (isDisconnected/isLocked/isQueuePaused all false); pin titles; boards; destination
-links; image aspect ratio (post-11-Sep pins at the favoured 2:3 1024x1536 score zero
-alongside the square ones).
+links; image aspect ratio (post-cutoff pins at the favoured 2:3 1024x1536 do no better
+than the square ones).
 
-THREE WRONG CALLS WERE MADE BEFORE THIS ONE STUCK:
-  1. "Missing pin titles" - several post-11-Sep pins carry full titles and still
-     score zero.
+FOUR WRONG CALLS WERE MADE BEFORE THIS SETTLED:
+  1. "Missing pin titles" - several post-cutoff pins carry full titles and still
+     score nothing.
   2. "Buffer is under-reporting" - inferred from Pinterest's ACCOUNT-LEVEL chart,
      which the older pins explain entirely on their own.
   3. Recommending a Buffer reconnect as the fix. Harmless, but not the problem.
-Each came from reading a correlation as a cause, and each was corrected only because
-a further check was run. The lesson for this file: an account-level total can never
-settle a per-item question. Get the per-item number.
+  4. "Pinterest shows zero too" - it shows two or three, not zero. Corrected by
+     Bridge after she read the per-pin figures.
+Every one came from reading a correlation as a cause, or from taking a rough answer as
+an exact one. Two lessons for this file: an account-level total can never settle a
+per-item question, and when a number decides something, get the number rather than a
+yes or no.
 
-WHAT TO ACTUALLY DO - none of these is proven as the trigger, all are things that
-make a small commercial account look like spam to Pinterest:
+WHAT TO ACTUALLY DO - none proven as the trigger, all of them things that make a small
+commercial account look like spam to Pinterest:
 - Check for a Pinterest notice or email dated around 10-11 September. An account
   action usually comes with one. If there is one, appeal it; that is the direct route.
-- CLAIM gdsbahamas.com in Pinterest settings. GDS owns the domain now. A claimed
-  domain is the single biggest trust signal Pinterest offers a publisher.
-- STOP PINNING STRAIGHT TO AMAZON. Six amazon.com/dp/ links cycling daily from a
-  small account is the classic affiliate-spam signature. The per-book landing pages
-  already exist and are live: https://pictures.gdsbahamas.com/b/{gw,gwa,reg,rega,
-  atbu,atbl}/ - all return 200. Pin to those; they carry the buy link onward.
-- No duplicate images. Five were pinned twice, and Pinterest merged one (the 16 Sep
-  pin of writers-desk-longisland-v2 displays the 7 Sep pin's title).
-- Ease the cadence. One to two pins every single day from a new small account is
-  aggressive. Drop to three or four a week until distribution returns.
+- CLAIM gdsbahamas.com in Pinterest settings. GDS owns the domain. A claimed domain is
+  the strongest trust signal Pinterest offers a publisher, and the account has none.
+- STOP PINNING STRAIGHT TO AMAZON. Six amazon.com/dp/ links cycling daily from a small
+  account is the classic affiliate-spam signature. The per-book landing pages exist and
+  are live: https://pictures.gdsbahamas.com/b/{gw,gwa,reg,rega,atbu,atbl}/ - all return
+  200. Pin to those; they carry the buy link onward.
+- No duplicate images. Five were pinned twice, and Pinterest merged one (the 16 Sep pin
+  of writers-desk-longisland-v2 displays the 7 Sep pin's title).
+- Ease the cadence. One to two pins every single day from a young account is
+  aggressive. Three or four a week until the breakouts return.
 
-WATCH FOR: the day a pin published on or after 11 September first shows a non-zero
-figure. That is recovery. The dashboard tracks it.
+WATCH FOR: a pin published on or after 11 September clearing a couple of dozen
+impressions. That is the amplification returning, and it is the signal that matters -
+not the first non-zero number, which Pinterest already shows.
