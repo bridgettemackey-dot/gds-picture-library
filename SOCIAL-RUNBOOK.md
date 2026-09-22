@@ -541,3 +541,49 @@ Then report, organised BY DATE. For each date list the platforms with: title, pi
 Optimise the summary for fast scanning — Bridge should be able to work top to bottom without hunting.
 
 Timing note: this routine fires at 22:00 UTC, which is 6pm Eastern during EDT. Daylight saving ends Nov 1, 2026, after which 22:00 UTC is 5pm Eastern. If this run is on or after Nov 1 and the cron is still `0 22 * * 0,3`, say so in your summary — it should move to `0 23 * * 0,3`.
+
+--- PINTEREST WENT TO ZERO ON 11 SEPTEMBER 2026 ---
+
+Every pin published from 2026-09-11 onward has reported EXACTLY zero impressions,
+zero saves, zero reactions. Seventeen consecutive pins across twelve days, still
+zero when checked on 22 September.
+
+What was ruled OUT, with evidence:
+- Not a publishing failure. All 42 campaign pins are live; each externalLink returns
+  HTTP 200 and renders a real pin page.
+- Not a broken metrics pipeline. Buffer refreshed every post the same day the check
+  was run, and pins from late August are STILL gaining impressions (one went 627 to
+  657 within a single day). The pipeline works for pins it already knows.
+- Not a Buffer-wide outage. Facebook and Instagram kept reporting normally straight
+  through the same period, day by day, with no gap.
+- Not the channel connection. isDisconnected false, isLocked false, isQueuePaused
+  false; account gdsgroupofcompanies.
+- Not missing pin titles. Some post-11-Sep pins do carry their full title on
+  Pinterest and still score zero. An earlier reading that blamed titles was WRONG and
+  was withdrawn after a wider sweep; do not resurrect it.
+- Not the boards or the links. The same four boards and the same six Amazon URLs
+  appear on both sides of the cutoff.
+
+What is left, and NEITHER is proven from outside Pinterest:
+(a) Pinterest stopped distributing new pins from this account on 11 September.
+    Existing pins keep the distribution they already had, which is exactly the
+    pattern observed.
+(b) Buffer stopped receiving analytics for pins created after that date, while
+    continuing to receive them for older pins.
+
+THE ONE CHECK THAT SEPARATES THEM can only be run by Bridge, signed in to
+Pinterest's own analytics: look at any pin published after 11 September. If
+Pinterest itself shows impressions, Buffer's reporting is at fault (b). If
+Pinterest also shows zero, distribution is genuinely stalled (a).
+
+Possible contributing factors if it is (a) — worth reducing either way, none of
+them demonstrated as the cause:
+- Five images were pinned twice. Pinterest merged one duplicate: the 16 Sep pin of
+  writers-desk-longisland-v2-20260905.png shows the 7 Sep pin's title.
+- The same six Amazon /dp/ links cycle daily across every pin.
+- One to two pins a day, every day, from a small account.
+
+DO NOT re-diagnose this from the Buffer data alone. Everything Buffer can tell us
+has been checked. The dashboard (dashboard/README.md) now tracks each channel's run
+of consecutive silent posts and will show the day a post-11-Sep pin first reports a
+non-zero figure.
