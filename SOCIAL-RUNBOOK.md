@@ -542,39 +542,50 @@ Optimise the summary for fast scanning — Bridge should be able to work top to 
 
 Timing note: this routine fires at 22:00 UTC, which is 6pm Eastern during EDT. Daylight saving ends Nov 1, 2026, after which 22:00 UTC is 5pm Eastern. If this run is on or after Nov 1 and the cron is still `0 22 * * 0,3`, say so in your summary — it should move to `0 23 * * 0,3`.
 
---- PINTEREST: BUFFER STOPPED REPORTING IT ON 11 SEPTEMBER 2026 (RESOLVED) ---
+--- PINTEREST HAS REPORTED NOTHING SINCE 11 SEPTEMBER 2026 (STILL OPEN) ---
 
-SETTLED 22 September 2026 against Pinterest's own analytics. Buffer returns exactly
-zero impressions, saves and reactions for every pin published from 2026-09-11 onward
-- seventeen consecutive pins. PINTEREST ITSELF DISAGREES. Its account analytics show
-daily impressions RISING straight through that window: roughly 2,000 in the nine days
-from 11 to 19 September, which on its own is close to the 2,440 Buffer reports for the
-entire campaign.
+Every pin published from 2026-09-11 onward reports exactly zero impressions, saves
+and reactions - seventeen consecutive pins over twelve days.
 
-So the pins are being distributed normally and Buffer is not seeing it. This is a
-REPORTING fault on Buffer's side, not a Pinterest penalty, not a throttle, and not
-anything wrong with the pins.
+THE ACCOUNT-LEVEL CHART DOES NOT SETTLE THIS. On 22 September Pinterest's own
+analytics were checked and show daily impressions rising through the same window,
+roughly 200 to 290 a day. That was briefly written up here as proof that Buffer was
+under-reporting. IT IS NOT PROOF, and that entry was wrong. Pinterest's chart is
+ACCOUNT-LEVEL: it counts every pin the account has ever posted, not just the new ones.
+Two Buffer snapshots one refresh apart show the older pins gaining +203 impressions
+between them, with not one post-11-Sep pin moving. That +203/day accounts for
+essentially the whole of Pinterest's 200-290/day curve. The older pins explain the
+chart on their own.
 
-What that means in practice:
-- Every Pinterest figure from 11 September onward is a FLOOR, not a count. The
-  dashboard says so on its face, via the caveat in dashboard/build.py.
-- Do not change the pinning strategy in response to those zeros. Nothing is wrong
-  with the pins.
-- The likely fix is to disconnect and reconnect the Pinterest channel in Buffer,
-  which re-authorises it and usually restores analytics. Only Bridge can do that.
-  If a reconnect does not fix it, it is one for Buffer support, with these numbers.
+SO BOTH READINGS ARE STILL LIVE:
+(a) Pinterest has stopped distributing new pins from this account. Older pins keep
+    the reach they already had, which is exactly the observed pattern.
+(b) Buffer has stopped receiving figures for pins created after 11 September.
+
+THE CHECK THAT ACTUALLY DECIDES IT, which only Bridge can run: open Pinterest's own
+analytics and look at a SINGLE PIN published after 11 September - per-pin, not the
+account total. Pin analytics showing impressions means Buffer is at fault (b). Pin
+analytics showing zero means distribution has stalled (a). The account chart cannot
+answer this and must not be used for it again.
 
 Ruled out along the way, with evidence, and NOT worth re-testing:
 - Publishing: all 42 campaign pins are live; each externalLink returns HTTP 200.
-- Metrics pipeline generally: Buffer refreshed every post the day it was checked,
-  and pins from late August are still gaining (one went 627 to 657 within a day).
-- A Buffer-wide outage: Facebook and Instagram reported normally throughout.
+- The metrics pipeline in general: Buffer refreshed every post the day it was checked,
+  and older pins are demonstrably still gaining.
+- A Buffer-wide outage: Facebook kept accruing through the same interval (+7 across
+  three posts between the two snapshots) and Instagram reported normally on 16 and
+  18 September. Only Pinterest shows a hard, total, sustained zero.
 - The channel connection as Buffer sees it: isDisconnected false, isLocked false,
   isQueuePaused false.
 - Pin titles. An earlier reading blamed missing titles and was WRONG - several
-  post-11-Sep pins carry their full title and still report zero. Do not resurrect it.
+  post-11-Sep pins carry their full title and still report zero.
 - Boards and destination links: identical on both sides of the cutoff.
 
-Housekeeping worth doing regardless, none of it the cause: five images were pinned
-twice (Pinterest merged one duplicate - the 16 Sep pin of writers-desk-longisland-v2
-displays the 7 Sep pin's title), and the same six Amazon /dp/ links cycle daily.
+TWO WRONG CALLS WERE MADE ON THIS ALREADY - missing titles, then "Buffer is
+under-reporting". Both were made by reading a correlation as a cause. Do not make a
+third. Nothing further can be settled from Buffer's data; it has all been checked.
+
+Housekeeping worth doing regardless, none of it demonstrated as a cause: five images
+were pinned twice (Pinterest merged one duplicate - the 16 Sep pin of
+writers-desk-longisland-v2 displays the 7 Sep pin's title), and the same six Amazon
+/dp/ links cycle daily.

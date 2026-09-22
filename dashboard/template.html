@@ -318,9 +318,9 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
       + '<div><div class="chan-n">'+q.silent+'</div>'
       + '<div class="chan-lbl">consecutive posts reporting nothing</div></div>'
       + '<div class="kv"><div><span class="state '+(bad?'alert':'ok')+'">'
-      + (cav ? 'Buffer not reporting' : (bad ? 'Not reporting' : (q.silent ? 'Quiet' : 'Reporting normally')))
+      + (cav ? 'Nothing reported' : (bad ? 'Not reporting' : (q.silent ? 'Quiet' : 'Reporting normally')))
       + '</span></div><div><span class="since">'
-      + (cav ? 'the network itself shows activity \u2014 see below' : lastTxt)
+      + (cav ? 'cause not yet settled \u2014 see below' : lastTxt)
       + '</span></div></div></div>';
   }).join('');
 
@@ -360,7 +360,7 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
     + 'anything — one Instagram post reads <span class="mono">500%</span> because five interactions landed on a reach of one person. '
     + 'Judge posts on the raw counts, not the rate.'
     + ((DB.meta.caveats || []).length
-       ? ' <b>And treat the Pinterest totals as a floor</b> \u2014 Buffer has been under-reporting them since 11 September; the note under Reporting health has the detail.'
+       ? ' <b>And Pinterest has reported nothing at all since 11 September</b> \u2014 see the note under Reporting health; it is not yet settled whether that is the pins or the reporting.'
        : '');
 
   /* ---------- channel cards ---------- */
