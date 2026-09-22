@@ -20,6 +20,20 @@ BOOK = {'girl-whale':'The Girl and The Whale','girl-whale-activity':'Girl & Whal
         'regatta':'Going To The Regatta','regatta-activity':'Regatta Activity Book',
         'atb-upper':'All Things Bahamian: Upper','atb-lower':'All Things Bahamian: Lower'}
 
+# Dated caveats the page shows against a channel. Remove one when it stops being true.
+CAVEATS = [{
+    'channel': 'pinterest',
+    'from': '2026-09-11',
+    'title': 'Buffer is under-reporting Pinterest',
+    'body': "Buffer returns exactly zero for every pin published since 11 September. "
+            "Pinterest's own analytics, checked on 22 September, show impressions rising "
+            "through the same period \u2014 roughly 2,000 in the nine days from 11 to 19 "
+            "September, close to Buffer's entire figure for the campaign. The pins are being "
+            "distributed; Buffer is not seeing it. Every Pinterest number on this page from "
+            "11 September onward is therefore a floor, not a count, and the totals that "
+            "include them are understated.",
+}]
+
 KEY = os.environ.get('BUFFER_API_KEY')
 if not KEY:
     sys.exit('BUFFER_API_KEY is not set — cannot reach Buffer. Nothing was written.')
@@ -136,7 +150,8 @@ def main():
                 'fresh': max(p['metricsUpdatedAt'] for p in raw if p.get('metricsUpdatedAt')),
                 'built': __import__('datetime').datetime.utcnow().strftime('%Y-%m-%dT%H:%MZ'),
                 'n': len(posts),
-                'quiet': {ch: quiet_since(posts, ch) for ch in ('facebook', 'instagram', 'pinterest')}},
+                'quiet': {ch: quiet_since(posts, ch) for ch in ('facebook', 'instagram', 'pinterest')},
+                'caveats': CAVEATS},
             'glossary': glossary, 'posts': posts}
 
     for ch, q in data['meta']['quiet'].items():

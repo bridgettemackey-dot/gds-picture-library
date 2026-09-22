@@ -188,6 +188,7 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
        ordinary quiet; a long one means the channel has stopped reporting, stopped distributing, or both.</p>
   </div>
   <div class="chans" id="status-cards"></div>
+  <div id="caveats"></div>
 </section>
 
 <section id="totals">
@@ -309,6 +310,7 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
   document.getElementById('status-cards').innerHTML = ['pinterest','facebook','instagram'].map(function(ch){
     var q = quiet[ch] || {silent:0,last:null,total:0};
     var bad = q.silent >= QUIET_ALERT;
+    var cav = (DB.meta.caveats || []).filter(function(c){ return c.channel === ch; })[0];
     var lastTxt = q.last ? ('last figure of any kind: ' + q.last)
                          : 'nothing has ever been reported for this channel';
     return '<div class="chan' + (bad?' alert':'') + '">'
@@ -316,8 +318,14 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
       + '<div><div class="chan-n">'+q.silent+'</div>'
       + '<div class="chan-lbl">consecutive posts reporting nothing</div></div>'
       + '<div class="kv"><div><span class="state '+(bad?'alert':'ok')+'">'
-      + (bad ? 'Not reporting' : (q.silent ? 'Quiet' : 'Reporting normally'))
-      + '</span></div><div><span class="since">'+lastTxt+'</span></div></div></div>';
+      + (cav ? 'Buffer not reporting' : (bad ? 'Not reporting' : (q.silent ? 'Quiet' : 'Reporting normally')))
+      + '</span></div><div><span class="since">'
+      + (cav ? 'the network itself shows activity \u2014 see below' : lastTxt)
+      + '</span></div></div></div>';
+  }).join('');
+
+  document.getElementById('caveats').innerHTML = (DB.meta.caveats || []).map(function(c){
+    return '<div class="callout" style="margin-top:14px"><h3>' + c.title + '</h3><p>' + c.body + '</p></div>';
   }).join('');
 
   /* ---------- totals ---------- */
@@ -350,7 +358,10 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
     + 'and <b class="mono">'+fmt(pinImp)+'</b> of that is Pinterest. Facebook has managed <b class="mono">'+fmt(fbImp)+'</b> impressions '
     + 'and Instagram <b class="mono">'+fmt(igView)+'</b> views in seven weeks. At that scale the engagement-rate percentage stops meaning '
     + 'anything — one Instagram post reads <span class="mono">500%</span> because five interactions landed on a reach of one person. '
-    + 'Judge posts on the raw counts, not the rate.';
+    + 'Judge posts on the raw counts, not the rate.'
+    + ((DB.meta.caveats || []).length
+       ? ' <b>And treat the Pinterest totals as a floor</b> \u2014 Buffer has been under-reporting them since 11 September; the note under Reporting health has the detail.'
+       : '');
 
   /* ---------- channel cards ---------- */
   var chanSpec = {
