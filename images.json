@@ -580,6 +580,66 @@
     "First colouring book"
    ],
    "file": "all-things-bahamian-lower-cover"
+  },
+  {
+   "id": "classroom-reading-corner-20260924",
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "slug": "atb-lower",
+   "asin": "B0HBNFLDQP",
+   "caption": "A reading corner",
+   "alt": "A sunlit reading corner: a low wooden shelf of picture books, a round straw mat, a tipped-over straw basket spilling coloured crayons, and an open colouring book showing a part-coloured flamingo and an outlined hibiscus. A shuttered window looks out to a palm, pale sand and turquoise sea.",
+   "bands": [
+    "Ages 5–9",
+    "Grades 1–3",
+    "Classroom & library"
+   ],
+   "file": "all-things-bahamian-lower-reading-corner",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "clean": "gds/atb-lower/classroom-reading-corner-20260924",
+   "branded": "gds-share/atb-lower/classroom-reading-corner-20260924-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "mr-hooker-tells-the-legend-20260925",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "slug": "girl-whale",
+   "asin": "B0HCB7V9C9",
+   "caption": "Mr. Hooker tells the legend",
+   "alt": "An older fisherman in a straw hat and faded blue floral shirt sits on the edge of a weathered wooden dock at sunset, one hand raised mid-story. Beside him a coil of rope, a folded green net and a battered tackle box; a small boat is tied below. Green volcanic mountains and a low golden sun behind.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "file": "girl-and-whale-mr-hooker",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "clean": "gds/girl-whale/mr-hooker-tells-the-legend-20260925",
+   "branded": "gds-share/girl-whale/mr-hooker-tells-the-legend-20260925-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "flags-over-the-regatta-20260927",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "slug": "regatta",
+   "asin": "B0HGKNTNDD",
+   "caption": "Flags over the regatta",
+   "alt": "Rows of plain coloured bunting strung above a grassy waterfront at a Bahamian regatta. Three wooden sloops with tall masts and white sails race on turquoise water beyond. Coral-pink and yellow vendor stalls stacked with pineapples, coconuts and papaya, a crowd in straw hats watching from the grass.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-flags",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "clean": "gds/regatta/flags-over-the-regatta-20260927",
+   "branded": "gds-share/regatta/flags-over-the-regatta-20260927-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
