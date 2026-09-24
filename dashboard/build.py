@@ -24,15 +24,16 @@ BOOK = {'girl-whale':'The Girl and The Whale','girl-whale-activity':'Girl & Whal
 CAVEATS = [{
     'channel': 'pinterest',
     'from': '2026-09-11',
-    'title': 'Pinterest pins stopped being picked up on 11 September',
-    'body': "Buffer shows a flat zero for all 17 pins published since 11 September. Pinterest's own "
-            "per-pin analytics, checked on 22 September, show about two or three impressions each \u2014 "
-            "so a trickle continues and Buffer is missing it, but the difference is immaterial at that "
-            "size. What actually changed is amplification: of the 25 pins before the cutoff, 9 earned "
-            "more than 100 impressions and one reached 657. Since the cutoff, none has cleared single "
-            "figures. The quiet baseline was always there \u2014 9 of those 25 earned under 10 too \u2014 "
-            "but the breakout pins have stopped entirely. Older pins are still circulating and still "
-            "gaining, which is what keeps Pinterest's account chart rising.",
+    'title': 'Pinterest pins stopped being carried on 11 September',
+    'body': "No pin published since 11 September has cleared ten impressions. A trickle "
+            "continues \u2014 one or two each, which Buffer now reports and which matches "
+            "Pinterest's own per-pin figures \u2014 but that is publication, not reach. What "
+            "changed is carry: of the 25 pins before the cutoff, 9 cleared 100 impressions and "
+            "one has now reached 736. None since has cleared ten. The older pins are still "
+            "growing strongly (they added 482 impressions between 22 and 24 September, every "
+            "one of them on a pin published before the cutoff), which is why the account chart "
+            "keeps rising and why the totals on this page still move. Read a rising total as "
+            "the old pins working, not the new ones.",
 }]
 
 KEY = os.environ.get('BUFFER_API_KEY')
@@ -104,17 +105,42 @@ def thumbnails(sources):
     return cache
 
 
+SHOWN = {'facebook': 'impressions', 'pinterest': 'impressions', 'instagram': 'views'}
+FLOOR = 10          # below this a post was published but never really carried
+
+
+def _shown(p):
+    return p['m'].get(SHOWN[p['ch']], 0)
+
+
+def _acted(p):
+    return sum(v for k, v in p['m'].items() if k not in ('engagementRate', SHOWN[p['ch']]))
+
+
 def quiet_since(posts, channel):
-    """Days of consecutive silence: how long since this channel last reported anything."""
-    seen = [p for p in posts if p['ch'] == channel and p['d'] >= CAMPAIGN_START]
-    seen.sort(key=lambda p: p['d'], reverse=True)
-    run = 0
+    """Two runs, because they answer different questions.
+
+    `silent`  - consecutive posts reporting literally nothing. Catches a channel
+                that has stopped reporting.
+    `weak`    - consecutive posts that never cleared FLOOR. Catches a channel that
+                is still reporting but no longer carrying anything, which a
+                single impression would otherwise hide.
+    """
+    seen = sorted([p for p in posts if p['ch'] == channel and p['d'] >= CAMPAIGN_START],
+                  key=lambda p: p['d'], reverse=True)
+    silent = weak = 0
     for p in seen:
-        if any(v for k, v in p['m'].items() if k != 'engagementRate'):
+        if _shown(p) or _acted(p):
             break
-        run += 1
-    last = next((p['d'] for p in seen if any(v for k, v in p['m'].items() if k != 'engagementRate')), None)
-    return {'silent': run, 'last': last, 'total': len(seen)}
+        silent += 1
+    for p in seen:
+        if _shown(p) >= FLOOR:
+            break
+        weak += 1
+    last = next((p['d'] for p in seen if _shown(p) or _acted(p)), None)
+    last_real = next((p['d'] for p in seen if _shown(p) >= FLOOR), None)
+    return {'silent': silent, 'weak': weak, 'last': last, 'last_real': last_real,
+            'floor': FLOOR, 'total': len(seen)}
 
 
 def main():
@@ -155,9 +181,38 @@ def main():
                 'caveats': CAVEATS},
             'glossary': glossary, 'posts': posts}
 
+    # Alert on a CHANGE of state, not on a channel that is simply small. Without
+    # this, Facebook and Instagram alert every night forever and the one night
+    # Pinterest recovers is lost in the noise.
+    state_path = os.path.join(HERE, 'state.json')
+    try:
+        prev = json.load(open(state_path))
+    except Exception:
+        prev = {}
+    state, news = {}, []
     for ch, q in data['meta']['quiet'].items():
-        if q['silent']:
-            print('ALERT %-9s silent on the last %d posts (last figure %s)' % (ch, q['silent'], q['last']))
+        stalled = q['weak'] >= 8
+        state[ch] = {'stalled': stalled, 'weak': q['weak']}
+        was = (prev.get(ch) or {}).get('stalled')
+        if was is None:
+            print('note  %-9s %s (no previous run to compare)'
+                  % (ch, 'stalled' if stalled else 'carrying'))
+        elif stalled and not was:
+            news.append('ALERT %-9s has STOPPED carrying - last %d posts never cleared %d'
+                        % (ch, q['weak'], q['floor']))
+        elif was and not stalled:
+            news.append('ALERT %-9s is CARRYING AGAIN - a post cleared %d on %s'
+                        % (ch, q['floor'], q['last_real']))
+    for line in news:
+        print(line)
+    if not news:
+        print('no change of state on any channel since the last run')
+    for ch, q in data['meta']['quiet'].items():
+        print('      %-9s weak run %-3d silent run %-3d last real figure %s'
+              % (ch, q['weak'], q['silent'], q['last_real']))
+
+    if '--check' not in sys.argv:
+        json.dump(state, open(state_path, 'w'), indent=1)
 
     if '--check' in sys.argv:
         return

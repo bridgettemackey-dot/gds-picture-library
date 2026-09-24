@@ -184,8 +184,7 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
 <section id="status">
   <div class="shead">
     <h2>Reporting health</h2>
-    <p>Each channel's run of consecutive posts that came back with nothing at all. A short run is
-       ordinary quiet; a long one means the channel has stopped reporting, stopped distributing, or both.</p>
+    <p>Each channel&rsquo;s run of consecutive posts that never reached ten people. A post can report a single impression and still have gone nowhere, so this counts carry rather than whether a figure came back at all.</p>
   </div>
   <div class="chans" id="status-cards"></div>
   <div id="caveats"></div>
@@ -309,18 +308,20 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
   var quiet = DB.meta.quiet || {};
   document.getElementById('status-cards').innerHTML = ['pinterest','facebook','instagram'].map(function(ch){
     var q = quiet[ch] || {silent:0,last:null,total:0};
-    var bad = q.silent >= QUIET_ALERT;
+    var bad = (q.weak || 0) >= QUIET_ALERT;
     var cav = (DB.meta.caveats || []).filter(function(c){ return c.channel === ch; })[0];
-    var lastTxt = q.last ? ('last figure of any kind: ' + q.last)
-                         : 'nothing has ever been reported for this channel';
+    var lastTxt = q.last_real ? ('last post to clear ' + (q.floor||10) + ': ' + q.last_real)
+                              : 'no post here has ever cleared ' + (q.floor||10);
     return '<div class="chan' + (bad?' alert':'') + '">'
       + '<div class="chan-top"><i class="dot" style="background:'+CH[ch].c+'"></i><h3>'+CH[ch].n+'</h3></div>'
-      + '<div><div class="chan-n">'+q.silent+'</div>'
-      + '<div class="chan-lbl">consecutive posts reporting nothing</div></div>'
+      + '<div><div class="chan-n">'+(q.weak||0)+'</div>'
+      + '<div class="chan-lbl">consecutive posts that never cleared '+(q.floor||10)+'</div></div>'
       + '<div class="kv"><div><span class="state '+(bad?'alert':'ok')+'">'
-      + (cav ? 'No longer picked up' : (bad ? 'Not reporting' : (q.silent ? 'Quiet' : 'Reporting normally')))
+      + (cav ? 'No longer carrying' : (bad ? 'Not carrying' : 'Carrying'))
       + '</span></div><div><span class="since">'
-      + (cav ? 'Pinterest\u2019s own figures show 2\u20133 each \u2014 see below' : lastTxt)
+      + (cav ? 'a trickle of 1\u20132 each \u2014 see below'
+             : (q.last_real ? ('last post to clear ' + (q.floor||10) + ': ' + q.last_real)
+                            : 'no post here has ever cleared ' + (q.floor||10)))
       + '</span></div></div></div>';
   }).join('');
 
@@ -360,7 +361,7 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
     + 'anything — one Instagram post reads <span class="mono">500%</span> because five interactions landed on a reach of one person. '
     + 'Judge posts on the raw counts, not the rate.'
     + ((DB.meta.caveats || []).length
-       ? ' <b>And no Pinterest pin has been picked up since 11 September</b> \u2014 Pinterest\u2019s own figures show two or three impressions each where Buffer shows zero. See the note under Reporting health.'
+       ? ' <b>And no Pinterest pin has cleared ten impressions since 11 September</b> \u2014 the totals here keep rising on the strength of older pins, not new ones. See the note under Reporting health.'
        : '');
 
   /* ---------- channel cards ---------- */
