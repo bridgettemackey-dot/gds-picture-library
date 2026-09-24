@@ -61,6 +61,31 @@ def probe():
             'Add it in the environment settings, then start a new session.')
     page_id, page_name, ig_id, ig_user = resolve()
     print('token works.')
+
+    # Which permissions the token actually carries. Meta offers two Instagram
+    # families - instagram_* (Facebook Login) and instagram_business_* (Instagram
+    # Login) - and only the granted set tells you which path this token is on.
+    perms = get('me/permissions')
+    if '__error' not in perms:
+        granted = sorted(d['permission'] for d in perms.get('data', [])
+                         if d.get('status') == 'granted')
+        declined = sorted(d['permission'] for d in perms.get('data', [])
+                          if d.get('status') != 'granted')
+        print('  granted       : %s' % (', '.join(granted) or 'none'))
+        if declined:
+            print('  NOT granted   : %s' % ', '.join(declined))
+        fb_family = [p for p in granted if p.startswith('instagram_')
+                     and not p.startswith('instagram_business_')]
+        ig_family = [p for p in granted if p.startswith('instagram_business_')]
+        if ig_family and not fb_family:
+            print('  NOTE: this token carries the instagram_business_* family, which belongs')
+            print('        to Instagram Login, not Facebook Login. The media calls below use')
+            print('        the Facebook Login endpoints; if they fail, that is why, and the')
+            print('        fix is to read via graph.instagram.com instead.')
+        if not any(p.endswith('manage_insights') for p in granted):
+            print('  NOTE: no *_manage_insights permission was granted - per-post reach and')
+            print('        saves will come back empty however well everything else works.')
+
     print('  Facebook Page : %s  (id %s)' % (page_name, page_id))
     if ig_id:
         print('  Instagram     : @%s  (id %s)' % (ig_user, ig_id))
