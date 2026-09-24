@@ -68,3 +68,27 @@ Review. The permissions are `pages_show_list`, `pages_read_engagement`, `instagr
 and `instagram_manage_insights`.
 
 The script never prints the token and never writes it to disk.
+
+### What Meta will and will not give you
+
+Verified against the live API on 24 September 2026, on v19 through v23:
+
+**IMPRESSIONS AND REACH ARE GONE from the Pages API.** `post_impressions`,
+`post_impressions_unique`, `post_reach`, `post_views`, `page_impressions`,
+`page_reach`, `page_views` and every variant tried are rejected with
+"(#100) The value must be a valid insights metric". This is a schema-level
+rejection, not a permissions problem. Do not re-add them without testing.
+
+What a Facebook Page post still reports: `post_clicks`,
+`post_reactions_by_type_total`, `post_activity_by_action_type`,
+`post_reactions_like_total`. Page level keeps `page_post_engagements`,
+`page_follows` and `page_views_total`.
+
+So Buffer's Facebook IMPRESSIONS figure cannot be checked against Meta - there is
+nothing to check it against. Clicks and reactions can be. Instagram is the richer
+side: reach, likes, comments, saved, shares and views are all still per-media.
+
+`insights()` asks for every metric at once and, if Meta rejects the call, retries
+one metric at a time and keeps whatever works. Meta retires names without notice
+and rejects the whole call over a single stale one, which would otherwise cost
+every other figure on the post.
