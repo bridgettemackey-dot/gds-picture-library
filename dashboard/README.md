@@ -92,3 +92,28 @@ side: reach, likes, comments, saved, shares and views are all still per-media.
 one metric at a time and keeps whatever works. Meta retires names without notice
 and rejects the whole call over a single stale one, which would otherwise cost
 every other figure on the post.
+
+## Second source: Pinterest (CSV export)
+
+Pinterest's API needs app review, a 30-day token and a 60-day refresh the nightly job
+would have to keep alive, and it is not documented whether Trial access can even read
+analytics for real pins. The export route costs none of that.
+
+    python3 dashboard/pinterest_csv.py --inspect <file.csv>   # show the column mapping, write nothing
+    python3 dashboard/pinterest_csv.py <file.csv>             # -> dashboard/pinterest.json
+
+Pinterest does not document its export headers and they differ between views, so
+nothing is hard-coded to one spelling. Columns are matched by a normalised name
+against an alias table, the header row is located even when buried under a title
+line, and comma/semicolon/tab files and thousands separators all work. Anything it
+cannot match is printed, not silently dropped.
+
+ALWAYS run --inspect first on a new export and read the mapping before trusting it.
+
+To line figures up against individual Buffer posts the export needs a pin id or a
+pinterest.com/pin/<id> URL column. Without one the numbers still work as a period
+total; the script says which case you are in.
+
+Getting the export: Pinterest Analytics, set the date range and filters you want,
+then Export at the top right. A pin-level view (Top Pins) is what carries the
+per-pin rows.
