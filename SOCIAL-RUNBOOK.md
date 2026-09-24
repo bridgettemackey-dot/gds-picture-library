@@ -603,3 +603,31 @@ commercial account look like spam to Pinterest:
 WATCH FOR: a pin published on or after 11 September clearing a couple of dozen
 impressions. That is the amplification returning, and it is the signal that matters -
 not the first non-zero number, which Pinterest already shows.
+
+--- ADDING A PICTURE TO THE LIBRARY SITE: RUN build_gallery.py ---
+
+images.json is the source of truth, but the gallery cards are BAKED INTO
+index.html. The runtime fetch only adds Cloudinary assets that are NOT already in
+images.json - so adding an entry to the manifest without rebuilding the cards
+makes that picture INVISIBLE. The manifest entry suppresses its own card. This
+caught three pictures on 24 Sep 2026: they were uploaded, branded, listed and
+pushed, and still did not appear on the site.
+
+The full sequence for a new picture:
+  1. upload the clean art to Cloudinary as gds/<slug>/<name>-<YYYYMMDD>
+  2. brand.py --name <name>-<YYYYMMDD>-bhm --upload      (the -bhm is not optional)
+  3. add the entry to images.json
+  4. python3 build_gallery.py                            (rebuilds the cards)
+  5. commit and push both files
+
+build_gallery.py emits one card per unique `branded` path, so a picture can never
+appear twice however many times it is listed. Run it with --check to see what
+would change without touching anything.
+
+VERIFY AFTERWARDS that every card resolves. On 24 Sep one card had been 404ing
+unnoticed - page-junkanoo-rush-rgb-20260915 was listed with a branded path that
+had never been uploaded, because the -bhm suffix was missed at branding time.
+Four manifest entries still carry branded paths without the -bhm suffix
+(atb-upper/cover-20260915, atb-upper/map-of-the-bahamas-20260915,
+atb-lower/cover-20260915); those three DO resolve and are fine as they are - do
+not "fix" them into names that do not exist.

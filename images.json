@@ -351,9 +351,9 @@
    "caption": "Colouring page: Junkanoo on Bay Street",
    "alt": "A colouring page: a Junkanoo rush out on Bay Street, Nassau, with drummers and a feathered costume.",
    "clean": "gds/atb-upper/page-junkanoo-rush-rgb-20260915",
-   "branded": "gds-share/atb-upper/page-junkanoo-rush-rgb-20260915",
+   "branded": "gds-share/atb-upper/page-junkanoo-rush-rgb-20260915-bhm",
    "w": 1080,
-   "h": 1964,
+   "h": 1742,
    "bands": [
     "Ages 9–12",
     "Grades 4–6",
@@ -562,7 +562,7 @@
    "file": "all-things-bahamian-upper-map-of-the-bahamas"
   },
   {
-   "id": "cover-20260915",
+   "id": "cover-lower-20260915",
    "book": "All Things Bahamian: Lower Elementary",
    "group": "All Things Bahamian",
    "slug": "atb-lower",
