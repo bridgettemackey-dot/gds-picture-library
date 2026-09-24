@@ -45,3 +45,26 @@ hundreds of impressions, mean anything.
 an ALERT line. The page shows the same runs and flags a channel at 8 or more. This exists because
 Pinterest went to exactly zero on every pin from 11 September 2026 onward while Facebook and
 Instagram kept reporting normally — see the note in `SOCIAL-RUNBOOK.md`.
+
+## Second source: Meta (Facebook Page + Instagram)
+
+`meta_pull.py` reads Page and Instagram insights straight from Meta, so Buffer can be
+checked rather than trusted. It needs `META_PAGE_TOKEN` in the environment — a long-lived
+Facebook **Page** access token. Page tokens derived from a long-lived user token do not
+expire, so this is set once and left alone.
+
+    python3 dashboard/meta_pull.py --probe   # check the token, print what it can see
+    python3 dashboard/meta_pull.py           # pull insights -> dashboard/meta.json
+
+The probe names the missing permission when a call is refused, rather than failing
+generically. Run it first after any token change.
+
+Accounts, confirmed from Buffer on 24 Sep 2026:
+  Facebook Page  "The GDS Group of Companies"  id 106614211138659   (type: page)
+  Instagram      @gdsgroupofcompanies          id 17841444276794297 (type: business)
+
+Because both accounts belong to GDS, these insights are Standard Access and need no App
+Review. The permissions are `pages_show_list`, `pages_read_engagement`, `instagram_basic`
+and `instagram_manage_insights`.
+
+The script never prints the token and never writes it to disk.
