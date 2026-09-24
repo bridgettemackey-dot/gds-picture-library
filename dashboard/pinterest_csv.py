@@ -4,28 +4,29 @@
     python3 dashboard/pinterest_csv.py --inspect <file.csv>   # show what it found, write nothing
     python3 dashboard/pinterest_csv.py <file.csv>             # -> dashboard/pinterest.json
 
-Pinterest does not document its export headers and changes them between views, so
-nothing here is hard-coded to one spelling. Columns are matched by a normalised
-name against the aliases below, and anything unmatched is reported rather than
-quietly dropped. Run --inspect first on any new export.
+A Pinterest export is NOT one table. It is several stacked sections - a filter
+preamble, a daily series, Top Boards, Top Pins - each with its own header row and
+its own footnote, separated by blank lines. Anything that assumes a single header
+reads the preamble and finds nothing. Sections are split on blank lines, each one
+gets its own header hunt, and sections are identified by the columns they carry
+rather than by the title above them, which is not always present.
 """
 import csv, io, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-# normalised header -> our field. Normalising strips case, spaces and punctuation,
-# so "Outbound clicks", "outbound_clicks" and "Outbound Clicks " all collapse together.
 ALIASES = {
     'impressions': 'impressions', 'totalimpressions': 'impressions',
     'saves': 'saves', 'totalsaves': 'saves', 'repins': 'saves',
     'pinclicks': 'pin_clicks', 'totalpinclicks': 'pin_clicks', 'closeups': 'pin_clicks',
     'outboundclicks': 'outbound_clicks', 'totaloutboundclicks': 'outbound_clicks',
     'linkclicks': 'outbound_clicks',
-    'engagements': 'engagements', 'totalengagements': 'engagements',
+    'engagement': 'engagements', 'engagements': 'engagements', 'totalengagements': 'engagements',
     'pinid': 'pin_id', 'id': 'pin_id',
-    'pinurl': 'url', 'url': 'url', 'link': 'url', 'pinlink': 'url',
+    'pinterestlink': 'url', 'pinurl': 'url', 'url': 'url', 'link': 'url', 'pinlink': 'url',
     'date': 'date', 'createdat': 'date', 'publishdate': 'date', 'created': 'date',
     'title': 'title', 'pintitle': 'title', 'description': 'title',
+    'contenttype': 'content_type', 'source': 'source', 'canonical': 'canonical',
 }
 NUMERIC = {'impressions', 'saves', 'pin_clicks', 'outbound_clicks', 'engagements'}
 
@@ -34,46 +35,44 @@ def norm(s):
     return re.sub(r'[^a-z0-9]', '', (s or '').lower())
 
 
-def read(path):
-    """Find the header row, which Pinterest sometimes buries under a title line."""
+def sections(path):
+    """Split the file into blocks on blank lines, keeping each block's rows."""
     raw = open(path, encoding='utf-8-sig', errors='replace').read()
     try:
-        dialect = csv.Sniffer().sniff(raw[:4096], delimiters=',;\t')
+        dialect = csv.Sniffer().sniff(raw[:2048], delimiters=',;\t')
     except Exception:
         dialect = csv.excel
-    rows = list(csv.reader(io.StringIO(raw), dialect))
-    rows = [r for r in rows if any((c or '').strip() for c in r)]
-    if not rows:
-        sys.exit('that file has no rows in it')
-    best, best_hits = 0, -1
-    for i, r in enumerate(rows[:10]):
+    blocks, cur = [], []
+    for row in csv.reader(io.StringIO(raw), dialect):
+        if any((c or '').strip() for c in row):
+            cur.append(row)
+        elif cur:
+            blocks.append(cur); cur = []
+    if cur:
+        blocks.append(cur)
+    return blocks
+
+
+def parse_block(rows):
+    """Find this block's header and return (mapping, body). A footnote line is one
+    long cell with no recognised columns, so it scores zero and is skipped."""
+    best, best_hits = None, 0
+    for i, r in enumerate(rows):
         hits = sum(1 for c in r if norm(c) in ALIASES)
         if hits > best_hits:
             best, best_hits = i, hits
+    if best is None or best_hits < 2:
+        return None, [], 0
     header = rows[best]
-    return header, rows[best + 1:], best_hits
+    mapping = {i: ALIASES[norm(h)] for i, h in enumerate(header) if norm(h) in ALIASES}
+    return mapping, rows[best + 1:], best_hits
 
 
-def parse(path, verbose=True):
-    header, body, hits = read(path)
-    mapping, unmatched = {}, []
-    for i, h in enumerate(header):
-        f = ALIASES.get(norm(h))
-        if f:
-            mapping[i] = f
-        elif (h or '').strip():
-            unmatched.append(h.strip())
-    if verbose:
-        print('header row found with %d recognised columns' % hits)
-        for i, f in sorted(mapping.items()):
-            print('   %-34s -> %s' % (header[i].strip(), f))
-        if unmatched:
-            print('   not recognised (ignored): %s' % ', '.join(unmatched[:12]))
-    if not any(f in NUMERIC for f in mapping.values()):
-        sys.exit('no impressions/saves/clicks column found - is this a pin-level export?')
-
-    pins = []
+def rows_from(mapping, body):
+    out = []
     for r in body:
+        if len(r) < 2:                       # footnote lines
+            continue
         rec = {}
         for i, f in mapping.items():
             if i >= len(r):
@@ -84,17 +83,42 @@ def parse(path, verbose=True):
                 try:
                     rec[f] = int(float(v)) if v else 0
                 except ValueError:
-                    rec[f] = 0
+                    continue
             elif v:
                 rec[f] = v
-        # a pin id hidden inside a pinterest.com/pin/<id> url is the best join key
-        if 'pin_id' not in rec and rec.get('url'):
+        if rec.get('url'):
             m = re.search(r'/pin/(\d+)', rec['url'])
             if m:
                 rec['pin_id'] = m.group(1)
-        if any(rec.get(f) for f in NUMERIC) or rec.get('pin_id'):
-            pins.append(rec)
-    return pins
+        if rec:
+            out.append(rec)
+    return out
+
+
+def parse(path, verbose=True):
+    found = {'daily': [], 'boards': [], 'pins': []}
+    for n, block in enumerate(sections(path), 1):
+        mapping, body, hits = parse_block(block)
+        if not mapping:
+            if verbose:
+                print('  section %d: no table here (filters or a footnote) - skipped' % n)
+            continue
+        rows = rows_from(mapping, body)
+        fields = set(mapping.values())
+        if 'pin_id' in {k for r in rows for k in r}:
+            kind = 'pins'
+        elif 'url' in fields:
+            kind = 'boards'
+        elif 'date' in fields:
+            kind = 'daily'
+        else:
+            kind = 'pins' if 'impressions' in fields else None
+        if verbose:
+            print('  section %d: %-6s %3d rows  columns: %s'
+                  % (n, kind or '?', len(rows), ', '.join(sorted(fields))))
+        if kind:
+            found[kind] += rows
+    return found
 
 
 def main():
@@ -104,22 +128,27 @@ def main():
     path = args[0]
     if not os.path.exists(path):
         sys.exit('no such file: %s' % path)
-    pins = parse(path)
-    withid = sum(1 for p in pins if p.get('pin_id'))
-    print('\nrows with figures : %d' % len(pins))
-    print('rows with a pin id: %d  (needed to line up against Buffer)' % withid)
-    for f in sorted(NUMERIC):
-        tot = sum(p.get(f, 0) for p in pins)
+    print('reading %s' % os.path.basename(path))
+    found = parse(path)
+    print('\ndaily rows : %d' % len(found['daily']))
+    print('board rows : %d' % len(found['boards']))
+    print('pin rows   : %d  (%d with a pin id)'
+          % (len(found['pins']), sum(1 for p in found['pins'] if p.get('pin_id'))))
+    for kind in ('daily', 'pins', 'boards'):
+        tot = {}
+        for r in found[kind]:
+            for f in NUMERIC:
+                if f in r:
+                    tot[f] = tot.get(f, 0) + r[f]
         if tot:
-            print('   %-16s %d' % (f, tot))
-    if withid == 0:
-        print('\nNOTE: no pin ids or pin URLs in this export, so these figures cannot be')
-        print('      matched to individual Buffer posts. They still work as a total.')
+            print('  %-7s %s' % (kind, '  '.join('%s %d' % kv for kv in sorted(tot.items()))))
+    if not found['pins']:
+        print('\nNo per-pin rows found. Export the Top Pins view to compare pin by pin.')
     if '--inspect' in sys.argv:
         print('\n--inspect: nothing written')
         return
     out = os.path.join(HERE, 'pinterest.json')
-    json.dump({'source': os.path.basename(path), 'pins': pins}, open(out, 'w'), indent=1)
+    json.dump({'source': os.path.basename(path), **found}, open(out, 'w'), indent=1)
     print('\nwrote %s' % out)
 
 

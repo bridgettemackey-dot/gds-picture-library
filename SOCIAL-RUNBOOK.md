@@ -654,6 +654,44 @@ ever saving". WRONG. Meta itself returns zero. Nobody has saved or shared an
 Instagram post. The 40 comments against a reach of 24 are also real and confirmed.
 
 So stop doubting Buffer on Meta. The numbers are small because the audience is
-small, not because the instrument is faulty. Pinterest was also confirmed accurate
-in Buffer against Pinterest's own per-pin analytics on 22 Sep. Across all three
-channels Buffer has now been checked and found right.
+small, not because the instrument is faulty.
+
+DO NOT extend that verdict to Pinterest - see the next section. It was written here
+on 24 Sep that Pinterest had been "confirmed accurate in Buffer". That was based on
+one spot check and it is WRONG.
+
+--- BUFFER UNDER-REPORTS PINTEREST BY ABOUT 40 PER CENT (24 SEP 2026) ---
+
+Checked against a Pinterest analytics CSV export covering 24 Aug - 23 Sep, matched
+pin by pin on the pin id. 39 pins matched.
+
+    Pinterest  4,104 impressions
+    Buffer     2,445 impressions
+
+BUFFER IS LOWER ON ALL 39 PINS. Not one matches. The gap ranges from a few per cent
+to the worst case, the 5 Sep All Things Bahamian: Upper pin, where Pinterest says
+1,605 and Buffer says 384 - Buffer showing under a quarter of it.
+
+Part of this is lag: Buffer's snapshot was 23 Sep 22:46 and Pinterest's export
+includes 22-23 Sep, which Pinterest itself marks as ESTIMATED and adjusts later.
+Those two days alone carry 1,659 impressions. But older pins that have long since
+settled are also short in Buffer (30 Aug: 366 vs 294; 31 Aug: 826 vs 736), so lag is
+not the whole story.
+
+TREAT EVERY PINTEREST FIGURE IN THE DASHBOARD AS A FLOOR.
+
+THE STALL IS REAL AND SURVIVES THIS CHECK. Per pin, on Pinterest's own numbers:
+    published before 11 Sep : 4,032 impressions across 22 pins
+    published 11 Sep onward :    72 impressions across 17 pins
+The best post-cutoff pin managed 10. Whatever changed on 11 September is genuine,
+and it is not a Buffer artefact.
+
+BUT THE ACCOUNT IS NOT DYING. Daily impressions are climbing hard - 135 on 19 Sep,
+424 on 21 Sep, 906 on 22 Sep - because one pre-cutoff pin has taken off. The 5 Sep
+Junkanoo page from All Things Bahamian: Upper is now the account's biggest pin by
+far at 1,605 and still rising. Pinterest is sending real traffic to GDS; it is all
+going to pins published before the cutoff.
+
+REFRESHING THIS: export Analytics overview from Pinterest with the date range you
+want, then `python3 dashboard/pinterest_csv.py <file>`. The export is several
+stacked sections, not one table; the importer handles that. Once a month is plenty.

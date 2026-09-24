@@ -1,0 +1,477 @@
+{
+ "source": "pin_export.csv",
+ "daily": [
+  {
+   "date": "2026-08-24",
+   "impressions": 0
+  },
+  {
+   "date": "2026-08-25",
+   "impressions": 0
+  },
+  {
+   "date": "2026-08-26",
+   "impressions": 0
+  },
+  {
+   "date": "2026-08-27",
+   "impressions": 0
+  },
+  {
+   "date": "2026-08-28",
+   "impressions": 0
+  },
+  {
+   "date": "2026-08-29",
+   "impressions": 0
+  },
+  {
+   "date": "2026-08-30",
+   "impressions": 3
+  },
+  {
+   "date": "2026-08-31",
+   "impressions": 0
+  },
+  {
+   "date": "2026-09-01",
+   "impressions": 0
+  },
+  {
+   "date": "2026-09-02",
+   "impressions": 0
+  },
+  {
+   "date": "2026-09-03",
+   "impressions": 1
+  },
+  {
+   "date": "2026-09-04",
+   "impressions": 0
+  },
+  {
+   "date": "2026-09-05",
+   "impressions": 4
+  },
+  {
+   "date": "2026-09-06",
+   "impressions": 27
+  },
+  {
+   "date": "2026-09-07",
+   "impressions": 54
+  },
+  {
+   "date": "2026-09-08",
+   "impressions": 67
+  },
+  {
+   "date": "2026-09-09",
+   "impressions": 88
+  },
+  {
+   "date": "2026-09-10",
+   "impressions": 47
+  },
+  {
+   "date": "2026-09-11",
+   "impressions": 77
+  },
+  {
+   "date": "2026-09-12",
+   "impressions": 62
+  },
+  {
+   "date": "2026-09-13",
+   "impressions": 193
+  },
+  {
+   "date": "2026-09-14",
+   "impressions": 182
+  },
+  {
+   "date": "2026-09-15",
+   "impressions": 258
+  },
+  {
+   "date": "2026-09-16",
+   "impressions": 270
+  },
+  {
+   "date": "2026-09-17",
+   "impressions": 173
+  },
+  {
+   "date": "2026-09-18",
+   "impressions": 208
+  },
+  {
+   "date": "2026-09-19",
+   "impressions": 135
+  },
+  {
+   "date": "2026-09-20",
+   "impressions": 172
+  },
+  {
+   "date": "2026-09-21",
+   "impressions": 424
+  },
+  {
+   "date": "2026-09-22",
+   "impressions": 906
+  },
+  {
+   "date": "2026-09-23",
+   "impressions": 753
+  }
+ ],
+ "boards": [
+  {
+   "url": "https://www.pinterest.com/gdsgroupofcompanies/gds-reading-series/",
+   "impressions": 1284,
+   "engagements": 25,
+   "pin_clicks": 19,
+   "outbound_clicks": 0,
+   "saves": 7
+  },
+  {
+   "url": "https://www.pinterest.com/gdsgroupofcompanies/bahamian-coloring-pages/",
+   "impressions": 1011,
+   "engagements": 31,
+   "pin_clicks": 27,
+   "outbound_clicks": 1,
+   "saves": 3
+  },
+  {
+   "url": "https://www.pinterest.com/gdsgroupofcompanies/long-island-bahamas/",
+   "impressions": 180,
+   "engagements": 3,
+   "pin_clicks": 2,
+   "outbound_clicks": 0,
+   "saves": 1
+  },
+  {
+   "url": "https://www.pinterest.com/gdsgroupofcompanies/bahamian-culture-for-kids/",
+   "impressions": 75,
+   "engagements": 3,
+   "pin_clicks": 2,
+   "outbound_clicks": 0,
+   "saves": 1
+  }
+ ],
+ "pins": [
+  {
+   "url": "https://www.pinterest.com/pin/830421618838406305/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 1605,
+   "pin_id": "830421618838406305"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838324247/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 826,
+   "pin_id": "830421618838324247"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838300002/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 366,
+   "pin_id": "830421618838300002"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838330608/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 277,
+   "pin_id": "830421618838330608"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838426750/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 232,
+   "pin_id": "830421618838426750"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838300304/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 180,
+   "pin_id": "830421618838300304"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838242771/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 156,
+   "pin_id": "830421618838242771"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838357795/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 64,
+   "pin_id": "830421618838357795"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838389928/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 52,
+   "pin_id": "830421618838389928"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838473936/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 50,
+   "pin_id": "830421618838473936"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838276804/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 37,
+   "pin_id": "830421618838276804"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838300407/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 36,
+   "pin_id": "830421618838300407"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838490632/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 34,
+   "pin_id": "830421618838490632"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838360897/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 29,
+   "pin_id": "830421618838360897"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838477569/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 17,
+   "pin_id": "830421618838477569"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838341081/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 15,
+   "pin_id": "830421618838341081"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838374472/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 14,
+   "pin_id": "830421618838374472"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838443561/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 13,
+   "pin_id": "830421618838443561"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838542962/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 10,
+   "pin_id": "830421618838542962"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838653052/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 9,
+   "pin_id": "830421618838653052"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838589290/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 9,
+   "pin_id": "830421618838589290"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838439108/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 9,
+   "pin_id": "830421618838439108"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838393534/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 7,
+   "pin_id": "830421618838393534"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838457693/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 7,
+   "pin_id": "830421618838457693"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838510690/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 6,
+   "pin_id": "830421618838510690"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838218818/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 6,
+   "pin_id": "830421618838218818"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838621395/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 5,
+   "pin_id": "830421618838621395"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838593515/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 4,
+   "pin_id": "830421618838593515"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838573880/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 3,
+   "pin_id": "830421618838573880"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838625385/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 3,
+   "pin_id": "830421618838625385"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838605099/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 3,
+   "pin_id": "830421618838605099"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838657944/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 3,
+   "pin_id": "830421618838657944"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838522003/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 3,
+   "pin_id": "830421618838522003"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838687831/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 3,
+   "pin_id": "830421618838687831"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838636423/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 3,
+   "pin_id": "830421618838636423"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838670136/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 2,
+   "pin_id": "830421618838670136"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838506815/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 2,
+   "pin_id": "830421618838506815"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838556876/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 2,
+   "pin_id": "830421618838556876"
+  },
+  {
+   "url": "https://www.pinterest.com/pin/830421618838539012/",
+   "content_type": "Organic",
+   "source": "From you",
+   "canonical": "No",
+   "impressions": 2,
+   "pin_id": "830421618838539012"
+  }
+ ]
+}
