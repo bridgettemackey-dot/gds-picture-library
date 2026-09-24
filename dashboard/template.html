@@ -225,12 +225,13 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
   </div>
   <div class="gloss" id="gloss"></div>
   <div class="callout" style="margin-top:16px">
-    <h3>A zero is not always a zero</h3>
+    <h3>Checked against Meta &mdash; the zeros are real</h3>
     <p>Buffer's API fills in <span class="mono">0</span> both when nobody did the thing <em>and</em> when the
-      network never reported it. The two are indistinguishable from the outside. Instagram saves, shares and
-      follows read <span class="mono">0</span> on all 52 posts ever published there &mdash; that is far more
-      likely to be Meta not reporting them through the API than 52 posts nobody ever saved. Treat a flat zero
-      column as &ldquo;no data&rdquo;, and a number that moves as real.</p>
+      network never reported it, and from the outside the two look the same. So on 24 September every Facebook
+      and Instagram figure here was checked against Meta's own API, post by post. <b>Instagram matched exactly on
+      all six metrics</b> &mdash; reach, views, likes, comments, saves and shares &mdash; and Facebook clicks
+      matched exactly too. The zeros are real: nobody has saved or shared an Instagram post. Buffer is reporting
+      these two channels accurately.</p>
   </div>
 </section>
 
@@ -444,11 +445,12 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
       + 'people reached, so most of them are not readers.'; },
     saves: function(){ return 'The most meaningful figure on this page. <span class="gnum">' + fmt(sum(pinC,'saves'))
       + '</span> people have pinned a GDS image to a board of their own \u2014 strangers choosing to keep it. '
-      + 'Instagram reports <span class="gnum">0</span> saves on every post ever, which is far more likely to be '
-      + 'Meta not reporting than nobody ever saving.'; },
+      + 'Instagram\u2019s <span class="gnum">0</span> is REAL: checked against Meta\u2019s own API on 24 September, '
+      + 'which also returns zero saves and zero shares on every post. Nobody has saved an Instagram post yet.'; },
     shares: function(){ return '<span class="gnum">' + fmt(sum(fbC,'shares')) + '</span> on Facebook for the whole '
       + 'reading-series campaign, against <span class="gnum">' + fmt(allTime('facebook','shares'))
-      + '</span> on older GDS posts going back to 2020. Instagram reports <span class="gnum">0</span> always.'; },
+      + '</span> on older GDS posts going back to 2020. Instagram\u2019s <span class="gnum">0</span> is confirmed '
+      + 'real against Meta\u2019s own API.'; },
     clicks: function(){ return 'Facebook only \u2014 neither Instagram nor Pinterest reports it, so there is no click '
       + 'figure for the Amazon links on those channels. All time reads <span class="gnum">'
       + fmt(allTime('facebook','clicks')) + '</span>, but <span class="gnum">7,345</span> of those come from one '

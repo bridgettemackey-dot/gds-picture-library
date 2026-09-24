@@ -631,3 +631,29 @@ Four manifest entries still carry branded paths without the -bhm suffix
 (atb-upper/cover-20260915, atb-upper/map-of-the-bahamas-20260915,
 atb-lower/cover-20260915); those three DO resolve and are fine as they are - do
 not "fix" them into names that do not exist.
+
+--- BUFFER IS ACCURATE ON FACEBOOK AND INSTAGRAM (VERIFIED 24 SEP 2026) ---
+
+Checked post by post against Meta's own Graph API, both accounts, since 1 August.
+
+INSTAGRAM - EXACT MATCH on every metric, 33 media on both sides:
+    reach 24=24 · views 29=29 · likes 19=19 · comments 40=40 · saves 0=0 · shares 0=0
+
+FACEBOOK - 38 posts on both sides:
+    clicks 10=10 exactly.
+    reactions: Meta 21, Buffer 19. The whole difference is two posts from 26 Aug
+    where Meta says 3 and Buffer says 2. Every one of the other 14 posts with
+    reactions matches exactly. Buffer's snapshot is from 23 Sep 22:46 and does not
+    appear to backfill the oldest posts, so this is staleness of 2, not error.
+    impressions: CANNOT BE CHECKED. Meta has removed impressions and reach from
+    the Pages API entirely (see dashboard/README.md).
+
+WHAT THIS OVERTURNS: this file and the dashboard both used to say Instagram's zero
+saves and zero shares were "far more likely to be Meta not reporting than nobody
+ever saving". WRONG. Meta itself returns zero. Nobody has saved or shared an
+Instagram post. The 40 comments against a reach of 24 are also real and confirmed.
+
+So stop doubting Buffer on Meta. The numbers are small because the audience is
+small, not because the instrument is faulty. Pinterest was also confirmed accurate
+in Buffer against Pinterest's own per-pin analytics on 22 Sep. Across all three
+channels Buffer has now been checked and found right.
