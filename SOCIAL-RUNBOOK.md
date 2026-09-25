@@ -695,3 +695,38 @@ going to pins published before the cutoff.
 REFRESHING THIS: export Analytics overview from Pinterest with the date range you
 want, then `python3 dashboard/pinterest_csv.py <file>`. The export is several
 stacked sections, not one table; the importer handles that. Once a month is plenty.
+
+--- INSTAGRAM RESCUE JOB (ig_rescue.py) ---
+
+Buffer's Instagram error - "Failed to create media container for instagram: the
+media could not be fetched from this URI" - IS Meta's own POST /<ig>/media step.
+Buffer is relaying Meta, not failing itself, and it tries EXACTLY ONCE. That is the
+whole problem. Every post re-queued by hand has eventually published, so the fault
+is transient and a retry is the entire fix.
+
+`ig_rescue.py` finds Instagram posts Buffer marked `error` and publishes them
+directly through Meta, retrying the container step up to 4 times (0s, 20s, 60s,
+120s), polling the container until FINISHED, then publishing and clearing the dead
+post out of Buffer.
+
+    python3 ig_rescue.py --dry-run    # everything except the final publish
+    python3 ig_rescue.py              # for real
+
+GUARDS, because this posts publicly:
+  - only posts Buffer marked `error`; never anything scheduled or already sent
+  - instagram channel only
+  - at most 3 per run, so a bad state cannot empty the queue onto the account
+  - nothing older than 7 days
+  - the Buffer post is deleted only AFTER Meta confirms publication
+
+THIS DOES NOT REPLACE BUFFER and does not stop the failures. Buffer still schedules
+and publishes everything on all three channels. The rescue only catches what Meta
+refused first time, within the hour instead of the next day.
+
+NEEDS instagram_content_publish ON THE TOKEN. It is already added to the app, but a
+token only carries what was ticked when it was generated. Without it every call
+returns "(#10) Requires instagram_content_publish permission to manage the object".
+
+September rate for context: 10 failed attempts against 30 publications, about one
+in four. Six explanations have been tried and all six were wrong; do not attempt a
+seventh from the outside. Retrying is what works.
