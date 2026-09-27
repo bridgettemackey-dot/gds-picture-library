@@ -640,6 +640,46 @@
    "branded": "gds-share/regatta/flags-over-the-regatta-20260927-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "fruits-of-the-bahamas-20260928",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "slug": "atb-upper",
+   "asin": "B0HC1PJ4DS",
+   "caption": "The fruits of The Bahamas",
+   "alt": "A roadside fruit stall under a faded blue awning: sapodillas, guavas halved to show pink flesh, knobbly green sugar apples, a bunch of small bananas, tamarind pods in a shallow basket and two halved papayas. A straw basket at one end, pink and yellow wooden houses, a coconut palm and turquoise sea behind.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Fruits of The Bahamas"
+   ],
+   "file": "all-things-bahamian-upper-fruits",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/fruits-of-the-bahamas-20260928",
+   "branded": "gds-share/atb-upper/fruits-of-the-bahamas-20260928-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "cape-santa-maria-20260930",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "slug": "regatta",
+   "asin": "B0HGKNTNDD",
+   "caption": "Cape Santa Maria",
+   "alt": "A long curve of pale sand at Cape Santa Maria, Long Island, with water grading from clear turquoise shallows to deep blue. Sea grape bushes along the dune, three coconut palms leaning in the wind, a weathered wooden dinghy pulled up on the sand and conch shells at the tideline in late afternoon light.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-cape-santa-maria",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "clean": "gds/regatta/cape-santa-maria-20260930",
+   "branded": "gds-share/regatta/cape-santa-maria-20260930-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [

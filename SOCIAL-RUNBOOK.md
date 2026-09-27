@@ -730,3 +730,21 @@ returns "(#10) Requires instagram_content_publish permission to manage the objec
 September rate for context: 10 failed attempts against 30 publications, about one
 in four. Six explanations have been tried and all six were wrong; do not attempt a
 seventh from the outside. Retrying is what works.
+
+--- THE SCRATCHPAD DOES NOT SURVIVE. KEEP EVERYTHING IN THE REPO. ---
+
+On 27 Sep 2026 the container was reclaimed between runs and took the scratchpad with
+it - including sched_wk39 through wk42 and verify42.py, which the check-in prompt told
+the next run to copy. They were gone. Everything had to be rebuilt from the runbook.
+
+So: anything a future run needs lives in git.
+    sched/wk<NN>.py     the week's schedule; copy the previous week's file
+    sched/verify.py     pre-flight checks, run BEFORE queueing
+    buffer_queue.py     what is errored and what is scheduled
+    brand.py            caption band and QR
+    build_gallery.py    rebuild index.html from images.json
+    ig_rescue.py        republish Buffer's Instagram failures through Meta
+    dashboard/          the activity dashboard and its Meta and Pinterest readers
+
+A fresh container also has no pip packages: `pip install qrcode pillow reportlab`
+before running brand.py.
