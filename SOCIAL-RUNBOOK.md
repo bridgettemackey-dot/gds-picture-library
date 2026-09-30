@@ -748,3 +748,29 @@ So: anything a future run needs lives in git.
 
 A fresh container also has no pip packages: `pip install qrcode pillow reportlab`
 before running brand.py.
+
+--- NEVER INVENT BIOGRAPHY. THE AUTHORS ARE REAL CHILDREN. ---
+
+On 30 Sep 2026 three scheduled posts said Zhané "wrote it after living there",
+meaning Hawaii. SHE HAS NEVER BEEN TO HAWAII. The Girl and The Whale is fiction.
+Nobody had told me she lived there; it was not in BOOK-CONTEXT.md or anywhere else.
+It was invented while writing a caption because it made a tidier story. Bridge
+caught it. All three were corrected before any of them published.
+
+THE RULE: state nothing about a real person's life that is not written down in
+BOOK-CONTEXT.md or said by Bridge. Not where they have lived, travelled, studied or
+worked; not their age, school or family circumstances; not what inspired them. A
+setting in a book is NOT evidence the author has been there. If a caption needs a
+biographical fact to work, either find it in the files, ask Bridge, or write the
+caption without it.
+
+This matters more here than on a normal account. The authors are Bridge's children.
+An invented detail about a child, published under a family imprint, is not a
+rounding error.
+
+What IS established and safe to say: Zhané Mackey wrote The Girl and The Whale.
+Nicholas' Long Island family adventure in Going To The Regatta is a true family
+account. The books are published from Nassau by GDS Publications.
+
+And the honest version reads better anyway. "The book is set in Hawaii. The author
+has never been there" is a far stronger opening than the invented one it replaced.
