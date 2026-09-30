@@ -143,26 +143,32 @@ S = [
   pin_url=REGA),
 
  # Sun 4 Oct — slot 49 — pillar 0 Book World — The Girl and The Whale — CATALOGUED
+ # CORRECTED 30 Sep: the first draft said Zhané wrote the book "after living there".
+ # She has NEVER been to Hawaii; the story is fiction. See the no-invented-biography
+ # rule in SOCIAL-RUNBOOK.md.
  dict(day='2026-10-04', base=19, pid='gds/girl-whale/on-the-outrigger-20260907', pad=False, board=B_READ,
   alt='An outrigger canoe on calm open water at golden hour, its float arm cutting a line across '
       'the surface, green island headland behind.',
-  fb=tail("The book is set in Hawaii, and that is not an accident.\n\n"
-    "Zhané wrote it after living there — the outrigger, the reef, the volcanic mountains, Mr. "
-    "Hooker and his boat. Then she published it from Nassau.\n\nWe get asked why a Bahamian "
-    "publisher's first reader is a Hawaiian story. The answer is that it is a story about believing "
-    "a child who says she heard something, and that belongs to no one island.\n\nThe islands in it "
-    "are real. So is the girl who wrote it.\n\nThe Girl and The Whale, by Zhané Mackey. Ages 6 to "
-    "12.\n\n"+GW),
-  ig=tail("The book is set in Hawaii, and that's not an accident. 🛶\n\nZhané wrote it after living "
-    "there — the outrigger, the reef, the volcanic mountains, Mr. Hooker and his boat. Then "
-    "published it from Nassau. 🇧🇸\n\nPeople ask why a Bahamian publisher's first reader is a "
-    "Hawaiian story. Because it's a story about believing a child who says she heard something, "
-    "and that belongs to no one island.\n\nBy Zhané Mackey. Ages 6–12.\n\n"+GW,
-    "#TheGirlAndTheWhale #ChildrensBooks #IslandStories #Bahamas #Hawaii #YoungAuthor"),
-  pin_t='A Hawaiian story, published from Nassau — The Girl and The Whale',
-  pin=tail("Written after living in Hawaii — the outrigger, the reef, the volcanic mountains — and "
-    "published from Nassau. A story about believing a child who says she heard something. By Zhané "
-    "Mackey. Ages 6 to 12.\n\n"+GW),
+  fb=tail("The book is set in Hawaii. The author has never been there.\n\n"
+    "Zhané built the island out of reading, looking and imagining — the outrigger, the reef, the "
+    "volcanic mountains, Mr. Hooker and his boat — and published it from Nassau.\n\nPeople ask why "
+    "a Bahamian publisher's first reader is a Hawaiian story. Partly because a child raised around "
+    "reef and boat and legend can recognise another island from a long way off. Mostly because it "
+    "is a story about believing a child who says she heard something, and that belongs to no one "
+    "island.\n\nOne day we hope she gets to stand on that beach and see how close she came.\n\n"
+    "The Girl and The Whale, by Zhané Mackey. Ages 6 to 12.\n\n"+GW),
+  ig=tail("The book is set in Hawaii. The author has never been there. 🛶\n\nZhané built the island "
+    "out of reading, looking and imagining — the outrigger, the reef, the volcanic mountains, Mr. "
+    "Hooker and his boat — and published it from Nassau. 🇧🇸\n\nWhy a Hawaiian story from a "
+    "Bahamian publisher? Partly because a child raised around reef and boat and legend can "
+    "recognise another island from a long way off. Mostly because it's a story about believing a "
+    "child who says she heard something.\n\nOne day we hope she gets to stand on that beach. ✨\n\n"
+    "By Zhané Mackey. Ages 6–12.\n\n"+GW,
+    "#TheGirlAndTheWhale #ChildrensBooks #IslandStories #Bahamas #YoungAuthor #Imagination"),
+  pin_t='Set in Hawaii, written from Nassau — The Girl and The Whale',
+  pin=tail("Set in Hawaii, by a Bahamian author who has never been there — an island built out of "
+    "reading, looking and imagining, and published from Nassau. A story about believing a child who "
+    "says she heard something. By Zhané Mackey. Ages 6 to 12.\n\n"+GW),
   pin_url=GW),
 ]
 
