@@ -680,6 +680,66 @@
    "branded": "gds-share/regatta/cape-santa-maria-20260930-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "book-of-legends-on-the-reef-20261001",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "slug": "girl-whale",
+   "asin": "B0HCB7V9C9",
+   "caption": "Hawaii’s Book of Legends",
+   "alt": "A thick old leather-bound book lying open on a flat sun-bleached rock at the edge of a shallow coral reef, its weathered cream pages blank. A conch shell and a sprig of dried seaweed beside it, clear turquoise water over coral and two small yellow fish below, and green volcanic mountains across the bay in late golden light.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island legend"
+   ],
+   "file": "girl-and-whale-book-of-legends",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "clean": "gds/girl-whale/book-of-legends-on-the-reef-20261001",
+   "branded": "gds-share/girl-whale/book-of-legends-on-the-reef-20261001-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-comet-strikes-cosmic-20261003",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "slug": "girl-whale-activity",
+   "asin": "B0HG8NKYV2",
+   "caption": "The comet strikes Cosmic",
+   "alt": "A vast humpback whale rising through deep night ocean water, her long pectoral fins glowing cosmic purple and scattered with starlight. A white-gold comet streaks down towards her raised back. Turtles, rays and shoals of small fish look up from the water below her, safe in her shadow, under a sky full of stars.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "The legend"
+   ],
+   "file": "girl-and-whale-activity-comet",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/the-comet-strikes-cosmic-20261003",
+   "branded": "gds-share/girl-whale-activity/the-comet-strikes-cosmic-20261003-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "pink-sand-at-deals-beach-20261004",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "slug": "regatta-activity",
+   "asin": "B0HH8PVQZ9",
+   "caption": "Pink sand at Deals Beach",
+   "alt": "A wide sweep of pink-tinged sand at Deals Beach, Long Island, palest rose where dry and deeper coral where the water has washed it, meeting clear turquoise shallows. Broken shells and pieces of pink coral across the sand, sea grape and silver-green scrub on the dune and casuarina trees leaning under a bright sky.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-activity-pink-sand",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "clean": "gds/regatta-activity/pink-sand-at-deals-beach-20261004",
+   "branded": "gds-share/regatta-activity/pink-sand-at-deals-beach-20261004-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
