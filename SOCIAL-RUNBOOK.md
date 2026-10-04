@@ -774,3 +774,26 @@ account. The books are published from Nassau by GDS Publications.
 
 And the honest version reads better anyway. "The book is set in Hawaii. The author
 has never been there" is a far stronger opening than the invented one it replaced.
+
+--- CHECK PLOT CLAIMS AGAINST "THE STORY, IN ORDER" BEFORE QUEUEING ---
+
+5 Oct 2026. Two captions were written and caught in pre-flight, both asserting
+things that are not true:
+
+1. A caption called Anna's dance "how the book ends". It is NOT. It is step 6 of
+   11, and NOTHING HAPPENS when she does it - she gives up, and only then does the
+   whale appear. The book ends with Kelani shouting her full name, Anna admitting
+   she wanted her mother to be proud, and the three of them under the stars.
+2. A caption said All Things Bahamian "gives straw work a page". There is no straw
+   section. The seven sections are national symbols, our islands, historic places,
+   life in our seas, Junkanoo, the fruits of The Bahamas, and a final make-your-own.
+
+Both were plausible, both were invented to make the caption land. Same failure as
+the Hawaii one: a tidy sentence reached for ahead of a true one.
+
+SO: before queueing, check every claim about what happens in a book against "The
+story, in order" in BOOK-CONTEXT.md, and every claim about what a book CONTAINS
+against the section list. If the file does not say it, do not write it.
+
+The true version was better again. "She does the dance. Nothing happens." is a far
+stronger opening than the invented ending it replaced.

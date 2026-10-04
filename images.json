@@ -740,6 +740,46 @@
    "branded": "gds-share/regatta-activity/pink-sand-at-deals-beach-20261004-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "friday-soup-at-green-leaf-20261005",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "slug": "regatta",
+   "asin": "B0HGKNTNDD",
+   "caption": "Friday soup at Green Leaf",
+   "alt": "A deep white enamel bowl of thick Bahamian soup with chunks of root vegetable, a wedge of lime on the rim, beside a fresh green coconut cut open with a straw in it and a scattering of pigeon peas on a worn wooden table. Behind, the open serving window of a mint green and coral building with bougainvillea against the wall.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-friday-soup",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "clean": "gds/regatta/friday-soup-at-green-leaf-20261005",
+   "branded": "gds-share/regatta/friday-soup-at-green-leaf-20261005-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "annas-dance-at-sunset-20261007",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "slug": "girl-whale",
+   "asin": "B0HCB7V9C9",
+   "caption": "Anna’s dance at sunset",
+   "alt": "A girl dancing barefoot on wet sand at the edge of the sea at sunset, arms thrown wide and head tipped back mid-spin, her reflection in the thin sheet of water beneath her. She wears a knee-length floral sundress and a shell necklace, her dark hair in two thick twists. The low orange sun, green volcanic mountains and two seabirds behind her.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "file": "girl-and-whale-annas-dance",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "clean": "gds/girl-whale/annas-dance-at-sunset-20261007",
+   "branded": "gds-share/girl-whale/annas-dance-at-sunset-20261007-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
