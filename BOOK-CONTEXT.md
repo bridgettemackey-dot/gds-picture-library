@@ -23,7 +23,7 @@ says "Level 3 Reader | Grades 2-3 | Ages 7-9" — that is the outlier, do not qu
 
 | Who | What the book says |
 |---|---|
-| **Anna Lelani Mahoe** | The full name, used by her mother when she is in trouble. "Chocolate-brown skin. Her hair was darker than the stripes on a zebra." Depicted 12–15 (standing rule). |
+| **Anna Lelani Mahoe** | The full name, used by her mother when she is in trouble. "Chocolate-brown skin. Her hair was darker than the stripes on a zebra." Depicted 12–15 (standing rule). **Never write her description from memory — paste `ANNA` from `sched/characters.py` into the prompt.** |
 | **Mr. Hooker** | "One of the greatest fishermen in Hawaii", knows many island stories. Tells Anna the legend and gives her the book. |
 | **Kelani** | Anna's mother. Sceptical — "You do not think anything is real," Gran Gran tells her. |
 | **Gran Gran** | Kelani's mother. Covers for Anna with the mahi-mahi story. |

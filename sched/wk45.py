@@ -71,11 +71,12 @@ S = [
   pin_url=ATBL),
 
  # Wed 7 Oct — slot 52 — pillar 3 Promo/CTA — The Girl and The Whale — NEW ART — BUNDLE DAY
- dict(day='2026-10-07', base=14, pid='gds/girl-whale/annas-dance-at-sunset-20261007', pad=False, board=B_READ,
-  alt='A girl dancing barefoot on wet sand at the edge of the sea at sunset, arms thrown wide and '
-      'head tipped back mid-spin, her reflection in the thin sheet of water beneath her. She wears '
-      'a knee-length floral sundress and a shell necklace, her dark hair in two thick twists. The '
-      'low orange sun, green volcanic mountains and two seabirds behind her.',
+ dict(day='2026-10-07', base=14, pid='gds/girl-whale/annas-dance-at-sunset-20261007b', pad=False, board=B_READ,
+  alt='Anna, a Black girl of about thirteen with chocolate-brown skin and long black hair, dances '
+      'barefoot on wet sand at the edge of the sea at sunset, arms thrown wide and head tipped back '
+      'mid-spin, her reflection in the thin sheet of water beneath her. She wears a knee-length '
+      'floral sundress and a white shell necklace. The low orange sun, green volcanic mountains and '
+      'two seabirds are behind her.',
   fb=tail("She does the dance. Nothing happens.\n\nThe legend gave Anna an instruction: dance at "
     "sunset, at the edge of the water. So she does — and the sky goes coral and gold and the sea "
     "stays empty, and she gives up.\n\nThat is the page we are proudest of. Most children's books "

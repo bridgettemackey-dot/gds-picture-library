@@ -266,14 +266,29 @@ and interior pages are square or nearly square, so a crop slices their edges off
 LOOK at the cropped result before scheduling. `g_auto` picks the subject sensibly, but a composition with content at the very top and bottom (a split-waterline scene, say) can lose something that matters.
 
 --- ANNA — HOW SHE ACTUALLY LOOKS ---
-This was wrong in earlier versions of this brief and was corrected on Sep 7, 2026 against the published book. THE BOOK IS THE AUTHORITY. Before you write any prompt with Anna in it, look at the two canonical references in Cloudinary:
+DO NOT WRITE THE DESCRIPTION YOURSELF. `sched/characters.py` holds it as a string.
+Import it and paste it into the prompt verbatim:
+
+    from characters import ANNA
+    prompt = "A children's picture-book illustration of ...\n\n" + ANNA + "\n..."
+
+THE WHOLE SECTION BELOW IS BACKGROUND. The string is the thing you ship. On
+4 Oct 2026 a picture of Anna reached the Buffer queue with FAIR SKIN and TWO
+BROWN PIGTAIL BRAIDS — the opposite of the book on both counts. The prompt that
+produced it was three hundred words about her AGE and said nothing about her
+appearance at all, because the run had spent its attention on the age trap
+described below and simply forgot she has a face. Everything in this section was
+already written down at the time and it did not help. Reading the rule is not the
+control. Pasting the string is the control.
+
+THE BOOK IS THE AUTHORITY. The two canonical references in Cloudinary:
 
   gds/girl-whale/page12-anna-20260828   — her character portrait, page 12
   gds/girl-whale/cover-20260825         — the cover
 
 ANNA IS BETWEEN TWELVE AND FIFTEEN YEARS OLD. Bridge stated this as a standing rule on Sep 13, 2026: she must be depicted inside that range in every picture, without exception. AIM FOR THIRTEEN OR FOURTEEN — the middle — so that when the model drifts, as it does, it still lands inside the range.
 
-She is a Black girl of thirteen or fourteen: a youthful, rounded, still-childlike face, warm medium-brown skin, and a wide easy smile. Her hair is the most recognisable thing about her — very long, thick and dark, nearly black, falling well past her shoulders in loose soft waves, usually blowing free, parted in the middle and drawn back at the sides. It is NOT tight coils and NOT a puff.
+She is a Black girl of thirteen or fourteen: a youthful, rounded, still-childlike face, DEEP CHOCOLATE-BROWN skin — the book's own words, not "medium brown" and never lighter — and a wide easy smile. Her hair is the most recognisable thing about her — very long, thick and dark, nearly black, falling well past her shoulders in loose soft waves, usually blowing free, parted in the middle and drawn back at the sides. It is NOT tight coils and NOT a puff.
 
 She wears a SLEEVELESS FLORAL SUNDRESS: thin shoulder straps, a fitted bodice, a flared skirt to about the knee, patterned with pink, coral and white hibiscus and tropical flowers with green leaves on a cream ground. She is barefoot, and on the cover and page 12 she wears a white cowrie shell necklace.
 
