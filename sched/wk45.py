@@ -23,11 +23,12 @@ tail = lambda t, tags=None: t + "\n\n" + GDSI + (("\n\n" + tags) if tags else ""
 
 S = [
  # Mon 5 Oct — slot 50 — pillar 1 Behind the Scenes — Going To The Regatta — NEW ART
- dict(day='2026-10-05', base=14, pid='gds/regatta/friday-soup-at-green-leaf-20261005', pad=False, board=B_LI,
+ dict(day='2026-10-05', base=14, pid='gds/regatta/friday-soup-at-green-leaf-20261005b', pad=False, board=B_LI,
   alt='A deep white enamel bowl of thick Bahamian soup with chunks of root vegetable, a wedge of '
-      'lime on the rim, beside a fresh green coconut cut open with a straw in it and a scattering '
-      'of pigeon peas on a worn wooden table. Behind, the open serving window of a mint green and '
-      'coral building with bougainvillea against the wall.',
+      'lime on the rim, beside a fresh green coconut cut open with a straw in it, a folded paper '
+      'napkin with a spoon resting on it, and a scattering of pigeon peas on a worn wooden table. '
+      'Behind, the open serving window of a mint green and coral building with bougainvillea '
+      'against the wall.',
   fb=tail("The detail people always ask about.\n\nGoing To The Regatta stops for lunch, because the "
     "drive down Long Island does. Soup on a Friday, a coconut cut open at the top, a table in the "
     "shade outside a little painted takeaway.\n\nWe could have skipped it. A plot does not need "

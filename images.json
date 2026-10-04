@@ -742,13 +742,13 @@
    "h": 1964
   },
   {
-   "id": "friday-soup-at-green-leaf-20261005",
+   "id": "friday-soup-at-green-leaf-20261005b",
    "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
    "group": "Going To The Regatta",
    "slug": "regatta",
    "asin": "B0HGKNTNDD",
    "caption": "Friday soup at Green Leaf",
-   "alt": "A deep white enamel bowl of thick Bahamian soup with chunks of root vegetable, a wedge of lime on the rim, beside a fresh green coconut cut open with a straw in it and a scattering of pigeon peas on a worn wooden table. Behind, the open serving window of a mint green and coral building with bougainvillea against the wall.",
+   "alt": "A deep white enamel bowl of thick Bahamian soup with chunks of root vegetable, a wedge of lime on the rim, beside a fresh green coconut cut open with a straw in it, a folded paper napkin with a spoon resting on it, and a scattering of pigeon peas on a worn wooden table. Behind, the open serving window of a mint green and coral building with bougainvillea against the wall.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
@@ -756,8 +756,8 @@
    ],
    "file": "going-to-the-regatta-friday-soup",
    "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
-   "clean": "gds/regatta/friday-soup-at-green-leaf-20261005",
-   "branded": "gds-share/regatta/friday-soup-at-green-leaf-20261005-bhm",
+   "clean": "gds/regatta/friday-soup-at-green-leaf-20261005b",
+   "branded": "gds-share/regatta/friday-soup-at-green-leaf-20261005b-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -834,6 +834,7 @@
   "gds-share/regatta-activity/deans-blue-hole-20260831-lib",
   "gds-share/regatta-activity/nature-study-desk-20260906",
   "gds-share/regatta-activity/nature-study-desk-20260906-lib",
+  "gds-share/regatta/friday-soup-at-green-leaf-20261005-bhm",
   "gds-share/regatta/page-watching-the-race-20260830",
   "gds-share/regatta/page-watching-the-race-20260830-lib",
   "gds-share/regatta/sloops-at-salt-pond-20260830",
