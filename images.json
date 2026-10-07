@@ -780,6 +780,66 @@
    "branded": "gds-share/girl-whale/annas-dance-at-sunset-20261007b-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "glass-window-bridge-20261008",
+   "slug": "atb-upper",
+   "caption": "The Glass Window Bridge, Eleuthera",
+   "alt": "The Glass Window Bridge in Eleuthera: a short road bridge spanning a narrow gap between two rocky headlands, with one car crossing. The deep navy Atlantic breaks white against the rock on one side; the calm pale turquoise Bight lies on the other.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Our islands"
+   ],
+   "file": "all-things-bahamian-upper-glass-window-bridge",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/glass-window-bridge-20261008",
+   "branded": "gds-share/atb-upper/glass-window-bridge-20261008-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "queens-staircase-20261010",
+   "slug": "atb-lower",
+   "caption": "The Queen’s Staircase, Nassau",
+   "alt": "The Queen’s Staircase in Nassau: a long flight of worn limestone steps cut down through a narrow gorge, with tall pale stone walls draped in ferns and vines either side and dappled sunlight falling across the steps.",
+   "bands": [
+    "Ages 6–9",
+    "Grades 1–3",
+    "Historic places"
+   ],
+   "file": "all-things-bahamian-lower-queens-staircase",
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "clean": "gds/atb-lower/queens-staircase-20261010",
+   "branded": "gds-share/atb-lower/queens-staircase-20261010-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "designing-the-finback-20261010",
+   "slug": "girl-whale-activity",
+   "caption": "Designing the Cosmic Finback",
+   "alt": "An illustrator’s worktable seen from above, scattered with pencil sketches of a humpback whale — a tail fluke, a long pectoral fin, a whole whale in outline. On one sheet a fin has been coloured deep purple and scattered with starlight. A purple and a graphite pencil, a sharpener with shavings, an eraser, a jar of coloured pencils and a conch shell lie around them.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Behind the scenes"
+   ],
+   "file": "girl-and-whale-activity-designing-the-finback",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/designing-the-finback-20261010",
+   "branded": "gds-share/girl-whale-activity/designing-the-finback-20261010-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
