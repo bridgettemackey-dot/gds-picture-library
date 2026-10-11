@@ -840,6 +840,106 @@
    "branded": "gds-share/girl-whale-activity/designing-the-finback-20261010-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "bahamian-flag-20261012",
+   "slug": "atb-upper",
+   "caption": "The flag of The Bahamas",
+   "alt": "The flag of The Bahamas flying from a white pole and snapping in a strong breeze — three bands of aquamarine, gold and aquamarine with a black triangle at the hoist. Behind it waves break white on a pale sand beach and palm fronds bend in the wind.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "National symbols"
+   ],
+   "file": "all-things-bahamian-upper-bahamian-flag",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/bahamian-flag-20261012",
+   "branded": "gds-share/atb-upper/bahamian-flag-20261012-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "sugar-loaf-pineapple-20261012",
+   "slug": "atb-upper",
+   "caption": "Eleuthera Sugar Loaf pineapples",
+   "alt": "Sugar Loaf pineapples growing in red-brown earth in Eleuthera, one whole and one cut in half, their spiky leaves bending in the wind with loose leaves tumbling. The sea shows as a turquoise band on the horizon with white caps on it.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Fruits of The Bahamas"
+   ],
+   "file": "all-things-bahamian-upper-sugar-loaf-pineapple",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/sugar-loaf-pineapple-20261012",
+   "branded": "gds-share/atb-upper/sugar-loaf-pineapple-20261012-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "vendor-buildings-salt-pond-20261013",
+   "slug": "regatta",
+   "caption": "The vendor stalls at Salt Pond",
+   "alt": "A row of small wooden vendor stalls at the Long Island regatta grounds at Salt Pond, painted pink, turquoise, yellow and lime green, with bunting strung between their roofs and people walking between them carrying plates and drinks. Racing sloops are under sail on the choppy water behind.",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-vendor-buildings-salt-pond",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "clean": "gds/regatta/vendor-buildings-salt-pond-20261013",
+   "branded": "gds-share/regatta/vendor-buildings-salt-pond-20261013-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "regatta-i-spy-20261014",
+   "slug": "regatta-activity",
+   "caption": "Regatta I-Spy",
+   "alt": "Looking down into clear shallow turquoise water over rippled sand: conch and scallop shells, orange starfish and small striped fish mid-dart, with the hulls of three small sloops on the moving surface above and light flickering in bands across the sand.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Seek and find"
+   ],
+   "file": "going-to-the-regatta-activity-regatta-i-spy",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "asin": "B0HH8PVQZ9",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "clean": "gds/regatta-activity/regatta-i-spy-20261014",
+   "branded": "gds-share/regatta-activity/regatta-i-spy-20261014-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "design-a-regatta-flag-20261014",
+   "slug": "regatta-activity",
+   "caption": "Design a regatta flag",
+   "alt": "A wooden table at the regatta set up for designing flags: blank triangular pennants, a jar of coloured pencils, scissors and string, one finished pennant lifting at the corner in the breeze and another sliding off the edge. Bunting snaps between two poles behind, with a sloop under sail on choppy water beyond.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Make your own"
+   ],
+   "file": "going-to-the-regatta-activity-design-a-regatta-flag",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "asin": "B0HH8PVQZ9",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "clean": "gds/regatta-activity/design-a-regatta-flag-20261014",
+   "branded": "gds-share/regatta-activity/design-a-regatta-flag-20261014-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
