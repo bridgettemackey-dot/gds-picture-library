@@ -265,6 +265,39 @@ and interior pages are square or nearly square, so a crop slices their edges off
 
 LOOK at the cropped result before scheduling. `g_auto` picks the subject sensibly, but a composition with content at the very top and bottom (a split-waterline scene, say) can lose something that matters.
 
+--- MOVEMENT IN EVERY PICTURE ---
+STANDING RULE, Bridge, 11 Oct 2026: "all images that contain water shows movement
+in the water. Where you are able to add movement to any other picture elements I
+want you to do so."
+
+DO NOT WRITE THIS FROM MEMORY EITHER. `sched/characters.py` holds it as `MOTION`.
+Import it and append it to every image prompt, last, after the scene and the
+character block:
+
+    from characters import ANNA, MOTION
+    prompt = "A children's picture-book illustration of ...\n\n" + ANNA + MOTION
+
+What it asks for: water never flat or glassy — waves mid-roll, crests tipping,
+foam actually breaking, spray in the air, ripple rings spreading, water sliding up
+and drawing back over sand, a wake peeling off a hull. And everything else that can
+move, moving: hair and clothing lifting, palm fronds and bougainvillea bending,
+flags and sails filling, birds mid-wingbeat, steam off hot food, shavings or petals
+mid-fall. People mid-step or mid-turn with their weight off-centre, never squared up
+to the viewer. Still the clean flat picture-book colour — energy and direction, not
+motion blur, not speed lines, not a photograph.
+
+THIS IS A SUBSTITUTE AND IT SHOULD BE CALLED ONE. Bridge originally asked for this
+through a tool called Claude Motion. There is no such tool in this session, and the
+Sora models on our OpenAI key report a shutdown date of 2026-09-24 and 404 on
+POST /v1/videos, so actual video is not reachable. She then said to drop it and put
+whatever movement we can into the stills. If a video generator ever does become
+reachable, the publishing half is already in place: Buffer takes
+`assets: [{video: {url, thumbnailUrl, metadata: {title, thumbnailOffset}}}]`
+via `VideoAssetInput`, and Cloudinary will host an MP4.
+
+LOOK AT WHAT COMES BACK. A model will happily return a mirror-flat sea after being
+told twice not to. If the water is dead, regenerate rather than shipping it.
+
 --- ANNA — HOW SHE ACTUALLY LOOKS ---
 DO NOT WRITE THE DESCRIPTION YOURSELF. `sched/characters.py` holds it as a string.
 Import it and paste it into the prompt verbatim:
