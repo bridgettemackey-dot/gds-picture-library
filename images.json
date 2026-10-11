@@ -302,16 +302,16 @@
    "file": "going-to-the-regatta-page-watching-the-race"
   },
   {
-   "id": "deans-blue-hole-20260831",
+   "id": "deans-blue-hole-20261012",
    "book": "Going To The Regatta Coloring and Activity Book",
    "group": "Going To The Regatta",
    "slug": "regatta-activity",
    "asin": "B0HH8PVQZ9",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
    "caption": "Dean’s Blue Hole",
-   "alt": "Dean’s Blue Hole, a deep circle of dark water inside a pale turquoise bay ringed by limestone.",
-   "clean": "gds/regatta-activity/deans-blue-hole-20260831",
-   "branded": "gds-share/regatta-activity/deans-blue-hole-20260831-bhm",
+   "alt": "Dean’s Blue Hole on Long Island, a deep dark circle of water ringed by pale turquoise shallows and a curve of white sand, with surf breaking hard against the headland beyond it and the casuarinas bent in the wind.",
+   "clean": "gds/regatta-activity/deans-blue-hole-20261012",
+   "branded": "gds-share/regatta-activity/deans-blue-hole-20261012-bhm",
    "w": 1080,
    "h": 1964,
    "bands": [
@@ -319,7 +319,7 @@
     "Colouring &amp; activities",
     "Classroom ready"
    ],
-   "file": "regatta-activity-book-deans-blue-hole"
+   "file": "going-to-the-regatta-activity-deans-blue-hole"
   },
   {
    "id": "nature-study-desk-20260906",
@@ -722,22 +722,22 @@
    "h": 1964
   },
   {
-   "id": "pink-sand-at-deals-beach-20261004",
+   "id": "pink-sand-deals-beach-20261012",
    "book": "Going To The Regatta Coloring and Activity Book",
    "group": "Going To The Regatta",
    "slug": "regatta-activity",
    "asin": "B0HH8PVQZ9",
    "caption": "Pink sand at Deals Beach",
-   "alt": "A wide sweep of pink-tinged sand at Deals Beach, Long Island, palest rose where dry and deeper coral where the water has washed it, meeting clear turquoise shallows. Broken shells and pieces of pink coral across the sand, sea grape and silver-green scrub on the dune and casuarina trees leaning under a bright sky.",
+   "alt": "The pink sand at Deals Beach, Long Island, with a turquoise wave curling over and breaking into thick white foam along the shore, and the sea grape and casuarina above bending in the wind.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
     "Long Island"
    ],
-   "file": "going-to-the-regatta-activity-pink-sand",
+   "file": "going-to-the-regatta-activity-pink-sand-deals-beach",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
-   "clean": "gds/regatta-activity/pink-sand-at-deals-beach-20261004",
-   "branded": "gds-share/regatta-activity/pink-sand-at-deals-beach-20261004-bhm",
+   "clean": "gds/regatta-activity/pink-sand-deals-beach-20261012",
+   "branded": "gds-share/regatta-activity/pink-sand-deals-beach-20261012-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -992,9 +992,11 @@
   "gds-share/girl-whale/reef-at-sunset-20260907",
   "gds-share/girl-whale/reef-at-sunset-20260907-lib",
   "gds-share/regatta-activity/deans-blue-hole-20260831",
+  "gds-share/regatta-activity/deans-blue-hole-20260831-bhm",
   "gds-share/regatta-activity/deans-blue-hole-20260831-lib",
   "gds-share/regatta-activity/nature-study-desk-20260906",
   "gds-share/regatta-activity/nature-study-desk-20260906-lib",
+  "gds-share/regatta-activity/pink-sand-at-deals-beach-20261004-bhm",
   "gds-share/regatta/friday-soup-at-green-leaf-20261005-bhm",
   "gds-share/regatta/page-watching-the-race-20260830",
   "gds-share/regatta/page-watching-the-race-20260830-lib",

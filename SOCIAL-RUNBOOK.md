@@ -296,6 +296,35 @@ NOTE ON sha256 VERIFICATION: Cloudinary's CDN can serve a stale 404 or an old by
 range for a second or two after an upload. A mismatch on the FIRST fetch is usually
 propagation, not failure - retry two or three times before concluding anything.
 
+--- MOTION HAS TO SURVIVE THE PANEL SIZE ---
+Bridge, 11 Oct 2026, looking at the first two collages: "I don't see any movement
+in the images with water."
+
+She was right, and the cause was two things at once.
+
+1. TWO PANELS WERE PRE-RULE CATALOGUED ART with genuinely flat water (Dean's Blue
+   Hole and the pink sand at Deals Beach). The handover even said they would "look
+   calmer than their neighbours" - and they were used anyway. If a picture's water
+   is dead, it is not a candidate for a collage panel. Regenerate it or pick
+   another.
+
+2. A COLLAGE PANEL IS ABOUT A QUARTER OF FULL SIZE, and fine detail dies there.
+   Ripple lines, surface sparkle and a thin wash at the tideline all read as
+   perfectly flat water once the picture is 508px wide. What survives is BIG
+   motion: a whole wave rearing and breaking, thick white foam, spray in the air,
+   trees visibly bent, bunting snapping.
+
+So when generating a picture that will be a COLLAGE PANEL, add this after MOTION:
+
+    THIS PICTURE WILL BE SHOWN SMALL, AS ONE PANEL OF FOUR. The movement must be
+    BIG and obvious at a glance - whole waves rearing and breaking, thick white
+    foam, spray thrown into the air, trees visibly bent. Fine ripples and delicate
+    surface texture disappear at this size and are not enough.
+
+AND CHECK IT AT PANEL SIZE, NOT FULL SIZE. Fetch each panel at w_508 and look at
+the four of them side by side before building the collage. A picture that clearly
+moves at 1024px can be glass at 508px, and the collage is what Bridge sees.
+
 --- COLLAGE DAYS ---
 STANDING RULE, Bridge, 11 Oct 2026: a collage on AT LEAST FOUR DAYS A WEEK,
 mixing existing and newly generated pictures, every panel from the SAME BOOK.

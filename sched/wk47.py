@@ -115,18 +115,20 @@ S = [
  # Wed 14 Oct — slot 63 — pillar 0 Book World — Regatta Coloring & Activity Book — COLLAGE
  dict(day='2026-10-14', base=19, board=B_COLOR, pad=False,
   panels=['gds/regatta-activity/regatta-i-spy-20261014',
-          'gds/regatta-activity/deans-blue-hole-20260831',
-          'gds/regatta-activity/pink-sand-at-deals-beach-20261004',
+          'gds/regatta-activity/deans-blue-hole-20261012',
+          'gds/regatta-activity/pink-sand-deals-beach-20261012',
           'gds/regatta-activity/design-a-regatta-flag-20261014'],
   alts=['Looking down into clear shallow turquoise water over rippled sand: shells, orange '
         'starfish and small striped fish mid-dart, with the hulls of three small sloops on the '
         'moving surface above.',
-        'Dean’s Blue Hole, a deep circle of dark water inside a pale turquoise bay ringed by '
-        'limestone and low green trees.',
-        'The pink sand at Deals Beach, Long Island, with clear shallow water washing up over it.',
+        'Dean’s Blue Hole on Long Island, a deep dark circle of water ringed by pale turquoise '
+        'shallows and white sand, with surf breaking hard against the headland beyond it and the '
+        'casuarinas bent in the wind.',
+        'The pink sand at Deals Beach, Long Island, with a turquoise wave curling over and breaking '
+        'into thick white foam along the shore and the trees above bending in the wind.',
         'A wooden table at the regatta set up for designing flags — blank pennants, coloured '
         'pencils, scissors and string, with bunting snapping between two poles behind.'],
-  collage='gds/regatta-activity/collage-activity-world-20261014',
+  collage='gds/regatta-activity/collage-activity-world-20261014b',
   alt='A four-panel collage from the Going To The Regatta Coloring & Activity Book: a seek-and-find '
       'view down into clear shallow water, Dean’s Blue Hole, the pink sand at Deals Beach, and a '
       'table set up for designing regatta flags with bunting snapping behind it.',
