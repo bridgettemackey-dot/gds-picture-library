@@ -782,10 +782,10 @@
    "h": 1964
   },
   {
-   "id": "glass-window-bridge-20261008",
+   "id": "glass-window-bridge-20261008-v2",
    "slug": "atb-upper",
    "caption": "The Glass Window Bridge, Eleuthera",
-   "alt": "The Glass Window Bridge in Eleuthera: a short road bridge spanning a narrow gap between two rocky headlands, with one car crossing. The deep navy Atlantic breaks white against the rock on one side; the calm pale turquoise Bight lies on the other.",
+   "alt": "The Glass Window Bridge in Eleuthera: a road bridge crossing a narrow gap in the rock, with the rough navy Atlantic breaking beyond it and the calm clear turquoise Bight of Eleuthera in the foreground on the near side.",
    "bands": [
     "Ages 9–12",
     "Grades 4–6",
@@ -796,8 +796,8 @@
    "group": "All Things Bahamian",
    "asin": "B0HC1PJ4DS",
    "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
-   "clean": "gds/atb-upper/glass-window-bridge-20261008",
-   "branded": "gds-share/atb-upper/glass-window-bridge-20261008-bhm",
+   "clean": "gds/atb-upper/glass-window-bridge-20261008-v2",
+   "branded": "gds-share/atb-upper/glass-window-bridge-20261008-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -951,6 +951,7 @@
   "gds-share/atb-lower/flamingo-seagrape-20260902-lib",
   "gds-share/atb-lower/straw-market-20260909",
   "gds-share/atb-lower/straw-market-20260909-lib",
+  "gds-share/atb-upper/glass-window-bridge-20261008-bhm",
   "gds-share/atb-upper/junkanoo-detail-20260902",
   "gds-share/atb-upper/junkanoo-detail-20260902-lib",
   "gds-share/atb-upper/page-island-life-20260830",

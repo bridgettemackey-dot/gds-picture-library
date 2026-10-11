@@ -20,18 +20,19 @@ S = [
  # Mon 12 Oct — slot 60 — pillar 4 Activity Spotlight — All Things Bahamian: Upper — COLLAGE
  dict(day='2026-10-12', base=14, board=B_COLOR, pad=False,
   panels=['gds/atb-upper/bahamian-flag-20261012',
-          'gds/atb-upper/glass-window-bridge-20261008',
+          'gds/atb-upper/glass-window-bridge-20261008-v2',
           'gds/atb-upper/junkanoo-detail-20260902',
           'gds/atb-upper/sugar-loaf-pineapple-20261012'],
   alts=['The flag of The Bahamas snapping in a strong breeze — aquamarine, gold and aquamarine '
         'bands with a black triangle at the hoist — above a beach where waves break white.',
-        'The Glass Window Bridge in Eleuthera, the rough navy Atlantic breaking against the rock '
-        'on one side and the calm turquoise Bight on the other.',
+        'The Glass Window Bridge in Eleuthera: a road bridge crossing a narrow gap, with the '
+        'rough navy Atlantic breaking against the rock beyond it and the calm clear turquoise '
+        'Bight in the foreground on the near side.',
         'A Junkanoo costume in close-up: layered crepe fringing in pink, orange and turquoise, '
         'with a goatskin drum and a cowbell resting beside it.',
         'Sugar Loaf pineapples growing in red-brown Eleuthera earth, one whole and one cut in '
         'half, their spiky leaves bending in the wind.'],
-  collage='gds/atb-upper/collage-seven-sections-20261012',
+  collage='gds/atb-upper/collage-seven-sections-20261012b',
   alt='A four-panel collage from All Things Bahamian: the national flag snapping in the wind, the '
       'Glass Window Bridge with rough Atlantic on one side and calm Bight on the other, a Junkanoo '
       'costume in close-up, and Sugar Loaf pineapples growing in Eleuthera.',

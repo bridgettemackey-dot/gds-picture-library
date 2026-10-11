@@ -265,6 +265,37 @@ and interior pages are square or nearly square, so a crop slices their edges off
 
 LOOK at the cropped result before scheduling. `g_auto` picks the subject sensibly, but a composition with content at the very top and bottom (a split-waterline scene, say) can lose something that matters.
 
+--- A CORRECTION MUST REACH images.json, OR IT WILL COME BACK ---
+On 8 Oct the Glass Window Bridge picture was corrected: the first render had the
+rough Atlantic and the calm Bight running away from the viewer on either side of a
+ridge, when they must sit on OPPOSITE SIDES OF THE ROAD - rough water beyond the
+bridge, calm clear water in front of it. The fix was uploaded as
+`glass-window-bridge-20261008-v2` and the three queued posts were repointed at it.
+
+THAT IS WHERE IT STOPPED. The correction never reached `images.json`, was never
+branded for the picture library, and was never recorded anywhere. So the library
+still served the WRONG version, and on 12 Oct a collage was built from it and the
+same error went back into the queue - four days after it had been fixed. Bridge
+caught it twice.
+
+WHEN A PICTURE IS CORRECTED, ALL FIVE OF THESE OR NONE:
+  1. upload the corrected art under a NEW public_id (overwrite is disabled)
+  2. brand it, `--name` ending in `-bhm`, and upload that too
+  3. point the images.json entry at the new clean AND branded paths, and fix the alt
+  4. add the OLD branded path to `retired`, then run build_gallery.py
+  5. repoint every queued post that uses it
+A correction that only reaches step 5 is not a correction; it is a patch on three
+posts and a trap for the next run.
+
+AND WHEN REUSING A CATALOGUED PICTURE, especially as a collage panel: the id in
+images.json is the authority. If you find a `-v2` or `-b` in Cloudinary that
+images.json does not know about, STOP - something was corrected without being
+recorded, and the library is serving the superseded file. Ask before using either.
+
+NOTE ON sha256 VERIFICATION: Cloudinary's CDN can serve a stale 404 or an old byte
+range for a second or two after an upload. A mismatch on the FIRST fetch is usually
+propagation, not failure - retry two or three times before concluding anything.
+
 --- COLLAGE DAYS ---
 STANDING RULE, Bridge, 11 Oct 2026: a collage on AT LEAST FOUR DAYS A WEEK,
 mixing existing and newly generated pictures, every panel from the SAME BOOK.
