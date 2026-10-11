@@ -265,6 +265,48 @@ and interior pages are square or nearly square, so a crop slices their edges off
 
 LOOK at the cropped result before scheduling. `g_auto` picks the subject sensibly, but a composition with content at the very top and bottom (a split-waterline scene, say) can lose something that matters.
 
+--- COLLAGE DAYS ---
+STANDING RULE, Bridge, 11 Oct 2026: a collage on AT LEAST FOUR DAYS A WEEK,
+mixing existing and newly generated pictures, every panel from the SAME BOOK.
+
+Settled with her on 11 Oct:
+- FOUR PANELS, TWO NEW AND TWO CATALOGUED. (collage.py also lays out 2, 3 or 6;
+  3 is a wide hero over two.)
+- FACEBOOK AND INSTAGRAM GET A NATIVE CAROUSEL of the four panels at full size.
+  Verified 11 Oct: Buffer accepts a list of assets on both, four created and read
+  back on each. `assets` is a LIST in CreatePostInput.
+- PINTEREST GETS ONE COMPOSITED COLLAGE, because a pin cannot carousel.
+- THE COLLAGE REPLACES THAT SLOT'S SINGLE PICTURE. Same date, pillar, book and
+  caption; only the picture changes. Posting volume and the pillar rotation are
+  unchanged.
+
+HITTING FOUR DAYS ACROSS THE TWO BATCHES. The week is queued in two runs:
+Mon-Wed covers 3 days, Thu-Sun covers 4. Two collage days in each batch makes
+four a week. Do not put a collage on every day - the single hero picture is still
+the better post for a quiet pillar like Behind the Scenes.
+
+HOW TO BUILD ONE
+  1. Pick a book and four pictures of it that belong together - a journey, a
+     place, a character across moments. Two from images.json, two newly generated
+     under the movement rule.
+  2. Composite the Pinterest pin:
+       python3 collage.py --out collage-<theme>-<YYYYMMDD>.png \
+           --panel gds/<slug>/<a> --panel gds/<slug>/<b> \
+           --panel gds/<slug>/<c> --panel gds/<slug>/<d>
+     It refuses panels from more than one book.
+  3. Upload it as `gds/<slug>/collage-<theme>-<YYYYMMDD>`, sha256-verified like
+     any other upload. Do NOT add the collage to images.json - every panel is
+     already a card in the picture library, so the collage would duplicate them.
+     DO add any newly generated panel to images.json as normal, and rebuild the
+     gallery.
+  4. In the week's schedule the slot carries `panels`, `alts` (ONE PER PANEL),
+     `collage` and the usual `alt` (which describes the collage as a whole, and is
+     what Pinterest reads). `sched/post.py` does the rest.
+
+`sched/verify.py` checks a collage day the way it checks a single picture, per
+panel, plus: one alt per panel, all panels from one book, and the collage itself
+reachable. The Anna rule applies across the panel alts too.
+
 --- MOVEMENT IN EVERY PICTURE ---
 STANDING RULE, Bridge, 11 Oct 2026: "all images that contain water shows movement
 in the water. Where you are able to add movement to any other picture elements I
