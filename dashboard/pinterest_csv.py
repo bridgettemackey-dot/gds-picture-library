@@ -1,155 +1,104 @@
 #!/usr/bin/env python3
-"""Fold a Pinterest analytics CSV export into the dashboard as a second source.
+# -*- coding: utf-8 -*-
+"""Turn Pinterest's analytics exports into dashboard/pinterest.json.
 
-    python3 dashboard/pinterest_csv.py --inspect <file.csv>   # show what it found, write nothing
-    python3 dashboard/pinterest_csv.py <file.csv>             # -> dashboard/pinterest.json
+    python3 dashboard/pinterest_csv.py
 
-A Pinterest export is NOT one table. It is several stacked sections - a filter
-preamble, a daily series, Top Boards, Top Pins - each with its own header row and
-its own footnote, separated by blank lines. Anything that assumes a single header
-reads the preamble and finds nothing. Sections are split on blank lines, each one
-gets its own header hunt, and sections are identified by the columns they carry
-rather than by the title above them, which is not always present.
+Pinterest's API needs app review even for Trial access, so Bridge exports CSVs by
+hand. Each export is a SNAPSHOT: the same pins, counted up to a different end date.
+Keeping several lets us see which pins are GROWING, which one snapshot cannot.
+
+An export is FOUR STACKED SECTIONS, each with its own title row, then its header,
+then rows, then a footnote. Sections are identified by the COLUMNS they carry, not
+by the title above them - assuming a single table cost a rewrite on 24 Sep 2026.
+
+THE FINDING THIS FILE EXISTS TO PROTECT (11 Oct 2026): PINS RAMP SLOWLY. A pin sits
+at one to five impressions for one to three weeks and then climbs, sometimes
+steeply. Pin ...838670136 read 2 on 23 Sep, 13 on 30 Sep, and 680 by 11 Oct. Judging
+a pin in its first fortnight says nothing. Never conclude a pin is dead from a
+single snapshot - that error produced a "distribution stall" in this dashboard that
+was wrong for three weeks.
 """
-import csv, io, json, os, re, sys
+import csv, glob, json, os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-
-ALIASES = {
-    'impressions': 'impressions', 'totalimpressions': 'impressions',
-    'saves': 'saves', 'totalsaves': 'saves', 'repins': 'saves',
-    'pinclicks': 'pin_clicks', 'totalpinclicks': 'pin_clicks', 'closeups': 'pin_clicks',
-    'outboundclicks': 'outbound_clicks', 'totaloutboundclicks': 'outbound_clicks',
-    'linkclicks': 'outbound_clicks',
-    'engagement': 'engagements', 'engagements': 'engagements', 'totalengagements': 'engagements',
-    'pinid': 'pin_id', 'id': 'pin_id',
-    'pinterestlink': 'url', 'pinurl': 'url', 'url': 'url', 'link': 'url', 'pinlink': 'url',
-    'date': 'date', 'createdat': 'date', 'publishdate': 'date', 'created': 'date',
-    'title': 'title', 'pintitle': 'title', 'description': 'title',
-    'contenttype': 'content_type', 'source': 'source', 'canonical': 'canonical',
-}
-NUMERIC = {'impressions', 'saves', 'pin_clicks', 'outbound_clicks', 'engagements'}
-
-
-def norm(s):
-    return re.sub(r'[^a-z0-9]', '', (s or '').lower())
+SRC = os.path.join(HERE, 'pinterest-exports')
 
 
 def sections(path):
-    """Split the file into blocks on blank lines, keeping each block's rows."""
-    raw = open(path, encoding='utf-8-sig', errors='replace').read()
-    try:
-        dialect = csv.Sniffer().sniff(raw[:2048], delimiters=',;\t')
-    except Exception:
-        dialect = csv.excel
-    blocks, cur = [], []
-    for row in csv.reader(io.StringIO(raw), dialect):
-        if any((c or '').strip() for c in row):
-            cur.append(row)
-        elif cur:
-            blocks.append(cur); cur = []
-    if cur:
-        blocks.append(cur)
-    return blocks
-
-
-def parse_block(rows):
-    """Find this block's header and return (mapping, body). A footnote line is one
-    long cell with no recognised columns, so it scores zero and is skipped."""
-    best, best_hits = None, 0
-    for i, r in enumerate(rows):
-        hits = sum(1 for c in r if norm(c) in ALIASES)
-        if hits > best_hits:
-            best, best_hits = i, hits
-    if best is None or best_hits < 2:
-        return None, [], 0
-    header = rows[best]
-    mapping = {i: ALIASES[norm(h)] for i, h in enumerate(header) if norm(h) in ALIASES}
-    return mapping, rows[best + 1:], best_hits
-
-
-def rows_from(mapping, body):
-    out = []
-    for r in body:
-        if len(r) < 2:                       # footnote lines
-            continue
-        rec = {}
-        for i, f in mapping.items():
-            if i >= len(r):
-                continue
-            v = (r[i] or '').strip()
-            if f in NUMERIC:
-                v = v.replace(',', '').replace('%', '')
-                try:
-                    rec[f] = int(float(v)) if v else 0
-                except ValueError:
-                    continue
-            elif v:
-                rec[f] = v
-        if rec.get('url'):
-            m = re.search(r'/pin/(\d+)', rec['url'])
-            if m:
-                rec['pin_id'] = m.group(1)
-        if rec:
-            out.append(rec)
+    rows = list(csv.reader(open(path, newline='', encoding='utf-8-sig')))
+    out, cur = [], []
+    for r in rows:
+        if not any(c.strip() for c in r):
+            if cur: out.append(cur); cur = []
+        else: cur.append(r)
+    if cur: out.append(cur)
     return out
 
 
-def parse(path, verbose=True):
-    found = {'daily': [], 'boards': [], 'pins': []}
-    for n, block in enumerate(sections(path), 1):
-        mapping, body, hits = parse_block(block)
-        if not mapping:
-            if verbose:
-                print('  section %d: no table here (filters or a footnote) - skipped' % n)
+def parse(path):
+    daily, pins, boards = {}, {}, {}
+    for sec in sections(path):
+        hi = None
+        for i, r in enumerate(sec[:3]):           # title row, then header
+            h = [c.strip().lower() for c in r]
+            if 'impressions' in h and h and h[0] in ('date', 'pinterest link'):
+                hi, hdr = i, h
+                break
+        if hi is None:
             continue
-        rows = rows_from(mapping, body)
-        fields = set(mapping.values())
-        if 'pin_id' in {k for r in rows for k in r}:
-            kind = 'pins'
-        elif 'url' in fields:
-            kind = 'boards'
-        elif 'date' in fields:
-            kind = 'daily'
-        else:
-            kind = 'pins' if 'impressions' in fields else None
-        if verbose:
-            print('  section %d: %-6s %3d rows  columns: %s'
-                  % (n, kind or '?', len(rows), ', '.join(sorted(fields))))
-        if kind:
-            found[kind] += rows
-    return found
+        body = sec[hi + 1:]
+        if hdr[0] == 'date':
+            for r in body:
+                if re.match(r'^\d{4}-\d{2}-\d{2}$', r[0].strip()):
+                    daily[r[0].strip()] = int(r[1])
+        elif 'content type' in hdr:               # Top Pins
+            iu, ii = hdr.index('pinterest link'), hdr.index('impressions')
+            for r in body:
+                m = re.search(r'/pin/(\d+)/', r[iu])
+                if m: pins[m.group(1)] = int(r[ii])
+        else:                                     # Top Boards
+            iu, ii = hdr.index('pinterest link'), hdr.index('impressions')
+            for r in body:
+                m = re.search(r'/gdsgroupofcompanies/([^/]+)/', r[iu])
+                if m: boards[m.group(1)] = int(r[ii])
+    return daily, pins, boards
 
 
 def main():
-    args = [a for a in sys.argv[1:] if not a.startswith('--')]
-    if not args:
-        sys.exit(__doc__)
-    path = args[0]
-    if not os.path.exists(path):
-        sys.exit('no such file: %s' % path)
-    print('reading %s' % os.path.basename(path))
-    found = parse(path)
-    print('\ndaily rows : %d' % len(found['daily']))
-    print('board rows : %d' % len(found['boards']))
-    print('pin rows   : %d  (%d with a pin id)'
-          % (len(found['pins']), sum(1 for p in found['pins'] if p.get('pin_id'))))
-    for kind in ('daily', 'pins', 'boards'):
-        tot = {}
-        for r in found[kind]:
-            for f in NUMERIC:
-                if f in r:
-                    tot[f] = tot.get(f, 0) + r[f]
-        if tot:
-            print('  %-7s %s' % (kind, '  '.join('%s %d' % kv for kv in sorted(tot.items()))))
-    if not found['pins']:
-        print('\nNo per-pin rows found. Export the Top Pins view to compare pin by pin.')
-    if '--inspect' in sys.argv:
-        print('\n--inspect: nothing written')
-        return
-    out = os.path.join(HERE, 'pinterest.json')
-    json.dump({'source': os.path.basename(path), **found}, open(out, 'w'), indent=1)
-    print('\nwrote %s' % out)
+    files = sorted(glob.glob(os.path.join(SRC, '*.csv')))
+    if not files:
+        raise SystemExit('no exports in %s' % SRC)
+    snaps, daily = {}, {}
+    for p in files:
+        end = re.search(r'(\d{8})\.csv$', p).group(1)
+        end = '%s-%s-%s' % (end[:4], end[4:6], end[6:])
+        d, pins, boards = parse(p)
+        snaps[end] = {'pins': pins, 'boards': boards}
+        daily.update(d)        # a later export corrects an earlier one's estimates
+    ends = sorted(snaps)
+    last = ends[-1]
+
+    # per-pin trajectory across snapshots, newest pin id last
+    traj = {}
+    for pid in sorted(set().union(*(s['pins'] for s in snaps.values())), key=int):
+        traj[pid] = {e: snaps[e]['pins'].get(pid) for e in ends}
+
+    out = {
+        'source': 'Pinterest analytics export (manual), %d snapshots' % len(ends),
+        'snapshots': ends,
+        'asof': last,
+        'daily': daily,
+        'boards': snaps[last]['boards'],
+        'pins': snaps[last]['pins'],
+        'trajectory': traj,
+        'totals': {e: sum(snaps[e]['pins'].values()) for e in ends},
+    }
+    with open(os.path.join(HERE, 'pinterest.json'), 'w') as f:
+        json.dump(out, f, indent=1)
+    print('%d snapshots (%s .. %s)' % (len(ends), ends[0], last))
+    print('%d pins, %d impressions as of %s' % (len(out['pins']), sum(out['pins'].values()), last))
+    print('daily series: %d days, %s .. %s' % (len(daily), min(daily), max(daily)))
 
 
 if __name__ == '__main__':

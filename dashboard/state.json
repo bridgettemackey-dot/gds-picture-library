@@ -1,14 +1,14 @@
 {
  "facebook": {
   "stalled": true,
-  "weak": 36
+  "weak": 62
  },
  "instagram": {
   "stalled": true,
-  "weak": 33
+  "weak": 61
  },
  "pinterest": {
   "stalled": true,
-  "weak": 20
+  "weak": 16
  }
 }

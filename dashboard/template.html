@@ -89,6 +89,23 @@ section{margin-top:44px;scroll-margin-top:20px}
 
 /* ---- charts ---- */
 .panel{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px;box-shadow:var(--shadow)}
+.chart-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.pinchart{position:relative}
+.pinchart svg{display:block;width:100%;height:auto;overflow:visible}
+.pinchart .tip{position:absolute;pointer-events:none;background:var(--card);border:1px solid var(--line);
+  border-radius:4px;padding:6px 9px;font-size:12.5px;color:var(--ink);box-shadow:var(--shadow);
+  white-space:nowrap;transform:translate(-50%,-125%);opacity:0;transition:opacity .08s}
+.pinchart .tip b{font-family:"IBM Plex Mono",monospace}
+.rampnote{color:var(--ink-2);font-size:13.5px;max-width:70ch;margin:0 0 14px}
+.ramp{display:flex;flex-direction:column;gap:7px}
+.ramprow{display:grid;grid-template-columns:92px 1fr 62px;align-items:center;gap:12px}
+.ramprow .pid{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+.ramprow .track{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;align-items:end;height:26px}
+.ramprow .track i{width:11px;justify-self:center;background:var(--sea);border-radius:2px 2px 0 0;min-height:2px;display:block}
+.ramprow .track i.nil{background:var(--line)}
+.ramprow .track i.nil{background:var(--line);min-height:2px}
+.ramprow .end{font-family:"IBM Plex Mono",monospace;font-size:12.5px;text-align:right;color:var(--ink)}
+@media(max-width:560px){ .ramprow{grid-template-columns:74px 1fr 50px;gap:8px} }
 .facets{display:flex;flex-direction:column;gap:20px}
 .facets>div{min-width:0}
 .facet-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:7px}
@@ -215,6 +232,29 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
        larger, so a shared axis would flatten the other two to nothing. Each row states its own peak.</p>
   </div>
   <div class="panel facets" id="facets"></div>
+</section>
+
+<section id="pin" hidden>
+  <div class="shead">
+    <h2>Pinterest, from Pinterest</h2>
+    <p>Buffer's Pinterest figures run low and late. These come from Pinterest's own analytics
+       exports &mdash; <span id="pin-snaps"></span> snapshots, which is what makes the ramp below
+       visible at all. Treat Buffer's Pinterest numbers as a floor.</p>
+  </div>
+  <div class="tiles" id="pin-tiles" style="margin-bottom:18px"></div>
+  <div class="panel">
+    <div class="chart-h">
+      <span class="eyebrow">Impressions a day, whole account</span>
+      <span class="eyebrow mono" id="pin-peak"></span>
+    </div>
+    <div id="pin-chart" class="pinchart"></div>
+  </div>
+  <div class="panel" style="margin-top:18px">
+    <div class="chart-h"><span class="eyebrow">The twelve newest pins, snapshot by snapshot</span></div>
+    <p class="rampnote">Every row starts near nothing. That is what a healthy young pin looks like
+       here &mdash; which is why judging one in its first fortnight says nothing at all.</p>
+    <div class="ramp" id="pin-ramp"></div>
+  </div>
 </section>
 
 <section id="glossary">
@@ -525,6 +565,98 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);color:v
       });
     });
   }
+  // ---- Pinterest, from Pinterest's own exports -------------------------------
+  (function(){
+    var P = DB.pinterest;
+    if(!P || !P.daily) return;
+    var sec = document.getElementById('pin'); sec.hidden = false;
+    document.getElementById('pin-snaps').textContent = (P.snapshots||[]).length;
+
+    document.getElementById('pin-tiles').innerHTML = [
+      ['Impressions to date', fmt(P.impressions), 'across ' + P.pins + ' pins'],
+      ['As of', P.asof || '\u2014', 'Pinterest\u2019s own figures'],
+      ['Biggest riser', P.risers && P.risers[0] ? '+' + fmt(P.risers[0].gain) : '\u2014',
+       P.risers && P.risers[0] ? 'one pin, ' + (P.snapshots[0]||'') + ' to ' + (P.asof||'') : '']
+    ].map(function(t){
+      return '<div class="tile"><div class="v">'+t[1]+'</div><div class="k">'+t[0]+'</div>'
+           + '<div class="sub">'+t[2]+'</div></div>';
+    }).join('');
+
+    // Change over time, one series -> area + line. One series, so no legend:
+    // the panel heading names it. Hover gives a crosshair and the exact value.
+    var days = Object.keys(P.daily).sort(), vals = days.map(function(d){ return P.daily[d]; });
+    if(!days.length) return;
+    var W=960, H=220, L=44, R=10, T=12, B=26;
+    var max = Math.max.apply(null, vals) || 1;
+    var peak = days[vals.indexOf(max)];
+    document.getElementById('pin-peak').textContent = 'peak ' + fmt(max) + ' on ' + peak;
+    var x = function(i){ return L + (W-L-R) * (days.length===1?0.5:i/(days.length-1)); };
+    var y = function(v){ return T + (H-T-B) * (1 - v/max); };
+    var line = vals.map(function(v,i){ return (i?'L':'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1); }).join(' ');
+    var area = line + ' L' + x(days.length-1).toFixed(1) + ' ' + y(0) + ' L' + x(0).toFixed(1) + ' ' + y(0) + ' Z';
+    var ticks = [0, Math.round(max/2), max];
+    var grid = ticks.map(function(t){
+      return '<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(t).toFixed(1)+'" y2="'+y(t).toFixed(1)+'" stroke="var(--line-2)" stroke-width="1"/>'
+           + '<text x="'+(L-8)+'" y="'+(y(t)+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="var(--ink-3)" font-family="IBM Plex Mono,monospace">'+fmt(t)+'</text>';
+    }).join('');
+    var every = Math.ceil(days.length/6);
+    var xlab = days.map(function(d,i){
+      if(i % every && i !== days.length-1) return '';
+      return '<text x="'+x(i).toFixed(1)+'" y="'+(H-6)+'" text-anchor="middle" font-size="11" fill="var(--ink-3)" font-family="IBM Plex Mono,monospace">'+d.slice(5)+'</text>';
+    }).join('');
+    var host = document.getElementById('pin-chart');
+    host.innerHTML = '<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Pinterest impressions a day">'
+      + '<defs><linearGradient id="pg" x1="0" x2="0" y1="0" y2="1">'
+      + '<stop offset="0%" stop-color="var(--sea)" stop-opacity="0.28"/>'
+      + '<stop offset="100%" stop-color="var(--sea)" stop-opacity="0.02"/></linearGradient></defs>'
+      + grid
+      + '<path d="'+area+'" fill="url(#pg)"/>'
+      + '<path d="'+line+'" fill="none" stroke="var(--sea)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>'
+      + '<line id="pin-cross" x1="0" x2="0" y1="'+T+'" y2="'+(H-B)+'" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="3 3" opacity="0"/>'
+      + '<circle id="pin-dot" r="4.5" fill="var(--sea)" stroke="var(--card)" stroke-width="2" opacity="0"/>'
+      + xlab
+      + '<rect id="pin-hit" x="'+L+'" y="'+T+'" width="'+(W-L-R)+'" height="'+(H-T-B)+'" fill="transparent"/>'
+      + '</svg><div class="tip" id="pin-tip"></div>';
+    var svg = host.querySelector('svg'), tip = document.getElementById('pin-tip');
+    var cross = document.getElementById('pin-cross'), dot = document.getElementById('pin-dot');
+    function move(ev){
+      var r = svg.getBoundingClientRect();
+      var px = ((ev.touches?ev.touches[0].clientX:ev.clientX) - r.left) / r.width * W;
+      var i = Math.round((px - L) / ((W-L-R) || 1) * (days.length-1));
+      i = Math.max(0, Math.min(days.length-1, i));
+      cross.setAttribute('x1', x(i)); cross.setAttribute('x2', x(i)); cross.setAttribute('opacity','1');
+      dot.setAttribute('cx', x(i)); dot.setAttribute('cy', y(vals[i])); dot.setAttribute('opacity','1');
+      tip.style.opacity = '1';
+      tip.style.left = (x(i) / W * r.width) + 'px';
+      tip.style.top  = (y(vals[i]) / H * r.height) + 'px';
+      tip.innerHTML = days[i] + ' &middot; <b>' + fmt(vals[i]) + '</b>';
+    }
+    function leave(){ cross.setAttribute('opacity','0'); dot.setAttribute('opacity','0'); tip.style.opacity='0'; }
+    svg.addEventListener('mousemove', move); svg.addEventListener('mouseleave', leave);
+    svg.addEventListener('touchstart', move, {passive:true}); svg.addEventListener('touchmove', move, {passive:true});
+
+    // The ramp: each newest pin across every snapshot, scaled to its own final
+    // value, so the SHAPE is comparable across pins of very different sizes.
+    // One COMMON scale across all twelve rows, so magnitude is comparable and a pin
+    // stuck at 7 cannot look like one that reached 385. Square-rooted, so the small
+    // pins stay visible under the big ones rather than collapsing to a hairline.
+    var gmax = 1;
+    (P.newest||[]).forEach(function(n){
+      ((P.ramp||{})[n.id]||[]).forEach(function(v){ if(v && v>gmax) gmax = v; });
+    });
+    var h = function(v){ return Math.max(2, Math.round(Math.sqrt(v/gmax) * 26)); };
+    document.getElementById('pin-ramp').innerHTML = (P.newest||[]).map(function(n){
+      var series = (P.ramp||{})[n.id] || [];
+      var cells = series.map(function(v){
+        if(v === null || v === undefined) return '<i class="nil" style="height:2px"></i>';
+        return '<i style="height:'+h(v)+'px"></i>';
+      }).join('');
+      return '<div class="ramprow"><span class="pid">\u2026'+n.id+'</span>'
+           + '<span class="track">'+cells+'</span>'
+           + '<span class="end">'+(n.v==null?'\u2014':fmt(n.v))+'</span></div>';
+    }).join('');
+  })();
+
   wire('era','era'); wire('ch','ch');
   document.getElementById('filt-act').addEventListener('change', function(e){ state.act=e.target.value; render(); });
   document.getElementById('sort').addEventListener('change', function(e){ state.sort=e.target.value; render(); });

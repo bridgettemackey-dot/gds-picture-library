@@ -24,16 +24,17 @@ BOOK = {'girl-whale':'The Girl and The Whale','girl-whale-activity':'Girl & Whal
 CAVEATS = [{
     'channel': 'pinterest',
     'from': '2026-09-11',
-    'title': 'Pinterest pins stopped being carried on 11 September',
-    'body': "No pin published since 11 September has cleared ten impressions. A trickle "
-            "continues \u2014 one or two each, which Buffer now reports and which matches "
-            "Pinterest's own per-pin figures \u2014 but that is publication, not reach. What "
-            "changed is carry: of the 25 pins before the cutoff, 9 cleared 100 impressions and "
-            "one has now reached 736. None since has cleared ten. The older pins are still "
-            "growing strongly (they added 482 impressions between 22 and 24 September, every "
-            "one of them on a pin published before the cutoff), which is why the account chart "
-            "keeps rising and why the totals on this page still move. Read a rising total as "
-            "the old pins working, not the new ones.",
+    'title': 'Pinterest pins ramp slowly \u2014 a young pin tells you nothing',
+    'body': "This panel said for three weeks that Pinterest had stalled on 11 September and "
+            "that no pin since had cleared ten impressions. THAT WAS WRONG, and eight "
+            "exports covering 23 September to 11 October show why. A pin sits at one to five "
+            "impressions for one to three weeks and then climbs, sometimes steeply. One pin "
+            "read 2 impressions on 23 September, 13 on 30 September, and 680 by 11 October. "
+            "Another went 1 \u2192 12 \u2192 348. Of the twelve newest pins, ten have now "
+            "cleared ten impressions. The account is carrying 300\u2013450 impressions a day "
+            "through October against about 70 a day in early September. Nothing stalled: the "
+            "old reading measured pins while they were days old and called them dead. Judge a "
+            "pin at a month, not at a week.",
 }]
 
 KEY = os.environ.get('BUFFER_API_KEY')
@@ -180,6 +181,43 @@ def main():
                 'quiet': {ch: quiet_since(posts, ch) for ch in ('facebook', 'instagram', 'pinterest')},
                 'caveats': CAVEATS},
             'glossary': glossary, 'posts': posts}
+
+    # Pinterest's own figures, from the manual exports. Buffer's Pinterest numbers
+    # are a floor: they lag Pinterest's and the gap looks like reporting lag rather
+    # than under-reporting, so prefer these wherever both exist.
+    try:
+        pj = json.load(open(os.path.join(HERE, 'pinterest.json')))
+        traj = pj.get('trajectory') or {}
+        ends = pj.get('snapshots') or []
+        risers = []
+        if len(ends) >= 2:
+            a, b = ends[0], ends[-1]
+            for pid, t in traj.items():
+                first, last = t.get(a), t.get(b)
+                if last is None:
+                    continue
+                risers.append({'id': pid[-9:], 'first': first, 'last': last,
+                               'gain': last - (first or 0)})
+            risers.sort(key=lambda r: -r['gain'])
+        # Only pins still in the final snapshot: one that has dropped out of
+        # Pinterest's top-50 table has no end value and would render as bars
+        # trailing into nothing, which reads as a collapse rather than a gap.
+        present = [q for q in traj if traj[q].get(ends[-1]) is not None] if ends else []
+        newest = sorted(present, key=int)[-12:]
+        data['pinterest'] = {
+            'asof': pj.get('asof'), 'snapshots': ends,
+            'daily': pj.get('daily') or {},
+            'boards': pj.get('boards') or {},
+            'totals': pj.get('totals') or {},
+            'pins': len(pj.get('pins') or {}),
+            'impressions': sum((pj.get('pins') or {}).values()),
+            'risers': risers[:8],
+            'newest': [{'id': q[-9:], 'v': (traj[q].get(ends[-1]) if ends else None)}
+                       for q in newest],
+            'ramp': {q[-9:]: [traj[q].get(e) for e in ends] for q in newest},
+        }
+    except FileNotFoundError:
+        data['pinterest'] = None
 
     # Alert on a CHANGE of state, not on a channel that is simply small. Without
     # this, Facebook and Instagram alert every night forever and the one night

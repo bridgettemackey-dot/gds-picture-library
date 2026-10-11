@@ -764,27 +764,58 @@ to the worst case, the 5 Sep All Things Bahamian: Upper pin, where Pinterest say
 
 Part of this is lag: Buffer's snapshot was 23 Sep 22:46 and Pinterest's export
 includes 22-23 Sep, which Pinterest itself marks as ESTIMATED and adjusts later.
-Those two days alone carry 1,659 impressions. But older pins that have long since
-settled are also short in Buffer (30 Aug: 366 vs 294; 31 Aug: 826 vs 736), so lag is
-not the whole story.
+Those two days alone carry 1,659 impressions. Older pins that had apparently settled
+were also short in Buffer (30 Aug: 366 vs 294; 31 Aug: 826 vs 736), which at the time
+looked like proof that lag was not the whole story.
+
+TREAT THE "40 PER CENT" AS UNRELIABLE (noted 11 Oct 2026). Now that pins are known to
+go on climbing for weeks, "settled" was an assumption, and those older pins were very
+likely still moving too - so that gap may be lag as well. Buffer being LOWER on all 39
+is solid; the SIZE of the gap is not. Do not quote 40 per cent as a figure.
 
 TREAT EVERY PINTEREST FIGURE IN THE DASHBOARD AS A FLOOR.
 
-THE STALL IS REAL AND SURVIVES THIS CHECK. Per pin, on Pinterest's own numbers:
+THE "STALL" WAS WRONG. RETRACTED 11 OCT 2026. This section used to say:
+
     published before 11 Sep : 4,032 impressions across 22 pins
     published 11 Sep onward :    72 impressions across 17 pins
-The best post-cutoff pin managed 10. Whatever changed on 11 September is genuine,
-and it is not a Buffer artefact.
+    "The best post-cutoff pin managed 10. Whatever changed on 11 September is
+     genuine, and it is not a Buffer artefact."
 
-BUT THE ACCOUNT IS NOT DYING. Daily impressions are climbing hard - 135 on 19 Sep,
-424 on 21 Sep, 906 on 22 Sep - because one pre-cutoff pin has taken off. The 5 Sep
-Junkanoo page from All Things Bahamian: Upper is now the account's biggest pin by
-far at 1,605 and still rising. Pinterest is sending real traffic to GDS; it is all
-going to pins published before the cutoff.
+Eight exports covering 23 Sep to 11 Oct show that was a MEASUREMENT ERROR, not a
+finding. PINS RAMP SLOWLY. A pin sits at one to five impressions for one to three
+weeks and then climbs, sometimes steeply:
 
-REFRESHING THIS: export Analytics overview from Pinterest with the date range you
-want, then `python3 dashboard/pinterest_csv.py <file>`. The export is several
-stacked sections, not one table; the importer handles that. Once a month is plenty.
+    the 21 pins at 10 impressions or fewer on 23 Sep
+        on 23 Sep :   101 impressions in total
+        on 11 Oct : 2,274 impressions in total   - twenty-three times higher
+        20 of those 21 have now cleared ten
+        the best went 2 -> 13 -> 313 -> 512 -> 680
+
+    whole account
+        23 Sep :  4,104 impressions
+        11 Oct : 12,335
+        daily mean 1-10 Sep: 29/day     1-11 Oct: 362/day
+
+Nothing stalled on 11 September. The pins published after it were simply days old
+when they were measured, and a days-old pin reads as dead whether it is or not.
+The error then hardened: a caveat went on the dashboard, the finding went into this
+file and into the weekly brief, and every later run inherited it as settled fact.
+
+THE RULE THAT COMES OUT OF THIS: JUDGE A PIN AT A MONTH, NOT AT A WEEK. Never
+conclude anything about Pinterest reach from a single snapshot - a snapshot cannot
+show a trend. Keep the exports in `dashboard/pinterest-exports/` and compare them.
+
+That is the sixth wrong call on Pinterest in this project. The pattern in all six:
+reaching a confident conclusion from one reading, then defending it. When Pinterest
+numbers look wrong, the first question is always "how old is this pin?"
+
+REFRESHING THIS: export Analytics overview from Pinterest, drop the CSV into
+`dashboard/pinterest-exports/`, and run `python3 dashboard/pinterest_csv.py` - it
+reads every export in that folder and writes `dashboard/pinterest.json`, which the
+dashboard's Pinterest panel renders. The export is several stacked sections, not one
+table; the importer handles that. KEEP THE OLD EXPORTS. Several snapshots are what
+make the ramp visible; one export on its own is what produced the stall error.
 
 --- INSTAGRAM RESCUE JOB (ig_rescue.py) ---
 
