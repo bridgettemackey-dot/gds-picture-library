@@ -296,34 +296,37 @@ NOTE ON sha256 VERIFICATION: Cloudinary's CDN can serve a stale 404 or an old by
 range for a second or two after an upload. A mismatch on the FIRST fetch is usually
 propagation, not failure - retry two or three times before concluding anything.
 
---- MOTION HAS TO SURVIVE THE PANEL SIZE ---
-Bridge, 11 Oct 2026, looking at the first two collages: "I don't see any movement
-in the images with water."
+--- CALM WATER, LIGHT AIR (THE RULE, AS IT NOW STANDS) ---
+This changed twice on 11 Oct 2026 and the SECOND version is the live one.
 
-She was right, and the cause was two things at once.
+Morning: "all images that contain water shows movement in the water. Where you are
+able to add movement to any other picture elements I want you to do so."
+Evening, after seeing the result: "Let the waters remain calm. Only the rough side
+of the Glass Window Bridge should be choppy."
 
-1. TWO PANELS WERE PRE-RULE CATALOGUED ART with genuinely flat water (Dean's Blue
-   Hole and the pink sand at Deals Beach). The handover even said they would "look
-   calmer than their neighbours" - and they were used anyway. If a picture's water
-   is dead, it is not a candidate for a collage panel. Regenerate it or pick
-   another.
+SO THE RULE IS NOW:
+  WATER IS CALM - serene, clear, glassy turquoise. No rough sea, no breaking
+  waves, no whitecaps, no churning foam, no spray. This is the look of the books
+  and of the islands; rough sea is off-brand.
+  THE AIR MOVES GENTLY - a light breeze. Hair and a dress stirring, fronds
+  swaying, bunting lifting, birds on the wing, steam off hot food. Trees lean
+  slightly; they are NEVER bent over.
+  PEOPLE ARE MID-ACTION - mid-step, mid-turn, weight off-centre.
 
-2. A COLLAGE PANEL IS ABOUT A QUARTER OF FULL SIZE, and fine detail dies there.
-   Ripple lines, surface sparkle and a thin wash at the tideline all read as
-   perfectly flat water once the picture is 508px wide. What survives is BIG
-   motion: a whole wave rearing and breaking, thick white foam, spray in the air,
-   trees visibly bent, bunting snapping.
+THE ONE EXCEPTION: the Atlantic side of the Glass Window Bridge. That picture's
+whole subject is the calm Bight against the open ocean, so the ocean side stays
+choppy. Name it explicitly in the scene text. Nowhere else.
 
-So when generating a picture that will be a COLLAGE PANEL, add this after MOTION:
+`sched/characters.py` holds this as `MOTION`. Paste it; do not rewrite it.
 
-    THIS PICTURE WILL BE SHOWN SMALL, AS ONE PANEL OF FOUR. The movement must be
-    BIG and obvious at a glance - whole waves rearing and breaking, thick white
-    foam, spray thrown into the air, trees visibly bent. Fine ripples and delicate
-    surface texture disappear at this size and are not enough.
-
-AND CHECK IT AT PANEL SIZE, NOT FULL SIZE. Fetch each panel at w_508 and look at
-the four of them side by side before building the collage. A picture that clearly
-moves at 1024px can be glass at 508px, and the collage is what Bridge sees.
+WHAT WENT WRONG IN BETWEEN, so nobody repeats it: reading "movement in the water"
+as literally as possible produced rearing surf, flying spray and trees bent double,
+and a note in this file telling the next run to make the motion BIGGER still
+because fine ripples vanish at collage-panel size. That advice is now WRONG and has
+been deleted. The panel-size observation itself is still true and still useful -
+a collage panel is about a quarter of full size, so CHECK PANELS AT w_508 side by
+side before building a collage - but what you are checking for now is that the
+water looks calm and the picture still reads, not that the surf is big enough.
 
 --- COLLAGE DAYS ---
 STANDING RULE, Bridge, 11 Oct 2026: a collage on AT LEAST FOUR DAYS A WEEK,

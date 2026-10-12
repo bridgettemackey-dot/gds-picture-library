@@ -19,10 +19,10 @@ tail = lambda t, tags=None: t + "\n\n" + GDSI + (("\n\n" + tags) if tags else ""
 S = [
  # Mon 12 Oct — slot 60 — pillar 4 Activity Spotlight — All Things Bahamian: Upper — COLLAGE
  dict(day='2026-10-12', base=14, board=B_COLOR, pad=False,
-  panels=['gds/atb-upper/bahamian-flag-20261012',
+  panels=['gds/atb-upper/bahamian-flag-20261012c',
           'gds/atb-upper/glass-window-bridge-20261008-v2',
           'gds/atb-upper/junkanoo-detail-20260902',
-          'gds/atb-upper/sugar-loaf-pineapple-20261012'],
+          'gds/atb-upper/sugar-loaf-pineapple-20261012c'],
   alts=['The flag of The Bahamas snapping in a strong breeze — aquamarine, gold and aquamarine '
         'bands with a black triangle at the hoist — above a beach where waves break white.',
         'The Glass Window Bridge in Eleuthera: a road bridge crossing a narrow gap, with the '
@@ -32,7 +32,7 @@ S = [
         'with a goatskin drum and a cowbell resting beside it.',
         'Sugar Loaf pineapples growing in red-brown Eleuthera earth, one whole and one cut in '
         'half, their spiky leaves bending in the wind.'],
-  collage='gds/atb-upper/collage-seven-sections-20261012b',
+  collage='gds/atb-upper/collage-seven-sections-20261012c',
   alt='A four-panel collage from All Things Bahamian: the national flag snapping in the wind, the '
       'Glass Window Bridge with rough Atlantic on one side and calm Bight on the other, a Junkanoo '
       'costume in close-up, and Sugar Loaf pineapples growing in Eleuthera.',
@@ -60,7 +60,7 @@ S = [
   pin_url=ATBU),
 
  # Tue 13 Oct — slot 61 — pillar 5 Bahamian Culture — Going To The Regatta — NEW ART
- dict(day='2026-10-13', base=14, pid='gds/regatta/vendor-buildings-salt-pond-20261013',
+ dict(day='2026-10-13', base=14, pid='gds/regatta/vendor-buildings-salt-pond-20261013c',
   pad=False, board=B_LI,
   alt='A row of small wooden vendor stalls at the Long Island regatta grounds at Salt Pond, '
       'painted pink, turquoise, yellow and lime green, with bunting strung between their roofs '
@@ -115,9 +115,9 @@ S = [
  # Wed 14 Oct — slot 63 — pillar 0 Book World — Regatta Coloring & Activity Book — COLLAGE
  dict(day='2026-10-14', base=19, board=B_COLOR, pad=False,
   panels=['gds/regatta-activity/regatta-i-spy-20261014',
-          'gds/regatta-activity/deans-blue-hole-20261012',
-          'gds/regatta-activity/pink-sand-deals-beach-20261012',
-          'gds/regatta-activity/design-a-regatta-flag-20261014'],
+          'gds/regatta-activity/deans-blue-hole-20260831',
+          'gds/regatta-activity/pink-sand-at-deals-beach-20261004',
+          'gds/regatta-activity/design-a-regatta-flag-20261014c'],
   alts=['Looking down into clear shallow turquoise water over rippled sand: shells, orange '
         'starfish and small striped fish mid-dart, with the hulls of three small sloops on the '
         'moving surface above.',
@@ -128,7 +128,7 @@ S = [
         'into thick white foam along the shore and the trees above bending in the wind.',
         'A wooden table at the regatta set up for designing flags — blank pennants, coloured '
         'pencils, scissors and string, with bunting snapping between two poles behind.'],
-  collage='gds/regatta-activity/collage-activity-world-20261014b',
+  collage='gds/regatta-activity/collage-activity-world-20261014c',
   alt='A four-panel collage from the Going To The Regatta Coloring & Activity Book: a seek-and-find '
       'view down into clear shallow water, Dean’s Blue Hole, the pink sand at Deals Beach, and a '
       'table set up for designing regatta flags with bunting snapping behind it.',

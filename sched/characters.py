@@ -47,40 +47,40 @@ FINBACK = (
  "stars in the sky combined. She carries the scar of a comet strike.\n")
 
 # ---------------------------------------------------------------------------
-# MOTION. Bridge, 11 Oct 2026: "all images that contain water shows movement in
-# the water. Where you are able to add movement to any other picture elements I
-# want you to do so."
+# MOTION. Bridge asked on 11 Oct 2026 for movement in every picture, and for
+# water in particular to show movement. She REVISED THAT THE SAME DAY, after
+# seeing the result: "Let the waters remain calm. Only the rough side of the
+# Glass Window Bridge should be choppy."
 #
-# She asked for this through a tool called Claude Motion, which this session
-# cannot reach - there is no such tool here, and the Sora models on our OpenAI
-# key report a shutdown date of 2026-09-24 and 404 on POST /v1/videos. Buffer
-# itself WOULD take a video (VideoAssetInput: url, thumbnailUrl,
-# metadata{title, thumbnailOffset}), so if a generator ever becomes reachable
-# the publishing half is already in place.
+# So the rule now has two halves pulling opposite ways, and the water half is the
+# one that changed:
+#   WATER  -> CALM. Serene, clear, glassy Bahamian turquoise. This is the look of
+#             the books and of the islands, and rough sea is off-brand.
+#   EVERYTHING ELSE -> still alive, but in a LIGHT BREEZE, not a gale. Big bent
+#             trees and flying spray were the over-correction; they are gone.
 #
-# Until then this is the substitute, and it is a substitute: motion rendered
-# INTO the still. Paste it into every prompt. It is deliberately last in the
-# prompt, after the scene and the characters, because trailing instructions
-# survive best.
+# The one exception is a subject that IS rough water: the Atlantic side of the
+# Glass Window Bridge, where the whole point is calm Bight against open ocean.
+# Name that explicitly in the scene text when you want it.
+#
+# She also asked for actual animation, through a tool called Claude Motion. It is
+# not reachable here and Sora 404s on our key, so this is movement rendered into a
+# still. Buffer would take a video (VideoAssetInput) if a generator ever appears.
 MOTION = (
- "\n\nMOVEMENT - THIS APPLIES TO EVERY PICTURE:\n"
- "Nothing in this picture is still or posed. Catch it one moment into an action "
- "already happening.\n"
- "- WATER IS NEVER FLAT OR GLASSY unless the scene is explicitly a calm bank or "
- "pool, and even then it carries fine ripples and a moving light-sparkle. "
- "Open sea: waves mid-roll, crests tipping over, white foam actually breaking "
- "and spray thrown into the air. Shallows: ripple rings spreading, water sliding "
- "up and drawing back over sand, a wet sheen running off. Around a boat or a "
- "swimmer: a wake peeling away, bow spray, disturbed water.\n"
- "- EVERYTHING ELSE THAT CAN MOVE, MOVES: hair and clothing lifting and "
- "streaming, leaves, palm fronds, bougainvillea and grass bending in the wind, "
- "flags, bunting and sails filling and snapping, clouds stretched by wind, birds "
- "mid-wingbeat, sand or dust kicked up, steam rising off hot food, loose paper, "
- "shavings or petals caught mid-fall.\n"
- "- A person is mid-step, mid-turn, mid-reach or mid-laugh, with their weight "
- "off-centre - never standing squarely facing the viewer.\n"
- "Keep the clean flat picture-book colour. This is energy and direction, not "
- "motion blur, not speed lines, and not a photograph."
+ "\n\nSTILLNESS AND MOVEMENT - THIS APPLIES TO EVERY PICTURE:\n"
+ "- WATER IS CALM. Bahamian water is serene, clear and glassy: smooth turquoise "
+ "shallows you can see the sand through, a quiet sea, at most a soft lapping edge "
+ "at the shore and a gentle sheen of light on the surface. NO rough or stormy sea, "
+ "NO rearing or breaking waves, NO whitecaps, NO churning white foam, NO spray in "
+ "the air. If the scene has open ocean in it, that ocean is calm too.\n"
+ "- THE AIR IS MOVING, GENTLY. A light breeze, not a gale: hair and a dress "
+ "stirring, palm fronds and leaves swaying, a flag or bunting lifting and rippling, "
+ "birds on the wing, steam drifting off hot food, a petal or a leaf falling. Trees "
+ "lean slightly; they are never bent over.\n"
+ "- PEOPLE ARE MID-ACTION. Mid-step, mid-turn, mid-reach or mid-laugh, weight "
+ "a little off-centre - never standing squarely facing the viewer.\n"
+ "Clean flat picture-book colour. Calm water, light air, a moment in progress - "
+ "not motion blur, not speed lines, not a photograph."
 )
 
 CHARACTERS = {'anna': ANNA, 'finback': FINBACK}

@@ -302,16 +302,16 @@
    "file": "going-to-the-regatta-page-watching-the-race"
   },
   {
-   "id": "deans-blue-hole-20261012",
+   "id": "deans-blue-hole-20260831",
    "book": "Going To The Regatta Coloring and Activity Book",
    "group": "Going To The Regatta",
    "slug": "regatta-activity",
    "asin": "B0HH8PVQZ9",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
    "caption": "Dean’s Blue Hole",
-   "alt": "Dean’s Blue Hole on Long Island, a deep dark circle of water ringed by pale turquoise shallows and a curve of white sand, with surf breaking hard against the headland beyond it and the casuarinas bent in the wind.",
-   "clean": "gds/regatta-activity/deans-blue-hole-20261012",
-   "branded": "gds-share/regatta-activity/deans-blue-hole-20261012-bhm",
+   "alt": "Dean’s Blue Hole, a deep circle of dark water inside a pale turquoise bay ringed by limestone and low green trees, the water calm and glassy.",
+   "clean": "gds/regatta-activity/deans-blue-hole-20260831",
+   "branded": "gds-share/regatta-activity/deans-blue-hole-20260831-bhm",
    "w": 1080,
    "h": 1964,
    "bands": [
@@ -722,13 +722,13 @@
    "h": 1964
   },
   {
-   "id": "pink-sand-deals-beach-20261012",
+   "id": "pink-sand-at-deals-beach-20261004",
    "book": "Going To The Regatta Coloring and Activity Book",
    "group": "Going To The Regatta",
    "slug": "regatta-activity",
    "asin": "B0HH8PVQZ9",
    "caption": "Pink sand at Deals Beach",
-   "alt": "The pink sand at Deals Beach, Long Island, with a turquoise wave curling over and breaking into thick white foam along the shore, and the sea grape and casuarina above bending in the wind.",
+   "alt": "The pink sand at Deals Beach, Long Island, with clear calm shallow water washing quietly up over it.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
@@ -736,8 +736,8 @@
    ],
    "file": "going-to-the-regatta-activity-pink-sand-deals-beach",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
-   "clean": "gds/regatta-activity/pink-sand-deals-beach-20261012",
-   "branded": "gds-share/regatta-activity/pink-sand-deals-beach-20261012-bhm",
+   "clean": "gds/regatta-activity/pink-sand-at-deals-beach-20261004",
+   "branded": "gds-share/regatta-activity/pink-sand-at-deals-beach-20261004-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -842,10 +842,10 @@
    "h": 1964
   },
   {
-   "id": "bahamian-flag-20261012",
+   "id": "bahamian-flag-20261012c",
    "slug": "atb-upper",
    "caption": "The flag of The Bahamas",
-   "alt": "The flag of The Bahamas flying from a white pole and snapping in a strong breeze — three bands of aquamarine, gold and aquamarine with a black triangle at the hoist. Behind it waves break white on a pale sand beach and palm fronds bend in the wind.",
+   "alt": "The flag of The Bahamas lifting in a light breeze from a white pole — three bands of aquamarine, gold and aquamarine with a black triangle at the hoist — above a calm clear turquoise sea and a pale sand beach, with palm fronds swaying.",
    "bands": [
     "Ages 9–12",
     "Grades 4–6",
@@ -856,16 +856,16 @@
    "group": "All Things Bahamian",
    "asin": "B0HC1PJ4DS",
    "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
-   "clean": "gds/atb-upper/bahamian-flag-20261012",
-   "branded": "gds-share/atb-upper/bahamian-flag-20261012-bhm",
+   "clean": "gds/atb-upper/bahamian-flag-20261012c",
+   "branded": "gds-share/atb-upper/bahamian-flag-20261012c-bhm",
    "w": 1080,
    "h": 1964
   },
   {
-   "id": "sugar-loaf-pineapple-20261012",
+   "id": "sugar-loaf-pineapple-20261012c",
    "slug": "atb-upper",
    "caption": "Eleuthera Sugar Loaf pineapples",
-   "alt": "Sugar Loaf pineapples growing in red-brown earth in Eleuthera, one whole and one cut in half, their spiky leaves bending in the wind with loose leaves tumbling. The sea shows as a turquoise band on the horizon with white caps on it.",
+   "alt": "Sugar Loaf pineapples growing in red-brown earth in Eleuthera, one whole and one cut in half, their leaves swaying gently with a leaf or two drifting down, and a calm flat band of turquoise sea on the horizon.",
    "bands": [
     "Ages 9–12",
     "Grades 4–6",
@@ -876,16 +876,16 @@
    "group": "All Things Bahamian",
    "asin": "B0HC1PJ4DS",
    "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
-   "clean": "gds/atb-upper/sugar-loaf-pineapple-20261012",
-   "branded": "gds-share/atb-upper/sugar-loaf-pineapple-20261012-bhm",
+   "clean": "gds/atb-upper/sugar-loaf-pineapple-20261012c",
+   "branded": "gds-share/atb-upper/sugar-loaf-pineapple-20261012c-bhm",
    "w": 1080,
    "h": 1964
   },
   {
-   "id": "vendor-buildings-salt-pond-20261013",
+   "id": "vendor-buildings-salt-pond-20261013c",
    "slug": "regatta",
    "caption": "The vendor stalls at Salt Pond",
-   "alt": "A row of small wooden vendor stalls at the Long Island regatta grounds at Salt Pond, painted pink, turquoise, yellow and lime green, with bunting strung between their roofs and people walking between them carrying plates and drinks. Racing sloops are under sail on the choppy water behind.",
+   "alt": "A row of small wooden vendor stalls at the Long Island regatta grounds at Salt Pond, painted pink, turquoise, yellow and lime green, with bunting lifting between their roofs and people walking between them. Sloops sit under sail on calm glassy turquoise water behind.",
    "bands": [
     "Ages 5–15",
     "Family reader",
@@ -896,8 +896,8 @@
    "group": "Going To The Regatta",
    "asin": "B0HGKNTNDD",
    "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
-   "clean": "gds/regatta/vendor-buildings-salt-pond-20261013",
-   "branded": "gds-share/regatta/vendor-buildings-salt-pond-20261013-bhm",
+   "clean": "gds/regatta/vendor-buildings-salt-pond-20261013c",
+   "branded": "gds-share/regatta/vendor-buildings-salt-pond-20261013c-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -922,10 +922,10 @@
    "h": 1964
   },
   {
-   "id": "design-a-regatta-flag-20261014",
+   "id": "design-a-regatta-flag-20261014c",
    "slug": "regatta-activity",
    "caption": "Design a regatta flag",
-   "alt": "A wooden table at the regatta set up for designing flags: blank triangular pennants, a jar of coloured pencils, scissors and string, one finished pennant lifting at the corner in the breeze and another sliding off the edge. Bunting snaps between two poles behind, with a sloop under sail on choppy water beyond.",
+   "alt": "A wooden table at the regatta set up for designing flags — blank pennants, coloured pencils, scissors and string, one finished pennant lifting at the corner — with bunting rippling gently between two poles and a sloop on a calm turquoise sea beyond.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
@@ -936,8 +936,8 @@
    "group": "Going To The Regatta",
    "asin": "B0HH8PVQZ9",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
-   "clean": "gds/regatta-activity/design-a-regatta-flag-20261014",
-   "branded": "gds-share/regatta-activity/design-a-regatta-flag-20261014-bhm",
+   "clean": "gds/regatta-activity/design-a-regatta-flag-20261014c",
+   "branded": "gds-share/regatta-activity/design-a-regatta-flag-20261014c-bhm",
    "w": 1080,
    "h": 1964
   }
@@ -951,6 +951,7 @@
   "gds-share/atb-lower/flamingo-seagrape-20260902-lib",
   "gds-share/atb-lower/straw-market-20260909",
   "gds-share/atb-lower/straw-market-20260909-lib",
+  "gds-share/atb-upper/bahamian-flag-20261012-bhm",
   "gds-share/atb-upper/glass-window-bridge-20261008-bhm",
   "gds-share/atb-upper/junkanoo-detail-20260902",
   "gds-share/atb-upper/junkanoo-detail-20260902-lib",
@@ -961,6 +962,7 @@
   "gds-share/atb-upper/page-junkanoo-rush-20260830-lib",
   "gds-share/atb-upper/pencils-sloop-drawing-20260906",
   "gds-share/atb-upper/pencils-sloop-drawing-20260906-lib",
+  "gds-share/atb-upper/sugar-loaf-pineapple-20261012-bhm",
   "gds-share/atb-upper/worktable-sketches-20260830",
   "gds-share/atb-upper/worktable-sketches-20260830-lib",
   "gds-share/girl-whale-activity/reading-corner-20260902",
@@ -992,11 +994,12 @@
   "gds-share/girl-whale/reef-at-sunset-20260907",
   "gds-share/girl-whale/reef-at-sunset-20260907-lib",
   "gds-share/regatta-activity/deans-blue-hole-20260831",
-  "gds-share/regatta-activity/deans-blue-hole-20260831-bhm",
   "gds-share/regatta-activity/deans-blue-hole-20260831-lib",
+  "gds-share/regatta-activity/deans-blue-hole-20261012-bhm",
+  "gds-share/regatta-activity/design-a-regatta-flag-20261014-bhm",
   "gds-share/regatta-activity/nature-study-desk-20260906",
   "gds-share/regatta-activity/nature-study-desk-20260906-lib",
-  "gds-share/regatta-activity/pink-sand-at-deals-beach-20261004-bhm",
+  "gds-share/regatta-activity/pink-sand-deals-beach-20261012-bhm",
   "gds-share/regatta/friday-soup-at-green-leaf-20261005-bhm",
   "gds-share/regatta/page-watching-the-race-20260830",
   "gds-share/regatta/page-watching-the-race-20260830-lib",
@@ -1004,6 +1007,7 @@
   "gds-share/regatta/sloops-at-salt-pond-20260830-lib",
   "gds-share/regatta/souse-and-johnnycake-20260906",
   "gds-share/regatta/souse-and-johnnycake-20260906-lib",
+  "gds-share/regatta/vendor-buildings-salt-pond-20261013-bhm",
   "gds-share/regatta/writers-desk-longisland-v2-20260905",
   "gds-share/regatta/writers-desk-longisland-v2-20260905-lib"
  ]
