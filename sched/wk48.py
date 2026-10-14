@@ -141,13 +141,14 @@ S = [
 
  # Sun 18 Oct — slot 68 — pillar 5 Bahamian Culture — ATB Upper — COLLAGE
  dict(day='2026-10-18', base=14, board=B_CULT, pad=False,
-  panels=['gds/atb-upper/queen-conch-20261018',
+  panels=['gds/atb-upper/queen-conch-20261018-v2',
           'gds/atb-upper/junkanoo-bay-street-20261018',
           'gds/atb-upper/fruits-of-the-bahamas-20260928',
           'gds/atb-upper/glass-window-bridge-20261008-v2'],
-  alts=['A large queen conch on the sea floor in clear shallow water, pale cream outside with a '
-        'glossy deep pink flared lip and its foot and eyestalks out of the shell, sea grass swaying '
-        'and sunlight flickering across the sand.',
+  alts=['A live queen conch moving across pale rippled sand in clear shallow turquoise water, its '
+        'heavy cream shell knobbed along the spire with a thick flared lip glossy deep pink inside, '
+        'the speckled animal out of the shell with a short blunt snout to the sand, two golden eyes '
+        'on sturdy stalks and a dark claw-shaped operculum dug in.',
         'A Junkanoo rush on Bay Street in Nassau at night: a lead dancer mid-stride in an enormous '
         'fanned headdress of pink, orange and turquoise crepe, drummers and cowbell shakers behind, '
         'and a crowd under lit street lamps.',
@@ -155,8 +156,8 @@ S = [
         'sapodilla — with a pink clapboard house, palms and calm turquoise water behind.',
         'The Glass Window Bridge in Eleuthera: a road bridge crossing a narrow gap, the rough navy '
         'Atlantic beyond it and the calm clear turquoise Bight in the foreground.'],
-  collage='gds/atb-upper/collage-island-culture-20261018',
-  alt='A four-panel collage from All Things Bahamian: a queen conch on the sea floor, a Junkanoo rush '
+  collage='gds/atb-upper/collage-island-culture-20261018-v2',
+  alt='A four-panel collage from All Things Bahamian: a live queen conch out of its shell on the sand, a Junkanoo rush '
       'on Bay Street at night, a roadside table of Bahamian fruit, and the Glass Window Bridge with '
       'the Atlantic on one side and the calm Bight on the other.',
   fb=tail("Four sections, one country.\n\nAll Things Bahamian is built in seven sections, and these "

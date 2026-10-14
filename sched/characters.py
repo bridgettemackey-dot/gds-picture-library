@@ -92,6 +92,35 @@ MOTION = (
 
 CHARACTERS = {'anna': ANNA, 'finback': FINBACK}
 
+
+
+# A queen conch is NOT a garden snail. The 18 Oct render gave it a broad gliding
+# sole, thin curved antennae and black beady eyes, because the prompt said only
+# "its foot and two eyestalks are out of the shell" and the model filled in the
+# only snail it knew. Paste this whenever a LIVE conch appears.
+CONCH = (
+ "\n\nTHE QUEEN CONCH IS NOT A SNAIL. DRAW IT FROM LIFE:\n"
+ "- EYES: this is the thing that matters most. Two LARGE, BRIGHT GOLDEN-YELLOW eyes, each with a "
+ "small round black pupil, like two little yellow lamps. Each eye sits on the end of a THICK, "
+ "STOUT, FLESHY eyestalk held UP and FORWARD, and a slender sensory tentacle branches off the "
+ "side of each stalk. NOT black beady dots, NOT long thin curved antennae, NOT a snail's "
+ "tentacles sweeping backwards.\n"
+ "- PROBOSCIS: a long flexible snout reaches forward and down from between the eyestalks to the "
+ "sand. A snail has no snout; a conch does. It must be there.\n"
+ "- FOOT: NARROW, muscular and tucked, not a broad flat sole. A conch does NOT glide or creep. It "
+ "VAULTS - it digs a hard, dark, claw-shaped sickle of an operculum into the sand at the end of "
+ "the foot and pole-vaults forward. Show that narrow foot and the dark claw-like operculum. NO "
+ "wide creeping snail-foot spread out on the sand.\n"
+ "- BODY: mottled grey-brown speckled with dark flecks. NOT golden, NOT a snail's soft tan.\n"
+ "- SHELL: heavy and solid, carried TILTED with the aperture turned down and sideways towards the "
+ "sand - never sitting upright on the animal's back like a garden snail's shell. A short conical "
+ "spire with a row of blunt knob-like spines along the shoulder of the big last whorl. The "
+ "OUTSIDE is dull sandy cream and tan, weathered, dusted with sand and a little algae - it is "
+ "camouflage. The glossy DEEP PINK is ONLY inside the aperture and on the inner face of the "
+ "flared lip. That lip is THICK and ROLLED, like a heavy wave of shell - not a thin fan.\n")
+
+CHARACTERS['conch'] = CONCH
+
 if __name__ == '__main__':
     for k, v in CHARACTERS.items():
         print('=== %s ===\n%s' % (k, v))

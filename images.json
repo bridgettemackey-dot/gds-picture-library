@@ -1025,7 +1025,7 @@
    "id": "queen-conch-20261018",
    "slug": "atb-upper",
    "caption": "The queen conch",
-   "alt": "A large queen conch on the sea floor in clear shallow water, pale cream outside with a glossy deep pink flared lip and its foot and eyestalks out of the shell. Sea grass sways slowly and sunlight flickers in slow bands across the rippled sand.",
+   "alt": "A live queen conch moving across pale rippled sand in clear shallow turquoise water. Its heavy cream and tan shell has blunt knobs along the spire and a thick flared lip glossy deep pink inside, and the speckled grey-brown animal is out of the shell with a short blunt snout reaching to the sand, two golden eyes on sturdy stalks, and a dark claw-shaped operculum dug in. Sea grass sways and sunlight flickers in slow bands across the sand.",
    "bands": [
     "Ages 9–12",
     "Grades 4–6",
@@ -1036,8 +1036,8 @@
    "group": "All Things Bahamian",
    "asin": "B0HC1PJ4DS",
    "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
-   "clean": "gds/atb-upper/queen-conch-20261018",
-   "branded": "gds-share/atb-upper/queen-conch-20261018-bhm",
+   "clean": "gds/atb-upper/queen-conch-20261018-v2",
+   "branded": "gds-share/atb-upper/queen-conch-20261018-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1151,6 +1151,8 @@
   "gds-share/regatta/souse-and-johnnycake-20260906-lib",
   "gds-share/regatta/vendor-buildings-salt-pond-20261013-bhm",
   "gds-share/regatta/writers-desk-longisland-v2-20260905",
-  "gds-share/regatta/writers-desk-longisland-v2-20260905-lib"
+  "gds-share/regatta/writers-desk-longisland-v2-20260905-lib",
+  "gds/atb-upper/queen-conch-20261018",
+  "gds-share/atb-upper/queen-conch-20261018-bhm"
  ]
 }
