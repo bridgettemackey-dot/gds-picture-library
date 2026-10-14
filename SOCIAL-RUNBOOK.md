@@ -516,42 +516,52 @@ ALT TEXT: write a real one for every image, describing what is actually shown â€
 NEVER attach a URL from tmpfiles.org, litterbox.catbox.moe, catbox, file.io or any other temporary host. Those were used as stopgaps in August 2026 and expired before scheduled posts published, silently breaking them. One August 26 pin was lost this way and cannot be recovered. Cloudinary is the only approved host.
 
 =====================================================================
-DRAW REAL ANIMALS FROM A REAL REFERENCE, NOT FROM THE MODEL'S MEMORY
+DRAW REAL ANIMALS FROM A REAL REFERENCE - AND ASK BRIDGE FOR THE PHOTO
 
-Bridge, 14 Oct 2026, on the queen conch queued for Sunday 18 October: "The image
-looks more like a snail, search for a more accurate online image to mirror."
+Bridge, 14 Oct 2026, on the queen conch queued for Sunday 18 October:
+  1. "The image looks more like a snail, search for a more accurate online image to mirror."
+  2. "The animal resides inside the shell, it does not carry the shell on its back."
+  3. "The image is still incorrect, the body emerges from the broader pink opening."
+  4. "Let me know if you would like an image attached here."  <- the one that ended it.
 
-She was right. The prompt said only "the animal's foot and two eyestalks are out
-of the shell", and the model filled the gap with the only gastropod it knows -
-a garden snail. Broad gliding sole, thin curved antennae, black beady eyes.
+FIVE regenerations. The first four were me reading prose descriptions and guessing
+at a shape. The fifth mirrored the photograph she sent and was right first time.
 
-A queen conch is nothing like that, and the differences are the whole picture:
+THE LESSON IS NOT "look it up". I did look it up, three times, and wrote three
+confident wrong rules into this file:
+  - v4: body a bulky mass slung underneath, shell perched on top like a hermit crab.
+  - v7: I over-corrected to "nothing comes out of the pink opening, it all comes out
+    of the narrow front spout, the pink opening must be EMPTY" - citing the siphonal
+    canal and the stromboid notch. Written as fact. Wrong, and the search results I
+    leaned on were about where ONE eyestalk pokes through, not where the animal sits.
+  - Each time the prose matched what I had written and I believed the picture.
 
-  - LARGE GOLDEN-YELLOW EYES with black pupils, on two thick stout stalks, each
-    with a slender sensory tentacle branching off it. Not black dots on antennae.
-  - A SNOUT. A long flexible proboscis reaches forward to the sand. Snails
-    have none.
-  - A NARROW foot ending in a hard, dark, claw-shaped operculum. A conch does
-    not creep - it digs that claw in and VAULTS. No wide creeping snail-foot.
-  - A mottled grey-brown speckled body, not soft snail tan.
-  - The shell carried TILTED, aperture turned down towards the sand, never
-    upright on the back. Blunt knobs along the shoulder, dull sandy camouflage
-    outside, and the glossy deep pink ONLY inside the aperture and flared lip.
+THE LESSON IS: for anything with a shape, prose is not a reference. A photograph is.
+ASK BRIDGE FOR ONE EARLY - she knows these subjects and she offered unprompted. One
+photo was worth three searches and four renders.
 
-This now lives as CONCH in sched/characters.py, beside ANNA and FINBACK, for the
-same reason they are there: a rule written as prose does not survive contact with
-a busy prompt. Paste the string.
+WHAT A QUEEN CONCH ACTUALLY LOOKS LIKE, from her photograph:
 
-THE GENERAL RULE: before drawing any real creature or place a Bahamian child
-would recognise, look up what it actually looks like. Do not trust the model, and
-do not trust your own picture of it. If it recurs across the books, write the
-anatomy into characters.py so the next run cannot lose it.
+  The animal sits DOWN INSIDE the shell's opening, cradled by the broad pink flared
+  lip, framed by pink the way someone stands in a doorway. Nothing hangs out
+  underneath. The shell's outline IS the animal's outline. Down in that opening you
+  see a hard dark brown-black CLAW-SHAPED OPERCULUM curved like a small sickle, the
+  mottled olive-brown speckled foot, and towards the front a short blunt orange-tan
+  snout and two large GOLDEN-YELLOW eyes with black pupils on short sturdy stalks.
+  The shell is squat, blunt-knobbed along the shoulder, pale cream and tan outside
+  with only a trace of algae, and the glossy pink runs from pale at the rim to deep
+  rose in the throat. That pink flare is what a Bahamian child knows a conch by.
 
-Three passes were needed here: the first got the anatomy right but gave it an
-over-long insect-like proboscis; the second softened it but buried the shell in
-algae so the pink no longer read; the third kept the friendly head and cleaned
-the shell. The pink flared lip is the thing a Bahamian child recognises a conch
-by - do not let camouflage accuracy cost that.
+This lives as CONCH in sched/characters.py, beside ANNA and FINBACK, for the same
+reason they do: a rule written as prose does not survive contact with a busy prompt.
+Paste the string. If a correction changes it, rewrite the string - do not add a
+second rule beside the first, which is how v7 ended up arguing with v4.
+
+THE GENERAL RULE: before drawing any real creature, place or object a Bahamian
+child would recognise, get a REFERENCE IMAGE, not a description. If one is not to
+hand, ask Bridge before rendering, not after four attempts. And if a correction
+about shape has more than one plausible reading, ask which - the same rule the
+water instruction taught, and I broke it again here by guessing at number 3.
 
 PUBLISH EVERY NEW PICTURE TO THE PICTURE LIBRARY
 =====================================================================

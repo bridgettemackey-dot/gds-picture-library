@@ -1025,7 +1025,7 @@
    "id": "queen-conch-20261018",
    "slug": "atb-upper",
    "caption": "The queen conch",
-   "alt": "A live queen conch moving across pale rippled sand in clear shallow turquoise water. Its heavy cream and tan shell has blunt knobs along the spire and a thick flared lip glossy deep pink inside, and the speckled grey-brown animal is out of the shell with a short blunt snout reaching to the sand, two golden eyes on sturdy stalks, and a dark claw-shaped operculum dug in. Sea grass sways and sunlight flickers in slow bands across the sand.",
+   "alt": "A live queen conch resting on pale rippled sand in clear shallow turquoise water, seen looking down into the shell's opening. The broad flared lip is spread wide and glossy deep pink, and the animal is nestled inside it: a dark claw-shaped operculum, a mottled olive-brown speckled foot, and at the front a short blunt snout with two golden eyes on short stalks looking out. Sea grass sways and sunlight flickers in slow bands across the sand.",
    "bands": [
     "Ages 9–12",
     "Grades 4–6",
@@ -1036,8 +1036,8 @@
    "group": "All Things Bahamian",
    "asin": "B0HC1PJ4DS",
    "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
-   "clean": "gds/atb-upper/queen-conch-20261018-v2",
-   "branded": "gds-share/atb-upper/queen-conch-20261018-v2-bhm",
+   "clean": "gds/atb-upper/queen-conch-20261018-v5",
+   "branded": "gds-share/atb-upper/queen-conch-20261018-v5-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1153,6 +1153,12 @@
   "gds-share/regatta/writers-desk-longisland-v2-20260905",
   "gds-share/regatta/writers-desk-longisland-v2-20260905-lib",
   "gds/atb-upper/queen-conch-20261018",
-  "gds-share/atb-upper/queen-conch-20261018-bhm"
+  "gds-share/atb-upper/queen-conch-20261018-bhm",
+  "gds/atb-upper/queen-conch-20261018-v2",
+  "gds-share/atb-upper/queen-conch-20261018-v2-bhm",
+  "gds/atb-upper/queen-conch-20261018-v3",
+  "gds-share/atb-upper/queen-conch-20261018-v3-bhm",
+  "gds/atb-upper/queen-conch-20261018-v4",
+  "gds-share/atb-upper/queen-conch-20261018-v4-bhm"
  ]
 }
