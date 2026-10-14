@@ -302,16 +302,16 @@
    "file": "going-to-the-regatta-page-watching-the-race"
   },
   {
-   "id": "deans-blue-hole-20260831",
+   "id": "deans-blue-hole-20261014",
    "book": "Going To The Regatta Coloring and Activity Book",
    "group": "Going To The Regatta",
    "slug": "regatta-activity",
    "asin": "B0HH8PVQZ9",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
    "caption": "Dean’s Blue Hole",
-   "alt": "Dean’s Blue Hole, a deep circle of dark water inside a pale turquoise bay ringed by limestone and low green trees, the water calm and glassy.",
-   "clean": "gds/regatta-activity/deans-blue-hole-20260831",
-   "branded": "gds-share/regatta-activity/deans-blue-hole-20260831-bhm",
+   "alt": "Dean’s Blue Hole on Long Island, a deep dark circle of water ringed by pale turquoise shallows and a curve of white sand, with a low swell rolling in, small waves running up the sand in a thin lace of foam and ripple lines crossing the shallows.",
+   "clean": "gds/regatta-activity/deans-blue-hole-20261014",
+   "branded": "gds-share/regatta-activity/deans-blue-hole-20261014-bhm",
    "w": 1080,
    "h": 1964,
    "bands": [
@@ -922,10 +922,10 @@
    "h": 1964
   },
   {
-   "id": "design-a-regatta-flag-20261014c",
+   "id": "design-a-regatta-flag-20261014d",
    "slug": "regatta-activity",
    "caption": "Design a regatta flag",
-   "alt": "A wooden table at the regatta set up for designing flags — blank pennants, coloured pencils, scissors and string, one finished pennant lifting at the corner — with bunting rippling gently between two poles and a sloop on a calm turquoise sea beyond.",
+   "alt": "A wooden table at the regatta set up for designing flags — blank pennants, coloured pencils, scissors and string, one pennant lifting at the corner — with bunting rippling between two poles and a gentle swell running up the sand beyond, a sloop leaving a soft wake.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
@@ -936,8 +936,8 @@
    "group": "Going To The Regatta",
    "asin": "B0HH8PVQZ9",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
-   "clean": "gds/regatta-activity/design-a-regatta-flag-20261014c",
-   "branded": "gds-share/regatta-activity/design-a-regatta-flag-20261014c-bhm",
+   "clean": "gds/regatta-activity/design-a-regatta-flag-20261014d",
+   "branded": "gds-share/regatta-activity/design-a-regatta-flag-20261014d-bhm",
    "w": 1080,
    "h": 1964
   }
@@ -994,9 +994,11 @@
   "gds-share/girl-whale/reef-at-sunset-20260907",
   "gds-share/girl-whale/reef-at-sunset-20260907-lib",
   "gds-share/regatta-activity/deans-blue-hole-20260831",
+  "gds-share/regatta-activity/deans-blue-hole-20260831-bhm",
   "gds-share/regatta-activity/deans-blue-hole-20260831-lib",
   "gds-share/regatta-activity/deans-blue-hole-20261012-bhm",
   "gds-share/regatta-activity/design-a-regatta-flag-20261014-bhm",
+  "gds-share/regatta-activity/design-a-regatta-flag-20261014c-bhm",
   "gds-share/regatta-activity/nature-study-desk-20260906",
   "gds-share/regatta-activity/nature-study-desk-20260906-lib",
   "gds-share/regatta-activity/pink-sand-deals-beach-20261012-bhm",

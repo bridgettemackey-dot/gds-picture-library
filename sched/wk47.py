@@ -115,9 +115,9 @@ S = [
  # Wed 14 Oct — slot 63 — pillar 0 Book World — Regatta Coloring & Activity Book — COLLAGE
  dict(day='2026-10-14', base=19, board=B_COLOR, pad=False,
   panels=['gds/regatta-activity/regatta-i-spy-20261014',
-          'gds/regatta-activity/deans-blue-hole-20260831',
+          'gds/regatta-activity/deans-blue-hole-20261014',
           'gds/regatta-activity/pink-sand-at-deals-beach-20261004',
-          'gds/regatta-activity/design-a-regatta-flag-20261014c'],
+          'gds/regatta-activity/design-a-regatta-flag-20261014d'],
   alts=['Looking down into clear shallow turquoise water over rippled sand: shells, orange '
         'starfish and small striped fish mid-dart, with the hulls of three small sloops on the '
         'moving surface above.',
@@ -128,7 +128,7 @@ S = [
         'into thick white foam along the shore and the trees above bending in the wind.',
         'A wooden table at the regatta set up for designing flags — blank pennants, coloured '
         'pencils, scissors and string, with bunting snapping between two poles behind.'],
-  collage='gds/regatta-activity/collage-activity-world-20261014c',
+  collage='gds/regatta-activity/collage-activity-world-20261014d',
   alt='A four-panel collage from the Going To The Regatta Coloring & Activity Book: a seek-and-find '
       'view down into clear shallow water, Dean’s Blue Hole, the pink sand at Deals Beach, and a '
       'table set up for designing regatta flags with bunting snapping behind it.',

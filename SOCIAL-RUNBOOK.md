@@ -296,37 +296,50 @@ NOTE ON sha256 VERIFICATION: Cloudinary's CDN can serve a stale 404 or an old by
 range for a second or two after an upload. A mismatch on the FIRST fetch is usually
 propagation, not failure - retry two or three times before concluding anything.
 
---- CALM WATER, LIGHT AIR (THE RULE, AS IT NOW STANDS) ---
-This changed twice on 11 Oct 2026 and the SECOND version is the live one.
+--- WATER ALWAYS MOVES, GENTLY (THE RULE, PASS 3 AND FINAL) ---
+This took three passes with Bridge on 11-14 Oct 2026. Both earlier readings were
+over-corrections. They are written out here so nobody swings back to either.
 
-Morning: "all images that contain water shows movement in the water. Where you are
-able to add movement to any other picture elements I want you to do so."
-Evening, after seeing the result: "Let the waters remain calm. Only the rough side
-of the Glass Window Bridge should be choppy."
+  Pass 1  "all images that contain water shows movement in the water"
+          -> read as ROUGH. Rearing surf, flying spray, trees bent double. WRONG.
+  Pass 2  "Let the waters remain calm."
+          -> read as FLAT. Glassy, mirror-smooth, dead. ALSO WRONG.
+  Pass 3  "any single frame image that includes water should have movement in the
+          water. Most should be calm movement."            <- THIS IS THE RULE.
 
-SO THE RULE IS NOW:
-  WATER IS CALM - serene, clear, glassy turquoise. No rough sea, no breaking
-  waves, no whitecaps, no churning foam, no spray. This is the look of the books
-  and of the islands; rough sea is off-brand.
-  THE AIR MOVES GENTLY - a light breeze. Hair and a dress stirring, fronds
-  swaying, bunting lifting, birds on the wing, steam off hot food. Trees lean
-  slightly; they are NEVER bent over.
-  PEOPLE ARE MID-ACTION - mid-step, mid-turn, weight off-centre.
+CALM IS NOT STILL. A quiet sea still swells, laps, ripples and shifts the light. A
+mirror finish is as wrong as a storm. What it looks like in practice:
+  - a low swell rolling slowly in
+  - small waves tipping over and running up the sand in a thin lace of white foam,
+    with the last wash sliding back
+  - ripple lines travelling across the shallows
+  - light flickering in slow bands over the sand below the surface
+  - a soft wake spreading behind a boat
+and NOT: storm sea, rearing or crashing waves, whitecaps across open water,
+churning foam, spray thrown into the air.
 
-THE ONE EXCEPTION: the Atlantic side of the Glass Window Bridge. That picture's
-whole subject is the calm Bight against the open ocean, so the ocean side stays
-choppy. Name it explicitly in the scene text. Nowhere else.
+THE ONE EXCEPTION is the Atlantic side of the Glass Window Bridge, where calm
+Bight against open ocean IS the subject. "Most should be calm" leaves room for a
+genuinely energetic subject, but treat that as rare, not as a licence.
+
+THE AIR MOVES GENTLY TOO - a light breeze, fronds swaying, bunting lifting, hair
+stirring, birds on the wing. Trees lean; they are never bent over. People are
+mid-step or mid-turn, weight off-centre.
 
 `sched/characters.py` holds this as `MOTION`. Paste it; do not rewrite it.
 
-WHAT WENT WRONG IN BETWEEN, so nobody repeats it: reading "movement in the water"
-as literally as possible produced rearing surf, flying spray and trees bent double,
-and a note in this file telling the next run to make the motion BIGGER still
-because fine ripples vanish at collage-panel size. That advice is now WRONG and has
-been deleted. The panel-size observation itself is still true and still useful -
-a collage panel is about a quarter of full size, so CHECK PANELS AT w_508 side by
-side before building a collage - but what you are checking for now is that the
-water looks calm and the picture still reads, not that the surf is big enough.
+HOW TO CHECK, and it is worth checking: pull each picture at w_430 and look at the
+water. Ask two questions in order - "is it moving?" then "is it calm?" Both must be
+yes. A collage panel is about a quarter of full size, so review panels at that size
+side by side before building the collage; movement that is subtle at 1024px can
+vanish entirely at 430px, which is how a mirror-flat blue hole nearly went out on
+14 Oct.
+
+COST NOTE, so this is not repeated: these three passes meant the same handful of
+pictures were regenerated three times and several finished assets were retired
+unused. When an instruction about look and feel is open to more than one reading -
+"movement" could mean alive or rough, "calm" could mean gentle or flat - ASK WHICH
+BEFORE REGENERATING CATALOGUED ART. One question would have saved two rounds.
 
 --- COLLAGE DAYS ---
 STANDING RULE, Bridge, 11 Oct 2026: a collage on AT LEAST FOUR DAYS A WEEK,

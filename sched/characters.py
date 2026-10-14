@@ -47,40 +47,47 @@ FINBACK = (
  "stars in the sky combined. She carries the scar of a comet strike.\n")
 
 # ---------------------------------------------------------------------------
-# MOTION. Bridge asked on 11 Oct 2026 for movement in every picture, and for
-# water in particular to show movement. She REVISED THAT THE SAME DAY, after
-# seeing the result: "Let the waters remain calm. Only the rough side of the
-# Glass Window Bridge should be choppy."
+# MOTION. This took three passes with Bridge on 11-14 Oct 2026 and the THIRD is
+# the live one. The two earlier readings were both over-corrections, so they are
+# written out here to stop anyone swinging back to either.
 #
-# So the rule now has two halves pulling opposite ways, and the water half is the
-# one that changed:
-#   WATER  -> CALM. Serene, clear, glassy Bahamian turquoise. This is the look of
-#             the books and of the islands, and rough sea is off-brand.
-#   EVERYTHING ELSE -> still alive, but in a LIGHT BREEZE, not a gale. Big bent
-#             trees and flying spray were the over-correction; they are gone.
+#   1. "all images that contain water shows movement in the water"  -> read as
+#      ROUGH. Rearing surf, flying spray, trees bent double. Wrong.
+#   2. "Let the waters remain calm"                                 -> read as
+#      FLAT. Glassy, mirror-smooth, dead. Also wrong.
+#   3. "any single frame image that includes water should have movement in the
+#      water. Most should be calm movement."                        <- THIS ONE.
 #
-# The one exception is a subject that IS rough water: the Atlantic side of the
-# Glass Window Bridge, where the whole point is calm Bight against open ocean.
-# Name that explicitly in the scene text when you want it.
+# So: water ALWAYS moves, and the movement is almost always GENTLE. Calm is not
+# the same as still. A quiet sea still swells, laps, ripples and shifts the light;
+# that is what she wants, and a mirror finish is as wrong as a storm.
 #
-# She also asked for actual animation, through a tool called Claude Motion. It is
-# not reachable here and Sora 404s on our key, so this is movement rendered into a
+# The one place rough water belongs is the Atlantic side of the Glass Window
+# Bridge, where calm Bight against open ocean IS the subject. Name it in the scene
+# text. "Most should be calm" leaves room for a genuinely energetic subject, but
+# treat that as the rare exception, not a licence.
+#
+# She also asked for real animation, through a tool called Claude Motion. It is not
+# reachable here and Sora 404s on our key, so this is movement rendered into a
 # still. Buffer would take a video (VideoAssetInput) if a generator ever appears.
 MOTION = (
- "\n\nSTILLNESS AND MOVEMENT - THIS APPLIES TO EVERY PICTURE:\n"
- "- WATER IS CALM. Bahamian water is serene, clear and glassy: smooth turquoise "
- "shallows you can see the sand through, a quiet sea, at most a soft lapping edge "
- "at the shore and a gentle sheen of light on the surface. NO rough or stormy sea, "
- "NO rearing or breaking waves, NO whitecaps, NO churning white foam, NO spray in "
- "the air. If the scene has open ocean in it, that ocean is calm too.\n"
- "- THE AIR IS MOVING, GENTLY. A light breeze, not a gale: hair and a dress "
- "stirring, palm fronds and leaves swaying, a flag or bunting lifting and rippling, "
- "birds on the wing, steam drifting off hot food, a petal or a leaf falling. Trees "
- "lean slightly; they are never bent over.\n"
- "- PEOPLE ARE MID-ACTION. Mid-step, mid-turn, mid-reach or mid-laugh, weight "
- "a little off-centre - never standing squarely facing the viewer.\n"
- "Clean flat picture-book colour. Calm water, light air, a moment in progress - "
- "not motion blur, not speed lines, not a photograph."
+ "\n\nMOVEMENT - THIS APPLIES TO EVERY PICTURE:\n"
+ "- THE WATER IS ALWAYS MOVING, AND THE MOVEMENT IS GENTLE. Never a mirror, never "
+ "glassy, never dead flat - but never rough either. A low swell rolling slowly in; "
+ "small waves tipping over and running up the sand in a thin lace of white foam, "
+ "with the last wash sliding back; ripple lines travelling across the shallows; "
+ "light shifting and flickering in bands over the sand below; a soft wake "
+ "spreading behind a boat. Calm, clear Bahamian turquoise - alive, not agitated. "
+ "NO storm sea, NO rearing or crashing waves, NO whitecaps across open water, NO "
+ "churning foam, NO spray thrown into the air.\n"
+ "- THE AIR IS MOVING, GENTLY. A light breeze: hair and a dress stirring, palm "
+ "fronds and leaves swaying, a flag or bunting lifting and rippling, birds on the "
+ "wing, steam drifting off hot food, a leaf or petal falling. Trees lean a little; "
+ "they are never bent over.\n"
+ "- PEOPLE ARE MID-ACTION. Mid-step, mid-turn, mid-reach or mid-laugh, weight a "
+ "little off-centre - never standing squarely facing the viewer.\n"
+ "Clean flat picture-book colour. A quiet moment that is plainly in motion - not "
+ "motion blur, not speed lines, not a photograph."
 )
 
 CHARACTERS = {'anna': ANNA, 'finback': FINBACK}
