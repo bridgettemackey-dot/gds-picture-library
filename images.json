@@ -940,6 +940,146 @@
    "branded": "gds-share/regatta-activity/design-a-regatta-flag-20261014d-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "colouring-tips-desk-20261015",
+   "slug": "atb-lower",
+   "caption": "Working out the colouring tips",
+   "alt": "A worktable seen from above with practice patches of pencil shading — light, medium, pressed dark and a blend — beside a line drawing of a flamingo half coloured in. A jar of coloured pencils, loose pencils, a sharpener with shavings and an eraser around them, and a leafy plant stirring by the window.",
+   "bands": [
+    "Grades 1–3",
+    "Behind the scenes",
+    "Colouring tips"
+   ],
+   "file": "all-things-bahamian-lower-colouring-tips-desk",
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "clean": "gds/atb-lower/colouring-tips-desk-20261015",
+   "branded": "gds-share/atb-lower/colouring-tips-desk-20261015-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "sunrise-over-the-atlantic-20261016",
+   "slug": "regatta",
+   "caption": "Sunrise over the Atlantic",
+   "alt": "Sunrise over the Atlantic from the rocky Long Island shore: the sun just clear of the horizon, the sky banded apricot and gold, a low swell rolling in and small waves running up the pale sand in a thin lace of foam. Dark ironshore rock in front, casuarinas leaning, two seabirds on the wing.",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-sunrise-over-the-atlantic",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "clean": "gds/regatta/sunrise-over-the-atlantic-20261016",
+   "branded": "gds-share/regatta/sunrise-over-the-atlantic-20261016-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "coral-reef-i-spy-20261017",
+   "slug": "girl-whale-activity",
+   "caption": "Coral Reef I-Spy",
+   "alt": "A bright coral reef underwater: shells, orange starfish, small striped fish, two crabs among the rocks and two green sea turtles gliding, with a small leather-bound book resting half hidden on the sand. Sunlight flickers down in slow shifting bands.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Seek and find"
+   ],
+   "file": "girl-and-whale-activity-coral-reef-i-spy",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/coral-reef-i-spy-20261017",
+   "branded": "gds-share/girl-whale-activity/coral-reef-i-spy-20261017-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "cosmic-bookmarks-20261017",
+   "slug": "girl-whale-activity",
+   "caption": "Cosmic bookmarks",
+   "alt": "Four finished paper bookmarks laid out on a pale wooden desk, decorated by hand with a whale tail, a starry night sky, a pattern of small waves and a ribbon of starlight, with scissors, a ball of twine and a jar of coloured pencils beside them.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Make your own"
+   ],
+   "file": "girl-and-whale-activity-cosmic-bookmarks",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/cosmic-bookmarks-20261017",
+   "branded": "gds-share/girl-whale-activity/cosmic-bookmarks-20261017-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "queen-conch-20261018",
+   "slug": "atb-upper",
+   "caption": "The queen conch",
+   "alt": "A large queen conch on the sea floor in clear shallow water, pale cream outside with a glossy deep pink flared lip and its foot and eyestalks out of the shell. Sea grass sways slowly and sunlight flickers in slow bands across the rippled sand.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Life in our seas"
+   ],
+   "file": "all-things-bahamian-upper-queen-conch",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/queen-conch-20261018",
+   "branded": "gds-share/atb-upper/queen-conch-20261018-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "junkanoo-bay-street-20261018",
+   "slug": "atb-upper",
+   "caption": "Junkanoo on Bay Street",
+   "alt": "A Junkanoo rush on Bay Street in Nassau at night: a lead dancer mid-stride in an enormous fanned headdress of pink, orange and turquoise crepe, with drummers, cowbell shakers and horn players behind and a crowd along the balconied buildings under lit street lamps.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Junkanoo"
+   ],
+   "file": "all-things-bahamian-upper-junkanoo-bay-street",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/junkanoo-bay-street-20261018",
+   "branded": "gds-share/atb-upper/junkanoo-bay-street-20261018-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "nature-pool-observer-20261018",
+   "slug": "regatta-activity",
+   "caption": "Nature Pool Observer",
+   "alt": "A clear natural rock pool on the Long Island shore, with pale sand and stones on the bottom, a few tiny fish, a small crab and green weed moving slowly. Fine ripple rings spread across the surface. An open blank notebook with a pencil and a magnifying glass rest on the rock at the near edge.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Observe and record"
+   ],
+   "file": "going-to-the-regatta-activity-nature-pool-observer",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "asin": "B0HH8PVQZ9",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "clean": "gds/regatta-activity/nature-pool-observer-20261018",
+   "branded": "gds-share/regatta-activity/nature-pool-observer-20261018-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [

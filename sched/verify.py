@@ -74,10 +74,15 @@ for s in m.S:
     # exactly what happened on 4 Oct 2026.
     blob = (s['alt'] + ' ' + ' '.join(s.get('alts') or []) + ' '
             + s['fb'] + ' ' + s['ig'] + ' ' + s['pin']).lower()
-    if 'anna' in blob:
+    # A slot may name Anna in a caption without depicting her - "Listen Like Anna"
+    # is an activity title, not a picture of her. That case sets anna_absent=True,
+    # which is a DELIBERATE assertion that no picture here shows her. The check
+    # cannot be bypassed by accident, only by someone saying so in the schedule.
+    if 'anna' in blob and not s.get('anna_absent'):
         a = (s['alt'] + ' ' + ' '.join(s.get('alts') or [])).lower()
         if 'anna' not in a:
-            problems.append("captions name Anna but no alt describes her")
+            problems.append("captions name Anna but no alt describes her "
+                            "(set anna_absent=True only if no picture here shows her)")
         if 'chocolate-brown' not in a:
             problems.append("Anna's alt must say chocolate-brown skin (see sched/characters.py)")
         if 'black hair' not in a:
