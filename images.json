@@ -1080,6 +1080,126 @@
    "branded": "gds-share/regatta-activity/nature-pool-observer-20261018-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "anna-on-the-glowing-fin-20261019",
+   "slug": "girl-whale",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "caption": "Carried on the glowing fin",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "file": "girl-and-whale-glowing-fin",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "alt": "Anna, a Pacific-island girl of about thirteen with deep chocolate-brown skin and long loose jet-black hair in a hibiscus-print sundress, standing with her arms flung wide on the long outstretched fin of an enormous humpback whale, the fin glowing cosmic purple and scattered with starlight, high above dark mountains, a pale beach, the lit windows of houses and the sea.",
+   "clean": "gds/girl-whale/anna-on-the-glowing-fin-20261019",
+   "branded": "gds-share/girl-whale/anna-on-the-glowing-fin-20261019-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "light-from-the-window-20261019",
+   "slug": "girl-whale",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "caption": "The light from the window",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "file": "girl-and-whale-light-from-the-window",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "alt": "Two island women seen from behind at an open window at night, a mother and her older mother, looking out at a strange purple glow spreading over the dark sea and hills, with a lamp, a jug of red juice and a woven mat in the warm room behind them.",
+   "clean": "gds/girl-whale/light-from-the-window-20261019",
+   "branded": "gds-share/girl-whale/light-from-the-window-20261019-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "midnight-drive-20261020",
+   "slug": "regatta",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "caption": "The drive home after midnight",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-midnight-drive",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "alt": "A car driving home late at night on a narrow Long Island road, its headlights lighting the empty road ahead, which is lined with low scrub and leaning palms, enormous field of stars.",
+   "clean": "gds/regatta/midnight-drive-20261020",
+   "branded": "gds-share/regatta/midnight-drive-20261020-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "rainbow-over-the-atlantic-20261020",
+   "slug": "regatta",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "caption": "Rainbow over the Atlantic",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-rainbow",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "alt": "A full bright rainbow arching over the Atlantic from the Long Island shore as a shower clears, half the sky still soft grey and half opening to blue, with a low swell rolling in and small waves running up pale sand in a thin lace of foam.",
+   "clean": "gds/regatta/rainbow-over-the-atlantic-20261020",
+   "branded": "gds-share/regatta/rainbow-over-the-atlantic-20261020-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "island-lighthouse-20261021",
+   "slug": "atb-lower",
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HBNFLDQP",
+   "caption": "A Bahamian lighthouse",
+   "bands": [
+    "Grades 1–3",
+    "Historic places",
+    "Landmarks"
+   ],
+   "file": "all-things-bahamian-lower-island-lighthouse",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "alt": "A Bahamian lighthouse on a low rocky point, a tall slender tower in broad red and white bands with a glass lantern room at the top and a small keeper's cottage beside it, pale limestone running down to clear turquoise shallows. A low swell rolls in and small waves break gently over the rocks in a thin lace of foam and slide back, with ripple lines travelling across the shallows.",
+   "clean": "gds/atb-lower/island-lighthouse-20261021",
+   "branded": "gds-share/atb-lower/island-lighthouse-20261021-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "design-annas-dress-20261021",
+   "slug": "girl-whale-activity",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "caption": "Design Anna’s Celebration Dress",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Design it yourself"
+   ],
+   "file": "girl-and-whale-activity-design-annas-dress",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "alt": "A worktable seen from above with four sheets of cream paper, each carrying a hand-drawn dress design coloured differently — one patterned with hibiscus flowers, one with small shells around the hem, one with a sweep of stars, one left as a plain outline — with a jar of coloured pencils, loose pencils, scraps of bright fabric and ribbon and a dish of shells around them. Through a window behind, calm turquoise sea moves gently under palms.",
+   "clean": "gds/girl-whale-activity/design-annas-dress-20261021",
+   "branded": "gds-share/girl-whale-activity/design-annas-dress-20261021-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
