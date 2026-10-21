@@ -516,6 +516,36 @@ ALT TEXT: write a real one for every image, describing what is actually shown â€
 NEVER attach a URL from tmpfiles.org, litterbox.catbox.moe, catbox, file.io or any other temporary host. Those were used as stopgaps in August 2026 and expired before scheduled posts published, silently breaking them. One August 26 pin was lost this way and cannot be recovered. Cloudinary is the only approved host.
 
 =====================================================================
+CHECK A CHARACTER AGAINST THE OTHER PEOPLE IN THE SAME FRAME
+
+24 Oct 2026. Anna sits between her mother and her grandmother under the stars.
+The ANNA string was pasted, and on its own the picture looked fine. But she read
+one shade lighter than the two women either side of her - and the book says deep
+chocolate-brown. Alone in a frame that drift is invisible; beside her own family
+it is obvious.
+
+So when a picture puts a character next to other people, do not only ask "does
+this match the description". Ask "does she match the people she is related to".
+Regenerated, naming the comparison in the prompt - all three the same depth, and
+light the faces warmly enough that deep brown skin does not go grey under a night
+sky. Right on the second attempt.
+
+Same rule for the boat. SLOOP now lives in sched/characters.py beside ANNA,
+FINBACK, MOTION and CONCH, because a C1 rig is exactly the kind of thing a prompt
+loses: one mast well forward, one mainsail, NO jib, boom past the stern, shallow
+wooden hull, a pry board for the crew to sit out on. Pasted on 22 Oct, correct
+first time.
+
+DON'T STATE OUR OWN PROCESS AS FACT EITHER
+
+Same day, the caption audit caught "every colouring page in the activity book
+starts as a drawing somebody works out in full, then has the colour taken back
+out". That is a claim about how GDS actually produces its pages, written because
+it made a satisfying sentence, with nothing behind it. It is the same error as
+describing a page layout nobody has seen - the subject was just closer to home,
+which made it easier to miss. Rewritten to describe the four pictures in the
+collage, which is all I actually know.
+
 DRAW REAL ANIMALS FROM A REAL REFERENCE - AND ASK BRIDGE FOR THE PHOTO
 
 Bridge, 14 Oct 2026, on the queen conch queued for Sunday 18 October:

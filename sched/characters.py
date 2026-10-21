@@ -133,6 +133,21 @@ CONCH = (
  "- Keep it appealing and alive for young children, the way a good natural-history picture in a "
  "children's book looks.\n")
 
+# BOOK-CONTEXT: "THE SLOOP - GET THIS RIGHT". A generated "Bahamian sloop" came back
+# as a two-masted yacht on 6 Sep 2026. The book teaches the C1 class. Paste this
+# whenever a racing sloop appears, then LOOK at the rig in what comes back.
+SLOOP = (
+ "\n\nTHE BOAT IS A BAHAMIAN C1 RACING SLOOP AND ITS RIG IS FIXED:\n"
+ "- ONE mast only, set well FORWARD near the bow. NOT two masts. NOT a modern yacht with "
+ "a tall metal mast.\n"
+ "- ONE enormous triangular mainsail and NO JIB - no second sail of any kind, nothing at "
+ "all forward of the mast.\n"
+ "- A long boom running well PAST THE STERN.\n"
+ "- A shallow open WOODEN hull.\n"
+ "- A long PRY BOARD sticking out over the windward side, for the crew to sit out on.\n")
+
+CHARACTERS['sloop'] = SLOOP
+
 CHARACTERS['conch'] = CONCH
 
 if __name__ == '__main__':
