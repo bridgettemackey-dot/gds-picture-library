@@ -202,9 +202,14 @@ Say what the page shows and name the edition you are selling; do not claim uniqu
 The two editions remain NOT interchangeable on audience and written content — six
 years separate them — but that difference lives in the text, not the art.
 
-**AUDIENCE DISCREPANCY:** the Lower cover reads AGES 6-9, while the routine brief and
-past captions say ages 5-8. The Upper cover reads AGES 9-12, which matches. Bridge has
-not yet been asked which to use for the Lower edition.
+**AUDIENCE — SETTLED 25 OCTOBER 2026.** Bridge: "Use 5-9 for ATB Lower going
+forward." So the Lower edition is marketed as **AGES 5-9, GRADES 1-3**, and that is
+what captions and picture-library bands carry. The printed cover reads AGES 6-9 and
+some older captions said 5-8; neither is the band to use. The Upper cover reads
+AGES 9-12, which matches how it is marketed, so Upper is unaffected.
+
+Do not re-open this and do not quietly fall back to giving grades only — that was a
+dodge while the question was open, and the question is closed.
 
 ### The seven sections
 1. **Bahamian National Symbols** (Upper 1-8, Lower 1-7) — flag, coat of arms, national

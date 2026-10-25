@@ -107,7 +107,11 @@ THE SIX TITLES
    Grades 4–6, ages 9–12. Coloring and discovery. Strongest classroom and library angle — write to teachers and librarians sourcing a cultural-studies resource.
 
 6. All Things Bahamian: Lower Elementary — My First Cultural Coloring Book — https://www.amazon.com/dp/B0HBNFLDQP
-   Grades 1–3, ages 5–9 (Bridge set this band on Sep 15, 2026; the cover says 6–9 and older captions said 5–8). Write to a parent choosing a first colouring book for a young child.
+   Ages 5–9, grades 1–3. CONFIRMED by Bridge on 25 Oct 2026 — "Use 5-9 for ATB Lower going
+   forward" — after she first set it on 15 Sep. The printed cover says 6–9 and some older
+   captions said 5–8; use neither. Between 15 Oct and 25 Oct captions dodged this by giving
+   grades only while I kept re-asking a question she had already answered. Say the ages.
+   Write to a parent choosing a first colouring book for a young child.
 
 Titles 5 and 6 are NOT interchangeable on audience or written content — six years separate them. Never write one caption and swap the title.
 
