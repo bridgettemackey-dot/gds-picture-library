@@ -520,6 +520,25 @@ ALT TEXT: write a real one for every image, describing what is actually shown â€
 NEVER attach a URL from tmpfiles.org, litterbox.catbox.moe, catbox, file.io or any other temporary host. Those were used as stopgaps in August 2026 and expired before scheduled posts published, silently breaking them. One August 26 pin was lost this way and cannot be recovered. Cloudinary is the only approved host.
 
 =====================================================================
+OUTSTANDING: DELETE THE SUPERSEDED CONCH ASSETS
+
+Bridge asked on 25 Oct 2026 for the incorrect queen conch versions to come off
+pictures.gdsbahamas.com so nobody downloads them. The site itself only shows v5 -
+it is built from images.json and the bad versions are retired there - but their
+raw Cloudinary URLs still return 200, so a saved or shared link still fetches a
+wrong conch.
+
+`delete_conch.py` is written and dry-run clean. It removes twelve assets: conch
+v1 to v4, clean and branded, plus the four superseded island-culture collages
+that each carry one of those conchs. It keeps v5 and the v5 collage.
+
+IT CANNOT RUN until CLOUDINARY_API_KEY and CLOUDINARY_API_SECRET are in the
+environment. The unsigned upload preset uploads but cannot delete. If a future
+run finds those two variables set, run `python3 delete_conch.py --dry-run`, read
+the list, then `--confirm`, and tell Bridge it is done. If they are not set, say
+so once in the report and move on - do not ask her to paste them into chat, they
+belong in the cloud environment settings.
+
 VERIFY THE PATH YOU WROTE DOWN, NOT THE PATH THE UPLOAD PRINTED
 
 25 Oct 2026. Fifteen cards on pictures.gdsbahamas.com were serving a broken image
