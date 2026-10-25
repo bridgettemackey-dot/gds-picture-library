@@ -520,6 +520,30 @@ ALT TEXT: write a real one for every image, describing what is actually shown â€
 NEVER attach a URL from tmpfiles.org, litterbox.catbox.moe, catbox, file.io or any other temporary host. Those were used as stopgaps in August 2026 and expired before scheduled posts published, silently breaking them. One August 26 pin was lost this way and cannot be recovered. Cloudinary is the only approved host.
 
 =====================================================================
+VERIFY THE PATH YOU WROTE DOWN, NOT THE PATH THE UPLOAD PRINTED
+
+25 Oct 2026. Fifteen cards on pictures.gdsbahamas.com were serving a broken image
+- every picture added from 18 October onward. Nobody noticed for a week.
+
+brand.py uploads to `gds-share/<slug>/<name>`, and this runbook says --name MUST
+END IN -bhm. From the conch fix onward I passed names WITHOUT the suffix, so the
+real public_id was `gds-share/atb-upper/queen-conch-20261018-v5`, and then wrote
+`...-v5-bhm` into images.json by hand because that is what the convention looked
+like.
+
+The sha256 check ran after every one of those uploads and passed every time. It
+compared the local file against the path brand.py had just printed. It never
+touched the different path the manifest was recording. A verification that reads
+its target from the same place the upload did cannot catch a manifest typo.
+
+So: `python3 check_library.py` after every images.json change and before every
+push. It HEADs both `clean` and `branded` for all 68 entries and fails on any
+non-200, and on any entry pointing at a retired path. It would have caught this
+on 18 October.
+
+Either pass --name ending in -bhm, or record what brand.py actually prints. Do
+not write the path from memory of the convention.
+
 CHECK A CHARACTER AGAINST THE OTHER PEOPLE IN THE SAME FRAME
 
 24 Oct 2026. Anna sits between her mother and her grandmother under the stars.
