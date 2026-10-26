@@ -74,19 +74,19 @@ S = [
  dict(day='2026-10-27', base=14, board=B_COLOR, pad=False,
   panels=['gds/atb-lower/colouring-tips-desk-20261015',
           'gds/atb-lower/junkanoo-costume-design-20261027',
-          'gds/atb-lower/classroom-display-wall-20261023',
-          'gds/atb-lower/proud-to-be-bahamian-20261027'],
+          'gds/atb-lower/classroom-display-wall-20261023-v2',
+          'gds/atb-lower/proud-to-be-bahamian-20261027-v2'],
   alts=["A worktable seen from above with practice patches of pencil shading — light, medium, pressed dark and a blend — beside a line drawing of a flamingo half coloured in. A jar of coloured pencils, loose pencils, a sharpener with shavings and an eraser around them, and a leafy plant stirring by the window.",
         'A table where a Junkanoo costume is being designed and built, seen from above: sheets of '
         'cream paper with hand-drawn costume designs coloured in bright crepe-paper colours, a '
         'part-built cardboard headdress base with strips of pink, orange and turquoise crepe paper '
         'being pasted on, a pot of paste with a brush, scissors, string and loose fringing.',
-        "A primary classroom noticeboard with about twelve sheets of cream paper pinned up, each a child's coloured-in drawing of a Bahamian subject — a conch, a flamingo, a sailing boat, a pineapple, a lighthouse, a Junkanoo headdress, a fish, a palm — all in bright uneven crayon and pencil. Below the board a low shelf holds a jar of crayons, a stack of paper and a small potted plant.",
+        "A primary classroom noticeboard with about twelve sheets of cream paper pinned up, each a child's coloured-in drawing of a Bahamian subject — a conch, a flamingo, a sailing boat, a pineapple, a lighthouse, a Junkanoo headdress, a fish, a palm, a green turtle, a hibiscus, a beach and the flag of The Bahamas — all in bright uneven crayon and pencil. Below the board a low shelf holds a jar of crayons, a stack of paper and a small potted plant.",
         'Nine Bahamian children of mixed ages standing together on a beach, all waving and smiling, '
         'two of them holding Bahamian flags lifting in the breeze. Palms lean behind them and clear '
         'turquoise sea beyond, where a low swell rolls in and small waves run up the pale sand in a '
         'thin lace of foam.'],
-  collage='gds/atb-lower/collage-more-than-colouring-20261027',
+  collage='gds/atb-lower/collage-more-than-colouring-20261027-v2',
   alt='A four-panel collage from All Things Bahamian, Lower Elementary: a desk working out colouring '
       'technique, a table where a Junkanoo costume is being designed and built, a classroom wall of '
       'finished work pinned up, and nine children waving on a beach with Bahamian flags.',

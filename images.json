@@ -1275,9 +1275,9 @@
    ],
    "file": "all-things-bahamian-lower-classroom-display-wall",
    "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
-   "alt": "A primary classroom noticeboard with about twelve sheets of cream paper pinned up, each a child's coloured-in drawing of a Bahamian subject — a conch, a flamingo, a sailing boat, a pineapple, a lighthouse, a Junkanoo headdress, a fish, a palm — all in bright uneven crayon and pencil. Below the board a low shelf holds a jar of crayons, a stack of paper and a small potted plant.",
-   "clean": "gds/atb-lower/classroom-display-wall-20261023",
-   "branded": "gds-share/atb-lower/classroom-display-wall-20261023",
+   "alt": "A primary classroom noticeboard with about twelve sheets of cream paper pinned up, each a child's coloured-in drawing of a Bahamian subject — a conch, a flamingo, a sailing boat, a pineapple, a lighthouse, a Junkanoo headdress, a fish, a palm, a green turtle, a hibiscus, a beach and the flag of The Bahamas — all in bright uneven crayon and pencil. Below the board a low shelf holds a jar of crayons, a stack of paper and a small potted plant.",
+   "clean": "gds/atb-lower/classroom-display-wall-20261023-v2",
+   "branded": "gds-share/atb-lower/classroom-display-wall-20261023-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1416,8 +1416,8 @@
    "file": "all-things-bahamian-lower-proud-to-be-bahamian",
    "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
    "alt": "Nine Bahamian children of mixed ages standing together on a beach, all waving and smiling, two of them holding Bahamian flags lifting in the breeze. Palms lean behind them and clear turquoise sea beyond, where a low swell rolls in and small waves run up the pale sand in a thin lace of foam.",
-   "clean": "gds/atb-lower/proud-to-be-bahamian-20261027",
-   "branded": "gds-share/atb-lower/proud-to-be-bahamian-20261027-bhm",
+   "clean": "gds/atb-lower/proud-to-be-bahamian-20261027-v2",
+   "branded": "gds-share/atb-lower/proud-to-be-bahamian-20261027-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1563,6 +1563,10 @@
   "gds/girl-whale/anna-on-the-glowing-fin-20261019",
   "gds-share/girl-whale/anna-on-the-glowing-fin-20261019",
   "gds/girl-whale/people-of-hawaii-looking-up-20261028",
-  "gds-share/girl-whale/people-of-hawaii-looking-up-20261028-bhm"
+  "gds-share/girl-whale/people-of-hawaii-looking-up-20261028-bhm",
+  "gds/atb-lower/classroom-display-wall-20261023",
+  "gds-share/atb-lower/classroom-display-wall-20261023",
+  "gds/atb-lower/proud-to-be-bahamian-20261027",
+  "gds-share/atb-lower/proud-to-be-bahamian-20261027-bhm"
  ]
 }
