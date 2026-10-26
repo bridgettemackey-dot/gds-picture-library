@@ -154,14 +154,9 @@ S = [
   pin_url=ATBU),
 
  # Wed 28 Oct — slot 83 — pillar 6 Classroom & Library — The Girl and The Whale — NEW ART
- dict(day='2026-10-28', base=19, pid='gds/girl-whale/people-of-hawaii-looking-up-20261028',
+ dict(day='2026-10-28', base=19, pid='gds/girl-whale/people-of-hawaii-looking-up-20261028-v2',
   pad=False, board=B_READ,
-  alt='A Pacific-island village at night as everyone comes outside to look up: villagers of all '
-      'ages in the lane between lit houses, heads tipped back, faces lit from above by a cosmic '
-      'purple glow. High above, an enormous humpback whale passes over, her long fins glowing '
-      'purple and scattered with starlight, with Anna — a girl with chocolate-brown skin and long '
-      'black hair in a floral sundress — a tiny figure standing on one fin. The sea beyond moves '
-      'gently under the glow.',
+  alt="A Pacific-island village at night as everyone comes outside to look up: villagers of all ages in the lane between lit houses, heads tipped back, faces lit from above by a cosmic purple glow. Low overhead an enormous humpback whale passes, her long fins glowing purple and scattered with starlight, with Anna — a girl with chocolate-brown skin and long black hair in a floral sundress — standing on one fin, arms wide. The sea beyond moves gently under the glow.",
   fb=tail("The page to stop on when you read it aloud.\n\nNear the end of The Girl and The Whale, "
     "the Cosmic Theseus Finback lifts Anna onto a glowing fin and carries her above the mountains, "
     "beaches, houses and sea — and the people of Hawaii look up and see her.\n\nIt is one moment in "

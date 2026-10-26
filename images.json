@@ -1095,9 +1095,9 @@
    ],
    "file": "girl-and-whale-glowing-fin",
    "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
-   "alt": "Anna, a Pacific-island girl of about thirteen with deep chocolate-brown skin and long loose jet-black hair in a hibiscus-print sundress, standing with her arms flung wide on the long outstretched fin of an enormous humpback whale, the fin glowing cosmic purple and scattered with starlight, high above dark mountains, a pale beach, the lit windows of houses and the sea.",
-   "clean": "gds/girl-whale/anna-on-the-glowing-fin-20261019",
-   "branded": "gds-share/girl-whale/anna-on-the-glowing-fin-20261019",
+   "alt": "Anna, a girl of about thirteen with chocolate-brown skin and long black hair in a hibiscus-print sundress, standing with her arms flung wide on the long outstretched fin of an enormous humpback whale flying full-length through the night sky, the fin glowing cosmic purple and scattered with starlight. She is small against the whale, about a tenth of its body. Far below, dark mountains, a curve of pale beach, lit windows and the moonlit sea moving gently.",
+   "clean": "gds/girl-whale/anna-on-the-glowing-fin-20261019-v2",
+   "branded": "gds-share/girl-whale/anna-on-the-glowing-fin-20261019-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1475,9 +1475,9 @@
    ],
    "file": "girl-and-whale-people-looking-up",
    "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
-   "alt": "A Pacific-island village at night as everyone comes outside to look up: villagers of all ages in the lane between lit houses, heads tipped back, faces lit from above by a cosmic purple glow. High above, an enormous humpback whale passes over, her long fins glowing purple and scattered with starlight, with Anna — a girl with chocolate-brown skin and long black hair in a floral sundress — a tiny figure standing on one fin. The sea beyond moves gently under the glow.",
-   "clean": "gds/girl-whale/people-of-hawaii-looking-up-20261028",
-   "branded": "gds-share/girl-whale/people-of-hawaii-looking-up-20261028-bhm",
+   "alt": "A Pacific-island village at night as everyone comes outside to look up: villagers of all ages in the lane between lit houses, heads tipped back, faces lit from above by a cosmic purple glow. Low overhead an enormous humpback whale passes, her long fins glowing purple and scattered with starlight, with Anna — a girl with chocolate-brown skin and long black hair in a floral sundress — standing on one fin, arms wide. The sea beyond moves gently under the glow.",
+   "clean": "gds/girl-whale/people-of-hawaii-looking-up-20261028-v2",
+   "branded": "gds-share/girl-whale/people-of-hawaii-looking-up-20261028-v2-bhm",
    "w": 1080,
    "h": 1964
   }
@@ -1559,6 +1559,10 @@
   "gds/atb-upper/queen-conch-20261018-v3",
   "gds-share/atb-upper/queen-conch-20261018-v3-bhm",
   "gds/atb-upper/queen-conch-20261018-v4",
-  "gds-share/atb-upper/queen-conch-20261018-v4-bhm"
+  "gds-share/atb-upper/queen-conch-20261018-v4-bhm",
+  "gds/girl-whale/anna-on-the-glowing-fin-20261019",
+  "gds-share/girl-whale/anna-on-the-glowing-fin-20261019",
+  "gds/girl-whale/people-of-hawaii-looking-up-20261028",
+  "gds-share/girl-whale/people-of-hawaii-looking-up-20261028-bhm"
  ]
 }

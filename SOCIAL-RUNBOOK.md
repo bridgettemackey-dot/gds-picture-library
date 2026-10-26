@@ -563,6 +563,42 @@ on 18 October.
 Either pass --name ending in -bhm, or record what brand.py actually prints. Do
 not write the path from memory of the convention.
 
+SIZE IS PART OF A CHARACTER'S DESCRIPTION, AND IT DRIFTS WORST ACROSS WEEKS
+
+Bridge, 26 Oct 2026: "the image of Anna on the fin of the whale is disproportionate
+to other images of Anna and the whale."
+
+She was right, and the drift ran both ways across the set:
+
+  page 20, riding (catalogued)      whale about  5x Anna's height   too small
+  on the glowing fin (19 Oct)       whale about  5-6x               too small
+  people of Hawaii (28 Oct, queued) whale about 25-30x              too large
+
+A humpback is fifteen to sixteen metres and Anna is about one metre fifty-five, so
+the whale's body should be roughly TEN TIMES her height nose to tail. Nothing in the
+set was at ten, and the two newest were wrong in opposite directions a week apart in
+the feed.
+
+Each picture looked fine on its own. That is the whole problem: a ratio has nothing
+to be wrong against until you put the pictures side by side. The same blindness as
+Anna's skin tone reading fine until her mother and grandmother were in frame with
+her - but worse, because these were made a week apart and never seen together until
+Bridge said so.
+
+SO: the scale is now written into FINBACK in sched/characters.py, with the number and
+with both failure modes named, because "enormous" is not a measurement and the model
+will happily draw a dolphin or a continent. Rewritten WHOLE, not added beside the old
+text - see the conch.
+
+AND: before queueing a picture of a recurring character, PUT IT BESIDE THE EXISTING
+ONES AT THE SAME WIDTH and look. One strip, four images, thirty seconds. It is the
+only way a ratio error is visible at all.
+
+Both pictures were regenerated. The 19 Oct one had already published, so the post
+keeps the old art and the library carries the corrected version for reuse as a
+collage panel. page20-riding-the-whale is still the remaining outlier and is flagged
+to Bridge rather than quietly replaced.
+
 CHECK A CHARACTER AGAINST THE OTHER PEOPLE IN THE SAME FRAME
 
 24 Oct 2026. Anna sits between her mother and her grandmother under the stars.

@@ -42,9 +42,20 @@ ANNA = (
 # The Girl and The Whale. FEMALE. "Her fins glowed a cosmic purple."
 FINBACK = (
  "THE COSMIC THESEUS FINBACK IS FIXED BY THE BOOK: an enormous humpback whale, the "
- "largest in the world, SHE not he. Her body is deep ocean blue-black and her long "
- "pectoral fins glow a cosmic purple scattered with starlight, brighter than all the "
- "stars in the sky combined. She carries the scar of a comet strike.\n")
+ "largest HUMPBACK in the world (not the largest whale in the world - say it the "
+ "book's way), SHE not he. Her body is deep ocean blue-black and her long pectoral "
+ "fins glow a cosmic purple scattered with starlight, brighter than all the stars in "
+ "the sky combined. She carries the scar of a comet strike.\n"
+ "- SCALE, AND THIS KEEPS DRIFTING, SO SET IT DELIBERATELY: a humpback is about "
+ "fifteen metres long and Anna is a girl of thirteen, so THE WHALE'S BODY IS ABOUT "
+ "TEN TIMES ANNA'S HEIGHT FROM NOSE TO TAIL. Picture ten of her laid end to end "
+ "along the whale. Not five - that makes a dolphin with a girl draped over it. Not "
+ "twenty-five - that makes her a speck and loses her face. Each long pectoral fin is "
+ "roughly a THIRD of the body, so a fin alone is about three times her height: "
+ "standing on one she takes up about a third of its length, and she reads clearly as "
+ "a girl, with her face visible.\n"
+ "- Hold that ratio whatever the camera is doing. If she must be far away, bring the "
+ "WHALE closer rather than shrinking her to a dot.\n")
 
 # ---------------------------------------------------------------------------
 # MOTION. This took three passes with Bridge on 11-14 Oct 2026 and the THIRD is
