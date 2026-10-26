@@ -563,6 +563,38 @@ on 18 October.
 Either pass --name ending in -bhm, or record what brand.py actually prints. Do
 not write the path from memory of the convention.
 
+NEVER REGENERATE THE BOOKS' OWN ARTWORK. THE CATALOGUE'S "REAL ARTWORK" IS SOURCE.
+
+26 Oct 2026. Bridge said "yes, redo page 20 to match" after the whale-scale fix, and
+the right answer was to stop, not to do it.
+
+`gds/girl-whale/page20-riding-the-whale-20260826` is not our illustration. It is a
+reproduction of page 20 of The Girl and The Whale: square format, the book's star
+motif, and the printed page number 20 in the corner. It sits in THE CATALOGUE below
+under "REAL ARTWORK FROM THE BOOKS", and the picture library serves it captioned
+"Page 20, riding the whale".
+
+Regenerating it would have put a FABRICATED page 20 on pictures.gdsbahamas.com,
+labelled as the book's page, downloadable. That is the error this whole runbook
+exists to prevent - presenting our illustration as a page of the book - except
+aimed at one specific numbered page of Zhané's published work, which anyone holding
+the book could check. The proportion on that page is the illustrator's choice. It is
+the source, not a draft.
+
+SO: anything under "REAL ARTWORK FROM THE BOOKS" is READ-ONLY. Never regenerate it,
+never "fix" it, never retire it in favour of a generated version. If it looks wrong,
+that is information about the book, and it goes to Bridge as a question.
+
+AND MEASURE AT FULL SIZE BEFORE QUOTING A NUMBER. The "about 5x" figure in the
+section below was taken off a 430px thumbnail and was wrong. On the full page Anna
+is SEATED, and the whale runs about six to seven times her standing height - not
+five. A ratio read off a thumbnail is a guess wearing a number's clothes.
+
+THAT LEAVES A REAL QUESTION, OPEN WITH BRIDGE: the book draws the whale at roughly
+7x, and FINBACK now says 10x, which came from real humpback measurements rather than
+from the book. The book is the authority for Anna's appearance; it is arguably the
+authority for the whale's scale too. Do not change FINBACK until she says which.
+
 SIZE IS PART OF A CHARACTER'S DESCRIPTION, AND IT DRIFTS WORST ACROSS WEEKS
 
 Bridge, 26 Oct 2026: "the image of Anna on the fin of the whale is disproportionate
