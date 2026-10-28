@@ -181,27 +181,23 @@ S = [
  dict(day='2026-11-01', base=14, board=B_COLOR, pad=False,
   panels=['gds/regatta-activity/nature-pool-observer-20261018',
           'gds/regatta-activity/family-connections-page-20261101',
-          'gds/regatta-activity/island-food-scramble-20261101',
+          'gds/regatta-activity/island-food-scramble-20261101-v2',
           'gds/regatta-activity/deans-blue-hole-20261014'],
   alts=["A clear natural rock pool on the Long Island shore, with pale sand and stones on the bottom, a few tiny fish, a small crab and green weed moving slowly. Fine ripple rings spread across the surface. An open blank notebook with a pencil and a magnifying glass rest on the rock at the near edge.",
         'A worktable seen from above where a family tree is being made: a large cream sheet with '
         'blank oval and rectangular frames joined by hand-drawn branching lines, every frame still '
         'empty, with small blank cards cut ready to stick in, a glue stick, scissors, a pencil, a '
         'jar of coloured pencils and a shell holding one corner down.',
-        'Five Bahamian foods laid out apart from each other on a scrubbed wooden table, each on its '
-        'own small square of cream paper: a whole silver fish on a board, a green coconut cut open '
-        'at the top, a few pears, a bowl of white rice and a bowl of pigeon peas, with a pencil and '
-        'a jar of coloured pencils at one edge under dappled light.',
+        "Five Bahamian foods laid out apart from each other on a scrubbed wooden table, each on its own small square of cream paper: a whole silver fish on a board, a green coconut cut open at the top, three avocados with one halved to show the stone, a bowl of white rice and a bowl of pigeon peas, with a pencil and a jar of coloured pencils at one edge under dappled light.",
         "Dean’s Blue Hole on Long Island, a deep dark circle of water ringed by pale turquoise shallows and a curve of white sand, with a low swell rolling in, small waves running up the sand in a thin lace of foam and ripple lines crossing the shallows."],
-  collage='gds/regatta-activity/collage-not-a-quiz-20261101',
+  collage='gds/regatta-activity/collage-not-a-quiz-20261101-v2',
   alt='A four-panel collage from the Going To The Regatta Coloring & Activity Book: a clear rock '
       'pool to sit and watch, a blank family tree waiting to be filled in, five Bahamian foods laid '
       'out as a puzzle, and Dean\'s Blue Hole.',
   fb=tail("Four pages, and three of them have no right answer at all.\n\nNature Pool "
     "Observer sends a child to sit beside water and write down what is actually there.\n\nMy Family "
     "Connections gives them an empty tree and asks who goes in it. Family Roots and Roles sits "
-    "beside it.\n\nIsland Food Scramble works with fish, coconut, pears, rice and peas — the food "
-    "that was actually on the table.\n\nAnd A Future Dean's Blue Hole Adventure asks them to "
+    "beside it.\n\nIsland Food Scramble works with fish, coconut, pears, rice and peas.\n\nAnd A Future Dean's Blue Hole Adventure asks them to "
     "imagine a place the family never reached. That is the book's own cross-sell: the reader sends "
     "readers here to imagine what Nicholas might notice, learn and remember when he finally gets "
     "there.\n\nAlso inside: Parts of a C1 Racing Sloop, Decorate the C1 Mainsail, Nicholas's Long "
@@ -213,7 +209,7 @@ S = [
   ig=tail("Four pages, and three of them have no right answer at all. 🔍\n\nNature Pool "
     "Observer sends a child to sit beside water and write down what's actually there.\n\nMy Family "
     "Connections gives them an empty tree and asks who goes in it.\n\nIsland Food Scramble works "
-    "with fish, coconut, pears, rice and peas — the food that was actually on the table.\n\nAnd A "
+    "with fish, coconut, pears, rice and peas.\n\nAnd A "
     "Future Dean's Blue Hole Adventure asks them to imagine a place the family never reached. "
     "That's the book's own cross-sell.\n\nAlso inside: Parts of a C1 Racing Sloop, Decorate the C1 "
     "Mainsail, Regatta I-Spy, Design a Regatta Flag, Plan an Island Meal, and four colouring "

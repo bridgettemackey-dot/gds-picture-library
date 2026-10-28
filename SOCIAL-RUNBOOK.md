@@ -563,6 +563,29 @@ on 18 October.
 Either pass --name ending in -bhm, or record what brand.py actually prints. Do
 not write the path from memory of the convention.
 
+A LOCAL WORD MAY NOT MEAN WHAT IT MEANS TO YOU
+
+Bridge, 29 Oct 2026, on the Island Food Scramble panel: the pears were wrong. In
+Bahamian usage a "pear" is an AVOCADO. The picture had European pears in it.
+
+BOOK-CONTEXT lists the scramble's words as "fish, coconut, pears, rice, peas" and
+says no more, so the file was not wrong - I read an English word with an English
+meaning in a Bahamian book. "Alligator pear" and "avocado pear" are documented
+Bahamian names for the fruit.
+
+This is the seagull again in a different coat: something that is ordinary somewhere
+else and wrong here. The guard is the same one rule 5 already states - ask whether
+it belongs in a Bahamian scene - extended to WORDS. Before illustrating any food,
+plant, animal or object named in the books, ask whether the Bahamian sense of that
+word is the one you are picturing. Pear, pepper, corn, potato, plum, bread. When
+unsure, ask Bridge BEFORE rendering.
+
+Caught in the same pass, and mine alone: the caption said the scramble's five words
+were "the food that was actually on the table". The book's Sunday dinner is peas and
+rice, baked chicken, fried fish, plantains and potato salad. No pears, no coconut. I
+invented a link between an activity's word list and a meal because it made the
+sentence land, which is rule 2's standing pattern.
+
 NEVER REGENERATE THE BOOKS' OWN ARTWORK. THE CATALOGUE'S "REAL ARTWORK" IS SOURCE.
 
 26 Oct 2026. Bridge said "yes, redo page 20 to match" after the whale-scale fix, and

@@ -1609,15 +1609,15 @@
    "asin": "B0HH8PVQZ9",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
    "caption": "Island Food Scramble",
-   "alt": "Five Bahamian foods laid out apart from each other on a scrubbed wooden table, each on its own small square of cream paper: a whole silver fish on a board, a green coconut cut open at the top, a few pears, a bowl of white rice and a bowl of pigeon peas, with a pencil and a jar of coloured pencils at one edge under dappled light.",
+   "alt": "Five Bahamian foods laid out apart from each other on a scrubbed wooden table, each on its own small square of cream paper: a whole silver fish on a board, a green coconut cut open at the top, three avocados with one halved to show the stone, a bowl of white rice and a bowl of pigeon peas, with a pencil and a jar of coloured pencils at one edge under dappled light.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
     "Activity page"
    ],
    "file": "going-to-the-regatta-activity-island-food-scramble",
-   "clean": "gds/regatta-activity/island-food-scramble-20261101",
-   "branded": "gds-share/regatta-activity/island-food-scramble-20261101-bhm",
+   "clean": "gds/regatta-activity/island-food-scramble-20261101-v2",
+   "branded": "gds-share/regatta-activity/island-food-scramble-20261101-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1727,6 +1727,8 @@
   "gds/atb-lower/classroom-display-wall-20261023",
   "gds-share/atb-lower/classroom-display-wall-20261023",
   "gds/atb-lower/proud-to-be-bahamian-20261027",
-  "gds-share/atb-lower/proud-to-be-bahamian-20261027-bhm"
+  "gds-share/atb-lower/proud-to-be-bahamian-20261027-bhm",
+  "gds/regatta-activity/island-food-scramble-20261101",
+  "gds-share/regatta-activity/island-food-scramble-20261101-bhm"
  ]
 }
