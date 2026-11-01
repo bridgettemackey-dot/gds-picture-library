@@ -1640,6 +1640,126 @@
    "branded": "gds-share/atb-lower/fruits-opener-basket-20261101-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "green-turtle-reef-20261102",
+   "slug": "atb-upper",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "caption": "A green sea turtle",
+   "alt": "A green sea turtle gliding over a Bahamian coral reef in clear shallow water, its olive and gold shell patterned and its flippers spread mid-stroke. Below are corals in pink, orange and violet, leaning sea fans, small striped reef fish and shells on pale sand, with a gentle swell overhead and sunlight flickering down in slow shifting bands.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Life in our seas"
+   ],
+   "file": "all-things-bahamian-upper-green-turtle-reef",
+   "clean": "gds/atb-upper/green-turtle-reef-20261102",
+   "branded": "gds-share/atb-upper/green-turtle-reef-20261102-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "stone-monument-20261102",
+   "slug": "atb-upper",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "caption": "A stone monument",
+   "alt": "A plain weathered limestone column on a square stepped base standing on a grassy rise above a Bahamian harbour, with nothing carved on it. A low stone wall and worn steps lead up, bougainvillea and ferns grow at the base and two casuarinas lean in the breeze. Below, clear turquoise water where a low swell rolls in and light shifts in slow bands over the sand.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Historic places"
+   ],
+   "file": "all-things-bahamian-upper-stone-monument",
+   "clean": "gds/atb-upper/stone-monument-20261102",
+   "branded": "gds-share/atb-upper/stone-monument-20261102-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "long-island-church-20261103",
+   "slug": "regatta",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "caption": "A Long Island church",
+   "alt": "A small white clapboard island church with a steep red roof, a short square bell tower and arched windows with pale blue shutters, three worn steps up to an open door. A low stone wall runs around a swept sandy yard, with a flowering poinciana and casuarinas beside it and two bicycles leaned against the wall in bright early light.",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-long-island-church",
+   "clean": "gds/regatta/long-island-church-20261103",
+   "branded": "gds-share/regatta/long-island-church-20261103-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-nature-bath-20261103",
+   "slug": "regatta",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "caption": "The nature bath",
+   "alt": "A nature bath on the Long Island shore early in the morning: a clear natural pool in worn limestone with pale sand and stones on the bottom, a few small fish and rough stone steps cut down into it, fine ripple rings spreading across the surface and light flickering below. Beyond the rock the open sea, a low swell rolling in and small waves breaking gently over the ironshore.",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "file": "going-to-the-regatta-nature-bath",
+   "clean": "gds/regatta/the-nature-bath-20261103",
+   "branded": "gds-share/regatta/the-nature-bath-20261103-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "choosing-the-pages-20261104",
+   "slug": "girl-whale-activity",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "caption": "Choosing the colouring pages",
+   "alt": "An illustrator's desk with five small pencil sketches of Anna — a girl with chocolate-brown skin and long black hair in the finished art, here in uncoloured pencil outline: listening on a beach, on a dock with a seated fisherman, dancing at the water's edge, watching a whale rise, and riding high on its fin. A pencil, an eraser, a jar of coloured pencils and a conch shell around them.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Behind the scenes"
+   ],
+   "file": "girl-and-whale-activity-choosing-the-pages",
+   "clean": "gds/girl-whale-activity/choosing-the-pages-20261104",
+   "branded": "gds-share/girl-whale-activity/choosing-the-pages-20261104-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-crayon-tin-20261104",
+   "slug": "atb-lower",
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "caption": "The crayon tin",
+   "alt": "An open tin of well-used crayons on a wooden table seen from above. Some are worn down to stubs with their paper peeled back — the turquoise, the gold and the pink are the shortest — while others are nearly full length. Loose crayons lie beside the tin, one broken in two, with crayon shavings scattered and a cream sheet at the edge carrying a half-coloured drawing of a conch shell.",
+   "bands": [
+    "Ages 5–9",
+    "Grades 1–3",
+    "Colouring tips"
+   ],
+   "file": "all-things-bahamian-lower-crayon-tin",
+   "clean": "gds/atb-lower/the-crayon-tin-20261104",
+   "branded": "gds-share/atb-lower/the-crayon-tin-20261104-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
