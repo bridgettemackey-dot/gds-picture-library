@@ -165,3 +165,28 @@ if __name__ == '__main__':
     for k, v in CHARACTERS.items():
         print('=== %s ===\n%s' % (k, v))
     print('=== motion ===%s' % MOTION)
+
+# Added 2 November 2026. The first green turtle we drew for the Life in Our
+# Bahamian Seas panel came back with FIVE limbs - three down the near side and
+# one on the far side - and Bridge caught it. A sea turtle's limb count is the
+# kind of thing the model will quietly get wrong while everything else about
+# the picture is right, so it is stated here as a hard count, the way the conch
+# is, rather than left to a passing phrase like "flippers spread mid-stroke".
+TURTLE = (
+ "\n\nTHE GREEN SEA TURTLE'S ANATOMY IS FIXED AND THE LIMB COUNT IS NOT NEGOTIABLE:\n"
+ "- EXACTLY FOUR LIMBS. Not five. Not six. Count them before you finish the picture: TWO long "
+ "front flippers, shaped like broad wings, set just behind the head; and TWO much SHORTER, "
+ "smaller, rounder rear flippers set near the back of the shell. Four limbs in total, plus a "
+ "SHORT pointed tail at the very back. There is no extra flipper in the middle of the body, no "
+ "spare limb behind the front flipper, and no second pair of front flippers.\n"
+ "- In a side-on view the near front flipper and the near rear flipper are fully visible; the "
+ "FAR front flipper may show past the far side of the shell, and the far rear flipper is usually "
+ "HIDDEN behind the body. If showing the far limbs makes the animal look as though it has more "
+ "than four, LEAVE THEM OUT - a clean four-limbed turtle matters more than completeness.\n"
+ "- The front flippers both sweep in the SAME direction at the same moment, the way a bird's "
+ "wings do - one raised and one lowered is a swimming stroke, but they both belong to the FRONT "
+ "of the animal, level with each other on the body.\n"
+ "- The shell is a smooth low OVAL dome of neat plates, olive and gold, widest behind the "
+ "middle; the head is small and blunt with a beaked mouth and dark eyes; the neck is short. The "
+ "shell has a clean unbroken edge with no limb breaking through it.\n")
+CHARACTERS['turtle'] = TURTLE

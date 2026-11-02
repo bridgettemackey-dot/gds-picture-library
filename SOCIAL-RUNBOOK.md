@@ -1209,3 +1209,28 @@ against the section list. If the file does not say it, do not write it.
 
 The true version was better again. "She does the dance. Nothing happens." is a far
 stronger opening than the invented ending it replaced.
+
+## COUNT THE LEGS. ANIMAL ANATOMY IS A COUNT, NOT A MOOD
+
+2 November 2026. The green turtle queued for Monday's ATB Upper carousel had
+FIVE limbs — three down the near side and one on the far side. Bridge caught it;
+the audit did not. Everything else about the picture was right, which is exactly
+why it slipped: the eye checks colour, water and composition, and takes the
+animal's body on trust.
+
+The prompt had said only "its flippers spread mid-stroke". That is a mood, not a
+count. Compare the conch: once CONCH said *how many* of what, *where*, the
+pictures stopped drifting.
+
+So, for any animal that recurs:
+
+- State the limb count as a hard number in `characters.py`, with the instruction
+  to count before finishing, and say what the WRONG answers look like.
+- Say which limbs are visible from which angle, and give permission to omit a
+  far-side limb when showing it would make the count read wrong.
+- Then **count them yourself in the generated file**, zoomed in, before it goes
+  anywhere near a collage. A panel at a quarter size hides a spare leg.
+
+`TURTLE` was added to `characters.py` the same day. The same treatment is owed to
+anything else with a body: the flamingo (two legs, one usually tucked), the
+spiny lobster (antennae, no claws), the Nassau grouper.

@@ -25,7 +25,7 @@ S = [
  dict(day='2026-11-02', base=14, board=B_CULT, pad=False,
   panels=['gds/atb-upper/glass-window-bridge-20261008-v2',
           'gds/atb-upper/stone-monument-20261102',
-          'gds/atb-upper/green-turtle-reef-20261102',
+          'gds/atb-upper/green-turtle-reef-20261102-v2',
           'gds/atb-upper/junkanoo-bay-street-20261018'],
   alts=["The Glass Window Bridge in Eleuthera: a road bridge crossing a narrow gap in the rock, with the rough navy Atlantic breaking beyond it and the calm clear turquoise Bight of Eleuthera in the foreground on the near side.",
         'A plain weathered limestone column on a square stepped base standing on a grassy rise '
@@ -33,14 +33,15 @@ S = [
         'up, bougainvillea and ferns grow at the base and two casuarinas lean in the breeze. Below, '
         'clear turquoise water where a low swell rolls in and light shifts in slow bands over the '
         'sand.',
-        'A green sea turtle gliding over a Bahamian coral reef in clear shallow water, its olive '
-        'and gold shell patterned and its flippers spread mid-stroke. Below are corals in pink, '
-        'orange and violet, leaning sea fans, small striped reef fish and shells on pale sand, with '
-        'a gentle swell overhead and sunlight flickering down in slow shifting bands.',
+        'A green sea turtle gliding over a Bahamian coral reef in clear shallow water, her olive '
+        'and gold shell patterned and her two front flippers sweeping mid-stroke. Around and below '
+        'her a spotted eagle ray glides over the sand, a queen angelfish and blue tangs move among '
+        'corals in pink, orange and violet, a spiny lobster shelters under a ledge, and a starfish '
+        'and a queen conch shell rest on pale sand.',
         "A Junkanoo rush on Bay Street in Nassau at night: a lead dancer mid-stride in an enormous fanned headdress of pink, orange and turquoise crepe, with drummers, cowbell shakers and horn players behind and a crowd along the balconied buildings under lit street lamps."],
-  collage='gds/atb-upper/collage-a-term-of-work-20261102',
+  collage='gds/atb-upper/collage-a-term-of-work-20261102-v2',
   alt='A four-panel collage from All Things Bahamian: the Glass Window Bridge in Eleuthera, a stone '
-      'monument above a harbour, a green sea turtle over a coral reef, and a Junkanoo rush on Bay '
+      'monument above a harbour, a green sea turtle over a busy coral reef, and a Junkanoo rush on Bay '
       'Street at night.',
   fb=tail("One section a week, and you have a term.\n\nThat is the practical case for All Things "
     "Bahamian in a classroom. It is built in seven sections, and they are not arbitrary — each one "
