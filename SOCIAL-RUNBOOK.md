@@ -1234,3 +1234,30 @@ So, for any animal that recurs:
 `TURTLE` was added to `characters.py` the same day. The same treatment is owed to
 anything else with a body: the flamingo (two legs, one usually tucked), the
 spiny lobster (antennae, no claws), the Nassau grouper.
+
+## PASTE `ANNA` EVEN WHEN THE PICTURE HAS NO COLOUR IN IT
+
+4 November 2026. The Behind the Scenes picture for Wednesday showed five
+uncoloured pencil sketches of Anna, and in every one she read about eight years
+old. Bridge caught it.
+
+The prompt had said "a girl" and never pasted `ANNA`. The reasoning at the time
+was defensible and wrong: a graphite sketch has no skin colour and no hair
+colour, so the character block looked irrelevant. But `ANNA` is not only a
+palette. It fixes her AGE, her BUILD, her head-to-body ratio and the length of
+her dress — and those survive into a monochrome sketch perfectly well. Strip the
+block out and the model falls back to its own idea of "a girl", which is a small
+child.
+
+**Paste the character block into every picture the character appears in — line
+art, pencil rough, silhouette, thumbnail, colouring page, all of it.** If part
+of it genuinely cannot apply, say which part is suspended and why, and state
+that everything else still holds. Do not drop the block.
+
+Two things make the age check reliable, and both are in `ANNA` now:
+
+- A ratio, not an adjective. Her head is about a SEVENTH of her height. "Not a
+  little girl" is advice; one-seventh is a measurement.
+- A second person in the frame to measure against. Standing, she reaches a grown
+  man's shoulder. The dock sketch is where v1 gave itself away — she was
+  waist-high to a seated fisherman.

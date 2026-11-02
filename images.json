@@ -1729,15 +1729,15 @@
    "asin": "B0HG8NKYV2",
    "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
    "caption": "Choosing the colouring pages",
-   "alt": "An illustrator's desk with five small pencil sketches of Anna — a girl with chocolate-brown skin and long black hair in the finished art, here in uncoloured pencil outline: listening on a beach, on a dock with a seated fisherman, dancing at the water's edge, watching a whale rise, and riding high on its fin. A pencil, an eraser, a jar of coloured pencils and a conch shell around them.",
+   "alt": "An illustrator's desk with five small pencil sketches of Anna, thirteen — a girl with chocolate-brown skin and long black hair in the finished art, here in uncoloured pencil outline: listening on a beach, on a dock with a seated fisherman, dancing at the water's edge, watching a whale rise, and riding high on its fin. A pencil, an eraser, a jar of coloured pencils and a conch shell around them.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
     "Behind the scenes"
    ],
    "file": "girl-and-whale-activity-choosing-the-pages",
-   "clean": "gds/girl-whale-activity/choosing-the-pages-20261104",
-   "branded": "gds-share/girl-whale-activity/choosing-the-pages-20261104-bhm",
+   "clean": "gds/girl-whale-activity/choosing-the-pages-20261104-v2",
+   "branded": "gds-share/girl-whale-activity/choosing-the-pages-20261104-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1792,6 +1792,7 @@
   "gds-share/atb-upper/sugar-loaf-pineapple-20261012-bhm",
   "gds-share/atb-upper/worktable-sketches-20260830",
   "gds-share/atb-upper/worktable-sketches-20260830-lib",
+  "gds-share/girl-whale-activity/choosing-the-pages-20261104-bhm",
   "gds-share/girl-whale-activity/reading-corner-20260902",
   "gds-share/girl-whale-activity/reading-corner-20260902-lib",
   "gds-share/girl-whale-activity/title-page-20260826",
@@ -1849,6 +1850,7 @@
   "gds/atb-upper/queen-conch-20261018-v2",
   "gds/atb-upper/queen-conch-20261018-v3",
   "gds/atb-upper/queen-conch-20261018-v4",
+  "gds/girl-whale-activity/choosing-the-pages-20261104",
   "gds/girl-whale/anna-on-the-glowing-fin-20261019",
   "gds/girl-whale/people-of-hawaii-looking-up-20261028",
   "gds/regatta-activity/island-food-scramble-20261101"

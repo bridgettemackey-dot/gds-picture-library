@@ -128,9 +128,10 @@ S = [
   pin_url=REG),
 
  # Wed 4 Nov — slot 92 — pillar 1 Behind the Scenes — Girl & Whale activity book — NEW ART
- dict(day='2026-11-04', base=14, pid='gds/girl-whale-activity/choosing-the-pages-20261104',
+ dict(day='2026-11-04', base=14, pid='gds/girl-whale-activity/choosing-the-pages-20261104-v2',
   pad=False, board=B_COLOR,
-  alt='An illustrator\'s desk with five small pencil sketches of Anna — a girl with chocolate-brown '
+  alt='An illustrator\'s desk with five small pencil sketches of Anna, thirteen — a girl with '
+      'chocolate-brown '
       'skin and long black hair in the finished art, here in uncoloured pencil outline: listening on '
       'a beach, on a dock with a seated fisherman, dancing at the water\'s edge, watching a whale '
       'rise, and riding high on its fin. A pencil, an eraser, a jar of coloured pencils and a conch '
