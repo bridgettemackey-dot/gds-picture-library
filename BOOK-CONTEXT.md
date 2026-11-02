@@ -356,3 +356,48 @@ we hold, so they remain upscales; a page export from those two books would impro
 returns HTTP 500 on every attempt and must not be used. 2.5 draws Anna noticeably older
 than GPT Image 2 did, so the age instruction has to describe the body, not name a number
 — see the ANNA rules in the routine brief.
+
+## THE GLAT WORKBOOKS — NOT ON THE ROSTER YET (2 NOVEMBER 2026)
+
+Bridge, 2 Nov 2026: *"Let's stay on free for now. Once we are done with the GLAT
+books we will add those to the roster."*
+
+So: Buffer stays on the free plan, and **nothing GLAT is posted until she says
+the books are done.** They are in draft — in `gds-curriculum-context` only the
+Grade 6 Mathematics source PDF is present, and the recreated answer keys are
+marked drafts until a teacher has checked them. Do not announce, tease, or
+illustrate a book that does not exist yet.
+
+When they do join, five things are different from every book now on the roster,
+and getting any of them wrong would be worse than a drifting character:
+
+1. **Different publisher.** The workbooks are authored by **Bahamian Teachers
+   United** and published by **BSM Consulting** — not GDS Publications. Do not
+   put the GDS-Images line or a `pictures.gdsbahamas.com` QR on them without
+   asking Bridge first; that library is the GDS books' library.
+2. **GLAT is the Ministry's exam, not ours.** Their own site carries the line:
+   *BSM Consulting is independent and is not affiliated with the Ministry of
+   Education. GLAT is administered by the Ministry of Education of The Bahamas.*
+   A post must never imply endorsement, affiliation, or that these are official
+   papers. They are practice papers **adapted from** past GLAT papers.
+3. **Different audience and tone.** Parents, teachers and schools preparing a
+   child for an exam — not a child with a crayon. The Reader Engagement and
+   Behind the Scenes pillars do not transfer unchanged.
+4. **Facts to confirm before any claim.** The new edition runs to two volumes
+   (Vol 1 May 2011–May 2018, Vol 2 May 2019 onward), three papers per sitting —
+   Mathematical Concepts, Computation, Application. **Which years were actually
+   sat must be confirmed with the Ministry**; the README says so. Never state a
+   year count from the table alone. The planned spread is Grade 3 and Grade 6
+   across Mathematics, Science, Social Studies and Language Arts — planned, not
+   published.
+5. **The answer-key address changed.** The old edition points at
+   `greatminds.teachable.com`. The new one points at `gdsbahamas.com/keys/...`
+   with an access code inside the front cover. Never print the old address.
+
+**Buffer capacity when they land.** Free allows 3 channels and 10 posts *queued*
+per channel at a time — a queue depth that refills as posts publish, not a
+monthly quota. Adding GLAT to the existing Facebook, Instagram and Pinterest
+channels needs no upgrade, as long as the Routine keeps queuing a few days at a
+time. What *would* force a paid plan is a **separate BSM-branded channel** — a
+fourth channel of any kind — which is a real possibility given it is a different
+imprint. Raise it with Bridge then, not now.
