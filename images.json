@@ -1760,6 +1760,106 @@
    "branded": "gds-share/atb-lower/the-crayon-tin-20261104-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "where-the-fruit-grows-20261106",
+   "slug": "atb-lower",
+   "caption": "Where the fruit grows",
+   "bands": [
+    "Ages 5–9",
+    "Grades 1–3",
+    "Fruits of The Bahamas"
+   ],
+   "file": "all-things-bahamian-lower-where-the-fruit-grows",
+   "alt": "A sunny Bahamian garden plot seen from low down: a pineapple ripening at the centre of its spiky-leaved plant, rooted close to the ground, with a leaning coconut palm carrying a cluster of green coconuts behind it. A low drystone wall, crotons and scrub beyond, a wooden bucket on its side, and a glimpse of calm turquoise sea between the trees.",
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "clean": "gds/atb-lower/where-the-fruit-grows-20261106",
+   "branded": "gds-share/atb-lower/where-the-fruit-grows-20261106-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-compass-on-the-rock-20261106",
+   "slug": "regatta-activity",
+   "caption": "Island Compass Challenge",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "file": "going-to-the-regatta-activity-the-compass-on-the-rock",
+   "alt": "An old brass pocket compass lying open on warm pale limestone at the edge of a Long Island shore, its plain dial carrying a red-and-white needle and a simple star, with a knotted cord, two small shells and a sprig of sea grape leaves beside it. Beyond the rock, clear turquoise shallows where a low swell rolls in and ripple lines travel across the sand.",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "asin": "B0HH8PVQZ9",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "clean": "gds/regatta-activity/the-compass-on-the-rock-20261106",
+   "branded": "gds-share/regatta-activity/the-compass-on-the-rock-20261106-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "a-future-blue-hole-adventure-20261106",
+   "slug": "regatta-activity",
+   "caption": "A future Dean's Blue Hole adventure",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "file": "going-to-the-regatta-activity-a-future-blue-hole-adventure",
+   "alt": "Dean's Blue Hole on Long Island seen from the rock above: a near-circular pool of deep navy water set into pale turquoise shallows, a tall limestone cliff curving round one side and a crescent of white sand on the other. In the foreground a snorkel mask, swim fins and a closed notebook with a pencil across it, laid out and waiting, with nobody there yet. The shallows move gently while the deep blue circle stays calm.",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "asin": "B0HH8PVQZ9",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "clean": "gds/regatta-activity/a-future-blue-hole-adventure-20261106",
+   "branded": "gds-share/regatta-activity/a-future-blue-hole-adventure-20261106-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "empty-docks-at-dawn-20261108",
+   "slug": "girl-whale",
+   "caption": "The empty docks at dawn",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "file": "the-girl-and-the-whale-empty-docks-at-dawn",
+   "alt": "A small Hawaiian fishing dock at first light with nobody on it: weathered grey planks and pilings running out over the water, a coil of rope and a folded net, and two tied-up skiffs rocking slowly against their lines. Green mountains stand behind under a pale gold and rose sky, and the sea is plainly moving — a low swell lifting the boats and a thin lace of foam running up the sand.",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "clean": "gds/girl-whale/empty-docks-at-dawn-20261108",
+   "branded": "gds-share/girl-whale/empty-docks-at-dawn-20261108-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "anna-follows-the-song-20261108",
+   "slug": "girl-whale",
+   "caption": "Anna follows the song",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "file": "the-girl-and-the-whale-anna-follows-the-song",
+   "alt": "Anna walking a Hawaiian shoreline early in the morning, mid-stride and turned away from the viewer with her head tilted, listening. She has deep chocolate-brown skin and long black hair loose past her shoulders with a braid across the crown, a white cowrie necklace and a hibiscus sundress, and she is barefoot on black volcanic rock and pale sand. The sea rolls in low with a lace of foam.",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "clean": "gds/girl-whale/anna-follows-the-song-20261108",
+   "branded": "gds-share/girl-whale/anna-follows-the-song-20261108-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [

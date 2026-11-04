@@ -68,6 +68,15 @@ for s in m.S:
     for k in ('fb', 'ig', 'pin'):
         if m.GDSI not in s[k]:
             problems.append('no GDS-Images line in ' + k)
+    # Pinterest rejects a pin description over 500 characters, and it rejects it at
+    # QUEUE time, not at publish time - so on 4 Nov 2026 three pins failed in the middle
+    # of a run that had already passed verify, leaving the week part-queued. The limit
+    # counts the whole description: body, the GDS-Images line and the Amazon links.
+    if len(s['pin']) > 500:
+        problems.append('pin description %d chars, Pinterest rejects over 500' % len(s['pin']))
+    # Pinterest caps the title too. 100 is the documented limit; flag anything close.
+    if len(s['pin_t']) > 100:
+        problems.append('pin title %d chars' % len(s['pin_t']))
     # A picture of Anna must say so in the alt, in the book's own terms. This does
     # not prove the render is right - only looking at it does - but it catches the
     # run that generated her without ever thinking about how she looks, which is

@@ -1261,3 +1261,25 @@ Two things make the age check reliable, and both are in `ANNA` now:
 - A second person in the frame to measure against. Standing, she reaches a grown
   man's shoulder. The dock sketch is where v1 gave itself away — she was
   waist-high to a seated fisherman.
+
+## PINTEREST REJECTS A PIN OVER 500 CHARACTERS, AND IT REJECTS IT AT QUEUE TIME
+
+4 November 2026. `verify.py` passed with 0 problems, and then three of the six
+Pinterest posts failed in the middle of the run: *"Invalid post: Pinterest posts
+cannot exceed 500 characters."* The week went out part-queued — fifteen of
+eighteen — and had to be finished by hand.
+
+This is a different animal from an Instagram failure. Instagram fails at PUBLISH
+time, intermittently, and the fix is to retry. This fails at QUEUE time, every
+time, deterministically, and no amount of retrying helps. It is a content bug,
+and it was checkable before the run.
+
+The 500 counts the WHOLE description: the body, the GDS-Images line and the
+Amazon links. A pin body that reads as comfortably short locally is over the
+limit once `tail()` has added roughly 100 characters of link and attribution.
+
+`verify.py` now checks `len(pin) <= 500` and `len(pin_t) <= 100`. The wider
+lesson is the one that keeps recurring here: **every limit the platform enforces
+belongs in verify.py, not in a human's memory.** When a post is rejected for a
+rule verify.py does not know, add the rule before re-queueing — the fix to the
+week is not finished until the check exists.
