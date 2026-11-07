@@ -10,8 +10,16 @@ On a collage day every panel is checked the same way a single picture would be,
 plus: all panels from the same book, one alt per panel, and the collage image
 itself reachable.
 """
-import importlib.util, io, sys, urllib.request
+import importlib.util, io, json, os, sys, urllib.request
 from PIL import Image
+
+# Anything retired in images.json must never be referenced by a schedule again. A
+# corrected picture keeps its old public_id alive on Cloudinary (overwrite is
+# disabled), so a stale path still fetches 200 and every URL check passes - which is
+# exactly how the Glass Window error came back in a rebuilt collage on 12 Oct 2026,
+# four days after it was fixed. Only the manifest knows a path is dead.
+_RETIRED = set(json.load(io.open(os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), 'images.json'), encoding='utf-8'))['retired'])
 
 spec = importlib.util.spec_from_file_location('wk', sys.argv[1])
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
@@ -54,6 +62,8 @@ for s in m.S:
             problems.append('collage day with no composited collage for Pinterest')
         for i, p in enumerate(panels):
             check_image(m.STD(p), (m.IGP if pad[i] else m.IGC)(p), 'panel%d' % (i + 1), problems)
+            if p in _RETIRED:
+                problems.append('panel%d points at a RETIRED path: %s' % (i + 1, p))
         for i, a in enumerate(alts):
             if len(a) > 500:
                 problems.append('panel%d alt %d' % (i + 1, len(a)))
@@ -62,6 +72,8 @@ for s in m.S:
         shown = 'COLLAGE x%d' % len(panels)
     else:
         check_image(m.STD(s['pid']), (m.IGP if s['pad'] else m.IGC)(s['pid']), 'img', problems)
+        if s['pid'] in _RETIRED:
+            problems.append('hero points at a RETIRED path: %s' % s['pid'])
         shown = s['pid'].rsplit('/', 1)[-1]
     if len(s['alt']) > 500:
         problems.append('alt %d' % len(s['alt']))

@@ -905,7 +905,7 @@
    "id": "regatta-i-spy-20261014",
    "slug": "regatta-activity",
    "caption": "Regatta I-Spy",
-   "alt": "Looking down into clear shallow turquoise water over rippled sand: conch and scallop shells, orange starfish and small striped fish mid-dart, with the hulls of three small sloops on the moving surface above and light flickering in bands across the sand.",
+   "alt": "Looking down into clear shallow turquoise water over rippled sand: six shells, three fluted scallops and three pink-mouthed conch, five orange starfish and four small striped fish mid-dart, with three Bahamian C1 racing sloops on the calm surface beyond — each with one mast, one large triangular mainsail and no jib. A low swell rolls in and light flickers in bands across the sand.",
    "bands": [
     "Ages 6–12",
     "Grades 1–6",
@@ -916,8 +916,8 @@
    "group": "Going To The Regatta",
    "asin": "B0HH8PVQZ9",
    "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
-   "clean": "gds/regatta-activity/regatta-i-spy-20261014",
-   "branded": "gds-share/regatta-activity/regatta-i-spy-20261014-bhm",
+   "clean": "gds/regatta-activity/regatta-i-spy-20261014-v2",
+   "branded": "gds-share/regatta-activity/regatta-i-spy-20261014-v2-bhm",
    "w": 1080,
    "h": 1964
   },
@@ -1933,6 +1933,7 @@
   "gds-share/regatta-activity/nature-study-desk-20260906",
   "gds-share/regatta-activity/nature-study-desk-20260906-lib",
   "gds-share/regatta-activity/pink-sand-deals-beach-20261012-bhm",
+  "gds-share/regatta-activity/regatta-i-spy-20261014-bhm",
   "gds-share/regatta/friday-soup-at-green-leaf-20261005-bhm",
   "gds-share/regatta/page-watching-the-race-20260830",
   "gds-share/regatta/page-watching-the-race-20260830-lib",
@@ -1953,6 +1954,7 @@
   "gds/girl-whale-activity/choosing-the-pages-20261104",
   "gds/girl-whale/anna-on-the-glowing-fin-20261019",
   "gds/girl-whale/people-of-hawaii-looking-up-20261028",
-  "gds/regatta-activity/island-food-scramble-20261101"
+  "gds/regatta-activity/island-food-scramble-20261101",
+  "gds/regatta-activity/regatta-i-spy-20261014"
  ]
 }

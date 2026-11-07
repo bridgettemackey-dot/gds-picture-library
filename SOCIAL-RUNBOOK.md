@@ -1283,3 +1283,34 @@ lesson is the one that keeps recurring here: **every limit the platform enforces
 belongs in verify.py, not in a human's memory.** When a post is rejected for a
 rule verify.py does not know, add the rule before re-queueing — the fix to the
 week is not finished until the check exists.
+
+## PASTE `SLOOP` TOO — AND verify.py NOW REFUSES A RETIRED PATH
+
+7 November 2026. `regatta-i-spy-20261014` had been live on the picture library
+since 14 October showing sloops with **a mainsail and a jib**. The book teaches
+the C1 class: one mast, one enormous mainsail, **no jib**. `SLOOP` has said so
+in `characters.py` since 22 October. It was simply never pasted into that
+picture's prompt.
+
+That is the same failure as Anna's uncoloured sketches on 2 November, one step
+further out: the blocks in `characters.py` are not only for characters. **If a
+picture contains a sloop, a conch, a turtle or Anna, paste that block — whoever
+or whatever else the picture is mainly about.** The i-spy page is a seek-and-find
+about shells; the sloops were scenery, and scenery is where a rule gets skipped.
+
+Regenerated with `SLOOP` pasted and the book's own counts stated as counts, the
+way `TURTLE` states the limb count — Regatta I-Spy is **6 shells, 5 starfish,
+4 fish, 3 small sloops**, so those are numbers to hit and then count in the
+output. The first attempt gave five shells; the second gave six.
+
+**And the durable half of the fix.** A retired picture does not stop existing:
+Cloudinary overwrite is disabled, so the old public_id still serves 200 forever
+and every URL check passes. Only `images.json` knows the path is dead. That is
+how the Glass Window error came back in a rebuilt collage four days after it was
+fixed. `verify.py` now loads the `retired` list and fails any slot — hero or
+panel — that points at one.
+
+A consequence worth knowing: **old week files now fail verify, and that is
+correct.** `wk47.py` and `wk50.py` reference paths retired since they ran. They
+are the record of what was published and must NOT be edited to match today's
+library. Run verify against the week you are about to queue, not against history.
