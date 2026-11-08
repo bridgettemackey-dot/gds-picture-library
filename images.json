@@ -1860,6 +1860,106 @@
    "branded": "gds-share/girl-whale/anna-follows-the-song-20261108-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "the-purple-glow-20261109",
+   "slug": "girl-whale",
+   "caption": "The purple glow",
+   "file": "the-girl-and-the-whale-the-purple-glow",
+   "alt": "A Hawaiian coral reef at dusk with a huge cosmic purple glow rising from under the water, lighting the sea from beneath in violet and lilac; nothing that makes the glow is visible. Anna stands small on dark volcanic rock in the middle distance, seen from behind with one hand lifted — deep chocolate-brown skin, long black hair past her shoulders, a hibiscus sundress, barefoot. The sky still glows coral and gold low down and a low swell rolls in over the reef flat.",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "clean": "gds/girl-whale/the-purple-glow-20261109",
+   "branded": "gds-share/girl-whale/the-purple-glow-20261109-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "listen-like-anna-20261110",
+   "slug": "girl-whale-activity",
+   "caption": "Listen Like Anna",
+   "file": "the-girl-and-the-whale-activity-listen-like-anna",
+   "alt": "A quiet spot set up for sitting still and listening: a folded woven mat on a flat warm rock above a Hawaiian shoreline, with an open blank notebook, a pencil and a cup of coloured pencils on it, and nobody there. Green mountains and palms behind; below, the sea moves gently with a low swell and a thin lace of foam running up the pale sand.",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "clean": "gds/girl-whale-activity/listen-like-anna-20261110",
+   "branded": "gds-share/girl-whale-activity/listen-like-anna-20261110-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "postcard-from-hawaii-20261110",
+   "slug": "girl-whale-activity",
+   "caption": "Postcard from Hawaii",
+   "file": "the-girl-and-the-whale-activity-postcard-from-hawaii",
+   "alt": "A completely blank cream postcard with a thin printed border lying on a pale wooden desk, seen from above. A pen rests across one corner, with two small shells, a sprig of dried seaweed and a striped jar of coloured pencils around it, and warm light coming in from a window to one side.",
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "clean": "gds/girl-whale-activity/postcard-from-hawaii-20261110",
+   "branded": "gds-share/girl-whale-activity/postcard-from-hawaii-20261110-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "junkanoo-headdress-on-the-stand-20261111",
+   "slug": "atb-upper",
+   "caption": "A Junkanoo headdress, finished",
+   "file": "all-things-bahamian-upper-junkanoo-headdress-on-the-stand",
+   "alt": "A finished Junkanoo headdress standing ready on a wooden stand in a workshop, seen from the front and slightly below so it towers: an enormous fanned crown of fringed crepe paper in hot pink, orange, turquoise and white built over a cardboard frame, with scrolled and spiralled paper shapes across it. Rolls of crepe paper, a pot of paste and card offcuts on the bench behind.",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Junkanoo"
+   ],
+   "clean": "gds/atb-upper/junkanoo-headdress-on-the-stand-20261111",
+   "branded": "gds-share/atb-upper/junkanoo-headdress-on-the-stand-20261111-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "junkanoo-from-the-balcony-20261111",
+   "slug": "atb-upper",
+   "caption": "Junkanoo from the balcony",
+   "file": "all-things-bahamian-upper-junkanoo-from-the-balcony",
+   "alt": "A Junkanoo rush seen from a first-floor balcony on Bay Street in Nassau at night: the parade snakes away down the street as a river of colour, dancers in enormous fanned crepe-paper costumes in pink, orange and turquoise with drummers and cowbell shakers among them, all mid-stride, and crowds packed along both pavements under warm street lamps between pastel colonial buildings.",
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Junkanoo"
+   ],
+   "clean": "gds/atb-upper/junkanoo-from-the-balcony-20261111",
+   "branded": "gds-share/atb-upper/junkanoo-from-the-balcony-20261111-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [

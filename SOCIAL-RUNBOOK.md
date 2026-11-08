@@ -1314,3 +1314,31 @@ A consequence worth knowing: **old week files now fail verify, and that is
 correct.** `wk47.py` and `wk50.py` reference paths retired since they ran. They
 are the record of what was published and must NOT be edited to match today's
 library. Run verify against the week you are about to queue, not against history.
+
+## THE IMAGE MODEL WILL REFUSE A LONE CHILD IN LOW LIGHT — CHANGE THE SHOT, NOT THE BLOCK
+
+8 November 2026. The purple-glow picture was refused twice by the image model's
+OUTPUT-stage safety system: HTTP 400, `moderation_blocked`, category "other".
+Nothing was written either time, and the batch script died on it, so the four
+jobs behind it never ran — **put each picture in its own try, or run them in
+separate calls, so one refusal does not take the week's artwork with it.**
+
+The likeliest trigger is the combination the prompt asked for: a lone
+thirteen-year-old, dusk, water, and `ANNA`'s build clauses, which are clinical
+because they have to be ("flat-built", "no curves", the dress, barefoot).
+
+**The fix is never to trim `ANNA`.** Editing the canonical block to get past a
+classifier would quietly undo the thing it exists to protect, and the next
+picture would drift. What changed was the SHOT:
+
+- Anna moved from the foreground to the middle distance, small in frame.
+- Seen from BEHIND, so the prompt stops describing a child's face and body.
+- Standing on dry rock, not in the water.
+- The prompt leads with the landscape and says so: "THE LANDSCAPE IS THE
+  SUBJECT".
+
+`ANNA` was pasted whole, unchanged, and the third attempt went through.
+
+A cost worth knowing: from behind, the three-way check is only partial. Skin,
+hair, the crown braid, the dress, barefoot and build are all checkable; her face
+is not. Say so in the report rather than claiming a full check.
