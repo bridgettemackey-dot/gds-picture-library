@@ -1960,6 +1960,106 @@
    "branded": "gds-share/atb-upper/junkanoo-from-the-balcony-20261111-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "the-drive-south-20261113",
+   "slug": "regatta",
+   "caption": "The drive south",
+   "file": "going-to-the-regatta-the-drive-south",
+   "alt": "A long afternoon drive down a narrow two-lane Long Island road, seen from the verge as a single car passes. Low scrub, leaning casuarinas and sea grape line the road, telephone poles run along it and a few pastel houses sit back from the tarmac. Clear turquoise water shows between the trees, moving gently with a low swell and a thin line of foam along the shore.",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "clean": "gds/regatta/the-drive-south-20261113",
+   "branded": "gds-share/regatta/the-drive-south-20261113-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-hoop-la-table-20261113",
+   "slug": "regatta",
+   "caption": "The hoop-la table",
+   "file": "going-to-the-regatta-the-hoop-la-table",
+   "alt": "A hoop-la stall at a Bahamian regatta with nobody standing at it: a wooden trestle table under a striped awning, its top marked out in painted squares with small prizes on them — a tin whistle, a little carved boat, a bag of sweets, a green bangle and a conch shell — and a stack of wooden hoops at the near edge. Bunting above, other stalls on the grass behind, and the sea beyond.",
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "clean": "gds/regatta/the-hoop-la-table-20261113",
+   "branded": "gds-share/regatta/the-hoop-la-table-20261113-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "parts-of-a-c1-sloop-20261115",
+   "slug": "regatta-activity",
+   "caption": "Parts of a C1 racing sloop",
+   "file": "going-to-the-regatta-activity-parts-of-a-c1-sloop",
+   "alt": "A single Bahamian C1 racing sloop at rest in clear shallow turquoise water, side on and close so the whole boat shows from bow to the end of the boom: one mast set well forward, one large triangular mainsail and no jib, a long boom running past the stern, a shallow open wooden hull and a pry board out over the side. The water is calm but moving, with ripple lines and light shifting over the sand.",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "asin": "B0HH8PVQZ9",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "clean": "gds/regatta-activity/parts-of-a-c1-sloop-20261115",
+   "branded": "gds-share/regatta-activity/parts-of-a-c1-sloop-20261115-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-c1-sloop-race-20261115",
+   "slug": "regatta-activity",
+   "caption": "The C1 sloop race",
+   "file": "going-to-the-regatta-activity-the-c1-sloop-race",
+   "alt": "Three Bahamian C1 racing sloops racing across clear turquoise water on a bright regatta day, seen from the side and slightly below so the sails tower. Each carries one mast and one large triangular mainsail with no jib, and the boats are heeled over with crew sitting out on the pry boards as counterweight. A low green shore behind, a soft white wake spreading from each hull and a low swell rolling through.",
+   "book": "Going To The Regatta Coloring and Activity Book",
+   "group": "Going To The Regatta",
+   "asin": "B0HH8PVQZ9",
+   "amazon": "https://www.amazon.com/dp/B0HH8PVQZ9",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "clean": "gds/regatta-activity/the-c1-sloop-race-20261115",
+   "branded": "gds-share/regatta-activity/the-c1-sloop-race-20261115-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-dance-at-sunset-20261115",
+   "slug": "girl-whale",
+   "caption": "The dance at sunset",
+   "file": "the-girl-and-the-whale-the-dance-at-sunset",
+   "alt": "A Hawaiian reef flat at sunset with the sky glowing coral and gold and a long road of light over the water. Anna dances in the middle distance, mid-turn with both arms lifted and one bare foot off the ground, her dress and hair swinging out — deep chocolate-brown skin, long black hair past her shoulders, a hibiscus sundress and a cowrie necklace. The sea rolls in low with a lace of foam and the gold light shifts on the surface.",
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "clean": "gds/girl-whale/the-dance-at-sunset-20261115",
+   "branded": "gds-share/girl-whale/the-dance-at-sunset-20261115-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
