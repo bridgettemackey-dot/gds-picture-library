@@ -1342,3 +1342,47 @@ picture would drift. What changed was the SHOT:
 A cost worth knowing: from behind, the three-way check is only partial. Skin,
 hair, the crown braid, the dress, barefoot and build are all checkable; her face
 is not. Say so in the report rather than claiming a full check.
+
+## THE PUBLISHED ALTS ARE A BACKLOG, NOT A CLEAN SLATE
+
+16 November 2026. Using `anna-meets-the-whale-20260907` as a collage panel meant
+reusing its images.json alt verbatim — and that alt turned out to fail two rules
+the library now holds itself to. It said "a girl of about thirteen ... with long
+dark hair" and never said CHOCOLATE-BROWN SKIN, so verify.py's Anna check would
+have rejected it; and it published her age as a fact, which rule 2 forbids.
+
+A sweep of every alt that mentions Anna found **ten more in the same state**:
+
+- Missing both required phrases: `page12-anna-20260828`, `anna-meets-the-whale-
+  20260907`, `on-the-outrigger-20260907`, `golden-shore-20260907`,
+  `reef-at-sunset-20260907`, `beach-at-sunset-20260907` — the early-September
+  batch, written before the rule existed.
+- Stating her age as a fact: `anna-meets-the-whale-20260907`,
+  `annas-dance-at-sunset-20261007b`, `anna-on-the-glowing-fin-20261019`,
+  `under-the-stars-20261024`, `gran-gran-covers-for-anna-20261029`,
+  `choosing-the-pages-20261104`.
+
+Only the one being published was corrected in that run; the rest were reported to
+Bridge rather than swept silently, because each needs its picture LOOKED AT to
+write an accurate alt and that is a task of its own, not a line item in a queueing
+run.
+
+**The general lesson: a rule added mid-project does not reach backwards.** Every
+rule in this runbook was added the week something went wrong, and everything
+published before that week is still in the old state. When a rule is added, ask
+what already in the library breaks it, and either fix it then or write the
+backlog down. The alts are the public accessibility text on
+pictures.gdsbahamas.com, so this one is worth clearing.
+
+## AND: COPY ANCHORS OUT OF THE FILE. EVERY TIME.
+
+Same day, three patches in a row missed or misfired because the anchor was typed
+from memory rather than copied: a line wrapped differently than I had assumed, a
+replacement left "The activity book has a page called Label the Humpback Whale is
+one of its pages", and a block rewrite ate both the `]` closing an `alts` list and
+the `collage=` key under it.
+
+Nothing reached Buffer, because the all-or-nothing guard aborted the misses and
+verify.py caught the two structural breakages. But the cost was four extra rounds.
+Use `grep -n` or `sed -n` to print the exact lines, locate them BY CONTENT, and
+rewrite whole lines by index rather than matching long multi-line strings.
