@@ -2140,6 +2140,106 @@
    "branded": "gds-share/girl-whale/the-sea-after-she-is-gone-20261117-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "label-the-humpback-whale-20261120",
+   "slug": "girl-whale-activity",
+   "caption": "Label the Humpback Whale",
+   "file": "the-girl-and-the-whale-activity-label-the-humpback-whale",
+   "alt": "A single humpback whale swimming slowly through clear open blue water, seen from the side and slightly below so the whole animal shows from snout to fluke: two very long pectoral fins, white underneath and knobbly along the front edge, a small stubby dorsal fin set well back on a low hump, a broad notched tail fluke, rounded knobs across the head and jaw and long pleated grooves along the throat. Sunlight comes down in shifting bands.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/label-the-humpback-whale-20261120",
+   "branded": "gds-share/girl-whale-activity/label-the-humpback-whale-20261120-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-fluke-going-down-20261120",
+   "slug": "girl-whale-activity",
+   "caption": "The fluke going down",
+   "file": "the-girl-and-the-whale-activity-the-fluke-going-down",
+   "alt": "A humpback whale's tail fluke lifted clear of the sea as she dives, seen from behind: broad, dark on top and patterned pale underneath, with a clear notch at the centre and a ragged trailing edge, water running off it in bright ribbons and falling back as spray. The rest of the whale is already under. Open blue-green ocean with a low swell rolling through and a soft wake spreading, a low green island far off in late afternoon light.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Activity page"
+   ],
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/the-fluke-going-down-20261120",
+   "branded": "gds-share/girl-whale-activity/the-fluke-going-down-20261120-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-old-fort-20261121",
+   "slug": "atb-lower",
+   "caption": "An old stone fort",
+   "file": "all-things-bahamian-lower-the-old-fort",
+   "alt": "An old stone fort above a Bahamian harbour seen from the grass below, its pale limestone walls weathered to cream and grey with rounded corner sentry turrets, a low arched gateway and narrow slit openings. Two black cannons on wooden carriages stand on the grass pointing out to sea, with bougainvillea and ferns at the foot of the wall and casuarinas leaning above. Beyond, clear turquoise water with a low swell rolling in.",
+   "bands": [
+    "Ages 5–9",
+    "Grades 1–3",
+    "Historic places"
+   ],
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "clean": "gds/atb-lower/the-old-fort-20261121",
+   "branded": "gds-share/atb-lower/the-old-fort-20261121-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "mangrove-creek-20261122",
+   "slug": "atb-upper",
+   "caption": "A mangrove creek",
+   "file": "all-things-bahamian-upper-mangrove-creek",
+   "alt": "A quiet mangrove creek on a Bahamian island, looking along the channel from just above the water. Red mangroves crowd both banks, their arching tangles of pale prop roots standing out of shallow clear water under dark glossy leaves. The water runs shallow and very clear over pale sand and patches of turtle grass, with small fish in the shadows, a slow current, fine ripple lines and light shifting across the sand.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Our beautiful islands"
+   ],
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/mangrove-creek-20261122",
+   "branded": "gds-share/atb-upper/mangrove-creek-20261122-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "sandbar-at-low-tide-20261122",
+   "slug": "atb-upper",
+   "caption": "A sandbar at low tide",
+   "file": "all-things-bahamian-upper-sandbar-at-low-tide",
+   "alt": "A wide Bahamian sandbar at low tide seen from low down: a long pale bar curving out into shallow water, ribbed all over with ripple marks left by the tide, with scattered shells and an orange starfish on it and warm shallow pools lying in the dips. The water runs out in bands of near-white, jade, turquoise and deeper blue, with a low swell rolling in and thin lines of foam sliding across the flats. A low green cay on the horizon.",
+   "bands": [
+    "Ages 9–12",
+    "Grades 4–6",
+    "Our beautiful islands"
+   ],
+   "book": "All Things Bahamian: Upper Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HC1PJ4DS",
+   "amazon": "https://www.amazon.com/dp/B0HC1PJ4DS",
+   "clean": "gds/atb-upper/sandbar-at-low-tide-20261122",
+   "branded": "gds-share/atb-upper/sandbar-at-low-tide-20261122-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [
