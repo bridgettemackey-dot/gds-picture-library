@@ -231,13 +231,16 @@ S = [
 
  # Sun 22 Nov — slot 119 — pillar 0 Book World — ATB Upper — COLLAGE
  dict(day='2026-11-22', base=19, board=B_COLOR, pad=False, anna_absent=True,
-  panels=['gds/atb-upper/glass-window-bridge-20261008-v2',
+  panels=['gds/atb-upper/glass-window-bridge-20261008-v3',
           'gds/atb-upper/mangrove-creek-20261122',
           'gds/atb-upper/island-settlement-harbour-20261023',
           'gds/atb-upper/sandbar-at-low-tide-20261122'],
-  alts=['The Glass Window Bridge in Eleuthera: a road bridge crossing a narrow gap in the rock, '
-        'with the rough navy Atlantic breaking beyond it and the calm clear turquoise Bight of '
-        'Eleuthera in the foreground on the near side.',
+  alts=['The Glass Window Bridge in Eleuthera from high above, looking along the narrow neck of land: '
+        'a two-lane road on a thin ribbon of dark ironshore rock running to the horizon, with a short '
+        'bridge over the gap and a single car crossing. The same ocean lies either side and runs '
+        'unbroken to the same horizon — the rough navy Atlantic on one side, whitecapped and bursting '
+        'against the rock, the calm turquoise Bight of Eleuthera on the other, moving with a low '
+        'swell.',
         'A quiet mangrove creek on a Bahamian island, looking along the channel from just above '
         'the water. Red mangroves crowd both banks, their arching tangles of pale prop roots '
         'standing out of shallow clear water under dark glossy leaves. The water runs shallow and '
@@ -253,11 +256,11 @@ S = [
         'and an orange starfish on it and warm shallow pools lying in the dips. The water runs '
         'out in bands of near-white, jade, turquoise and deeper blue, with a low swell rolling in '
         'and thin lines of foam sliding across the flats. A low green cay on the horizon.'],
-  collage='gds/atb-upper/collage-our-beautiful-islands-20261122',
-  alt='Four Bahamian island scenes: the Glass Window Bridge with the navy Atlantic on one side '
-      'and turquoise shallows on the other, a mangrove creek with arching prop roots over clear '
-      'water, a pastel settlement around a quiet harbour, and a rippled sandbar at low tide with '
-      'a starfish on it.',
+  collage='gds/atb-upper/collage-our-beautiful-islands-20261122-v2',
+  alt='Four Bahamian island scenes: the Glass Window Bridge on its thin ribbon of rock with '
+      'the rough Atlantic on one side and the calm Bight on the other, a mangrove creek with '
+      'arching prop roots over clear water, a pastel settlement around a quiet harbour, and a '
+      'rippled sandbar at low tide with a starfish on it.',
   fb=tail("You cannot put an archipelago on one page, which is the whole problem the book is "
     "solving.\n\nOur Beautiful Islands is the longest section in All Things Bahamian by a "
     "distance — pages 9 to 49 in the Upper edition — and it is maps and island scenes. It has to "

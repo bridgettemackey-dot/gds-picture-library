@@ -1386,3 +1386,30 @@ Nothing reached Buffer, because the all-or-nothing guard aborted the misses and
 verify.py caught the two structural breakages. But the cost was four extra rounds.
 Use `grep -n` or `sed -n` to print the exact lines, locate them BY CONTENT, and
 rewrite whole lines by index rather than matching long multi-line strings.
+
+## A PLACE BRIDGE KNOWS BEATS ANYTHING WE CAN REASON OUT
+
+19 November 2026. Bridge: the Glass Window's calm side "looks as if the waves
+were simply erased." She was right — v2's Bight was a single flat plane with an
+even caustic net over it, hard edges where water met rock, and a few milky
+blotches that genuinely read as erasure.
+
+But the water was only the first of three faults, and the other two were MINE,
+found only because she kept looking at the drafts:
+
+- Sample A/B drew the Bight as a **shallow rocky bay** full of coral heads.
+  Bridge: *"there aren't so many rocks... its calm ocean that extends as far as
+  the eye can see."* Both sides are open ocean to the same horizon.
+- Sample C still showed **pale sand and caustics near the bridge**. Bridge:
+  *"The shore line is not in plain sight."* The seabed is not visible at all on
+  that side, which means no caustic patterns either — and my "sunlight reaches
+  pale sand" clause was the thing generating the shoreline every time.
+
+Both corrections are now in BOOK-CONTEXT under Eleuthera, quoted.
+
+The lesson is rule 5 pointed at PLACES, and it is the conch all over again: I
+reasoned a composition from a one-line summary and got it confidently wrong
+twice. **Bridge has stood at these places. When a picture is of somewhere real
+and she is reachable, show her a draft before the five-place correction, not
+after.** Four samples cost one afternoon; a wrong picture in the library costs a
+correction across five places and a rebuilt collage.

@@ -248,6 +248,25 @@ road on a thin ribbon of rock with a single car on it, dark choppy Atlantic on o
 side and calm banks on the other. Caption: "At the Glass Window Bridge, the Atlantic
 Ocean and the calm Bight of Eleuthera lie on opposite sides of a narrow strip of rock."
 
+> **HOW TO DRAW IT — BRIDGE, 19 NOVEMBER 2026.** Two corrections, both about the
+> CALM side, both made after seeing drafts:
+>
+> 1. *"On the calm side there aren't so many rocks. Instead its calm ocean that
+>    extends as far as the eye can see; similar to the rough side which extends as
+>    far as the eye can see."* It is NOT a shallow rocky bay. Both sides are open
+>    ocean running to the SAME horizon. The land is only the thin ribbon the road
+>    sits on.
+> 2. *"The shore line is not in plain sight. The ocean is continuous but one side is
+>    rough while the other is calm."* So NO beach, NO sandbank, NO pale shallow
+>    shelf and NO visible sea floor on the calm side — and therefore no caustic
+>    light patterns, which is what kept producing a shoreline. The colour comes
+>    from the water itself, turquoise deepening to blue.
+>
+> The ONE difference between the two seas is their state. This is also the one
+> place in the whole library where rough water is correct (SOCIAL-RUNBOOK rule 4),
+> and the calm half still has to MOVE: a long low swell, ripple sets, and foam
+> lapping the rock the whole way along.
+
 **The Bahamian Flag** (Upper p2). The flag on a pole, three bands with the triangle at
 the hoist. Fact: "Our flag uses aquamarine, gold and black."
 
