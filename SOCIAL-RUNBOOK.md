@@ -1413,3 +1413,43 @@ twice. **Bridge has stood at these places. When a picture is of somewhere real
 and she is reachable, show her a draft before the five-place correction, not
 after.** Four samples cost one afternoon; a wrong picture in the library costs a
 correction across five places and a rebuilt collage.
+
+## A BOAT ON A BOOKMARK IS STILL A SLOOP
+
+Recorded 2026-11-22, week 59.
+
+Having just audited the published Regatta pictures for the jib error, I generated a
+fresh one. The bookmarks prompt said "one with a single triangular-sailed sloop" and
+`SLOOP` was not pasted, because a painted boat on a child's bookmark read to me as
+decoration rather than as a sloop. What came back had a mainsail, a jib, a mast
+amidships and no pry board — the same wrong boat, one rung further down.
+
+**Paste `SLOOP` for every boat in a Regatta picture**, at any size, in any medium, even
+a boat painted inside the picture by a character. "Single triangular-sailed" is a
+description. `SLOOP` plus "COUNT THE SAILS: THERE IS EXACTLY ONE" is a count, and only
+the count works. Regenerated once with the block pasted and it came back correct.
+
+Audit result for the pre-`SLOOP` era (`SLOOP` dates from 22 Oct, so anything older is
+suspect): of four published Regatta pictures with boats in them, three are correct —
+`sloops-at-salt-pond-20260830`, `page-watching-the-race-20260830` and
+`flags-over-the-regatta-20260927` all carry a single mainsail. Only
+`design-a-regatta-flag-20261014d` is wrong: mainsail and jib, no pry board. It is
+published. It was kept out of week 59's collage and `island-food-scramble-20261101`
+used in its place.
+
+## COPY THE BRANDED PATH OUT OF images.json — IT IS NOT ALWAYS `-bhm`
+
+Recorded 2026-11-22, week 59.
+
+Typed four collage panel paths from memory with `-bhm` on all of them. Two are not:
+`island-lighthouse-20261021` and `plan-an-island-meal-20261022` have no suffix, and
+`island-food-scramble-20261101` is `-v2-bhm`. collage.py 404s and the traceback does
+not name which panel failed. Emit the paths from the manifest.
+
+**And check the baked title line before accepting a collage.** The `atb-lower` slug
+holds TWO book titles — 16 images branded "All Things Bahamian: Lower Elementary" and 4
+branded "All Things Bahamian: My First Cultural Coloring Book" — under one ASIN.
+collage.py's same-book check looks at the slug, so it passes a collage whose panels
+advertise two different books. The first week-59 collage did exactly that;
+`straw-market-20260909` was swapped for `queens-staircase-20261010` and rebuilt. Look at
+the rendered collage, read the four caption bars, and make sure they agree.

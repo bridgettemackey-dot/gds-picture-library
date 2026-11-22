@@ -190,3 +190,23 @@ TURTLE = (
  "middle; the head is small and blunt with a beaked mouth and dark eyes; the neck is short. The "
  "shell has a clean unbroken edge with no limb breaking through it.\n")
 CHARACTERS['turtle'] = TURTLE
+
+# Added 23 November 2026. SOCIAL-RUNBOOK has owed the spiny lobster a count block
+# since 2 Nov, alongside the flamingo and the Nassau grouper. The failure mode here
+# is specific and very likely: asked for "a lobster", the model draws a MAINE
+# lobster with two big claws. The Bahamian crawfish has none, and a child who
+# colours one with claws has learned the wrong animal.
+LOBSTER = (
+ "\n\nTHE CARIBBEAN SPINY LOBSTER - THE BAHAMIAN CRAWFISH - AND ITS ANATOMY IS FIXED:\n"
+ "- IT HAS NO CLAWS. NONE. Not big ones, not small ones, not pincers of any kind on any leg. "
+ "This is the single most important thing: it is NOT a Maine or European lobster. If you have "
+ "drawn a claw, you have drawn the wrong animal.\n"
+ "- TWO ENORMOUSLY LONG, THICK, SPINY ANTENNAE sweeping forward and out, each about as long as "
+ "the whole body. These are the feature you notice first and they must be unmistakable.\n"
+ "- A hard, knobbly, SPINY carapace over the front half, with forward-pointing horns above the "
+ "two small stalked eyes.\n"
+ "- FIVE PAIRS of plain walking legs - ten legs in total, all ending in simple points.\n"
+ "- A segmented abdomen ending in a broad FAN TAIL.\n"
+ "- COLOUR: mottled brown, rust and olive with scattered pale cream SPOTS, and a pair of larger "
+ "cream spots on the tail segments. Not bright red - that is a cooked lobster.\n")
+CHARACTERS['lobster'] = LOBSTER
