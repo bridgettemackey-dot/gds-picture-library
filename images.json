@@ -2340,6 +2340,126 @@
    "branded": "gds-share/regatta-activity/the-finished-flags-flying-20261125-bhm",
    "w": 1080,
    "h": 1964
+  },
+  {
+   "id": "the-start-of-the-race-20261126",
+   "slug": "regatta",
+   "caption": "The start of the race",
+   "file": "going-to-the-regatta-the-start-of-the-race",
+   "alt": "Three wooden Bahamian racing sloops just after the start of a race off Long Island, seen from the shore. Each carries one tall triangular mainsail on a single mast set well forward, with no second sail, and each is heeled over with its crew of grown men sitting right out on the long pry board over the windward side. Bright turquoise water with a short chop, spray off the bows and white wake behind. Rocks, a pale beach and casuarinas in the foreground.",
+   "bands": [
+    "Ages 5–15",
+    "Family reader",
+    "Long Island"
+   ],
+   "book": "Going To The Regatta: Nicholas’ Long Island Family Adventure",
+   "group": "Going To The Regatta",
+   "asin": "B0HGKNTNDD",
+   "amazon": "https://www.amazon.com/dp/B0HGKNTNDD",
+   "clean": "gds/regatta/the-start-of-the-race-20261126",
+   "branded": "gds-share/regatta/the-start-of-the-race-20261126-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-song-over-the-water-20261127",
+   "slug": "girl-whale",
+   "caption": "The song over the water",
+   "file": "the-girl-and-the-whale-the-song-over-the-water",
+   "alt": "The open sea at first light seen from a low rocky shore, with nobody in the picture. The sun sits just above the horizon laying a road of gold across the water, and the sea runs in bands of deep blue, jade and turquoise with a long swell rolling through it and small waves breaking white over the rocks in the foreground. Out in the middle distance a soft violet-purple glow shows under the surface, diffuse and low, as though something luminous were passing below.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "clean": "gds/girl-whale/the-song-over-the-water-20261127",
+   "branded": "gds-share/girl-whale/the-song-over-the-water-20261127-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-whale-far-offshore-20261127",
+   "slug": "girl-whale",
+   "caption": "The whale offshore",
+   "file": "the-girl-and-the-whale-the-whale-far-offshore",
+   "alt": "An enormous humpback whale in deep blue water offshore, seen from an empty pale beach. Her broad dark back and knobbly head are clear of the surface and one long pectoral fin is raised high out of the water with water streaming off it, its edge glowing cosmic purple and scattered with points of starlight. A low green cay lies on the horizon behind her, small against her. Calm water with a long swell, and small waves running up the sand in a lace of foam.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Island story"
+   ],
+   "book": "The Girl and The Whale",
+   "group": "The Girl and The Whale",
+   "asin": "B0HCB7V9C9",
+   "amazon": "https://www.amazon.com/dp/B0HCB7V9C9",
+   "clean": "gds/girl-whale/the-whale-far-offshore-20261127",
+   "branded": "gds-share/girl-whale/the-whale-far-offshore-20261127-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-same-page-in-both-books-20261128",
+   "slug": "atb-lower",
+   "caption": "The same page in both books",
+   "file": "all-things-bahamian-lower-the-same-page-in-both-books",
+   "alt": "Two paperback colouring books lying open side by side on a wooden table, seen from above, both open at the same line drawing — a flamingo standing in shallow water among sea grape leaves, in clean black outline on white. One book is a little larger than the other; both covers are plain. An open tin of crayons, a pink crayon, three coloured pencils and a shell lie around them, with warm afternoon light falling across the table.",
+   "bands": [
+    "Ages 5–9",
+    "Grades 1–3",
+    "Behind the scenes"
+   ],
+   "book": "All Things Bahamian: Lower Elementary",
+   "group": "All Things Bahamian",
+   "asin": "B0HBNFLDQP",
+   "amazon": "https://www.amazon.com/dp/B0HBNFLDQP",
+   "clean": "gds/atb-lower/the-same-page-in-both-books-20261128",
+   "branded": "gds-share/atb-lower/the-same-page-in-both-books-20261128-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "a-childs-cosmic-finback-20261129",
+   "slug": "girl-whale-activity",
+   "caption": "A child’s cosmic finback",
+   "file": "the-girl-and-the-whale-activity-a-childs-cosmic-finback",
+   "alt": "A child's own wax-crayon drawing taped up crooked on a pale wall: a big purple whale with long fins, drawn in bold waxy strokes with the paper showing through, surrounded by yellow stars and blue scribbled water. Two smaller crayon drawings are taped below it, one of a sun and flowers and one of a rainbow. A corner of a wooden shelf with building blocks and a soft toy shows at the bottom, in soft daylight.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Make your own"
+   ],
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/a-childs-cosmic-finback-20261129",
+   "branded": "gds-share/girl-whale-activity/a-childs-cosmic-finback-20261129-bhm",
+   "w": 1080,
+   "h": 1964
+  },
+  {
+   "id": "the-worn-down-pencils-20261129",
+   "slug": "girl-whale-activity",
+   "caption": "The pencils afterwards",
+   "file": "the-girl-and-the-whale-activity-the-worn-down-pencils",
+   "alt": "An open blue tin of coloured pencils on a wooden table after a long afternoon's colouring, most of them worn down short and blunt and two still sharp. A metal sharpener and a small heap of curled shavings lie beside the tin, a sheet of paper rests face down nearby so only its blank back shows, and a conch shell sits at the edge of the table. Warm low light comes through a window behind.",
+   "bands": [
+    "Ages 6–12",
+    "Grades 1–6",
+    "Behind the scenes"
+   ],
+   "book": "The Girl and The Whale Coloring and Activity Book",
+   "group": "The Girl and The Whale",
+   "asin": "B0HG8NKYV2",
+   "amazon": "https://www.amazon.com/dp/B0HG8NKYV2",
+   "clean": "gds/girl-whale-activity/the-worn-down-pencils-20261129",
+   "branded": "gds-share/girl-whale-activity/the-worn-down-pencils-20261129-bhm",
+   "w": 1080,
+   "h": 1964
   }
  ],
  "retired": [

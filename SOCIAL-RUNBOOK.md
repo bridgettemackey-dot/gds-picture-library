@@ -1453,3 +1453,15 @@ collage.py's same-book check looks at the slug, so it passes a collage whose pan
 advertise two different books. The first week-59 collage did exactly that;
 `straw-market-20260909` was swapped for `queens-staircase-20261010` and rebuilt. Look at
 the rendered collage, read the four caption bars, and make sure they agree.
+
+## THE ALT LIMIT IS 480, NOT 500 — post.py TRUNCATES BEFORE BUFFER SEES IT
+
+Recorded 2026-11-25, week 60.
+
+`post.py`'s `asset()` sends `alt[:480]`. verify.py checked 500, so an alt between 481
+and 500 passed verify and then lost its tail silently on the way out.
+`create-your-own-island-legend-20261124` went out on 24 Nov at 483 characters and
+published three characters short. verify.py now checks 480 on heroes and on every
+panel alt, and says so in the message.
+
+Nothing else was affected: a sweep of all 123 catalogued alts found that one only.

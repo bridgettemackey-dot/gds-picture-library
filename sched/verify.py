@@ -65,8 +65,11 @@ for s in m.S:
             if p in _RETIRED:
                 problems.append('panel%d points at a RETIRED path: %s' % (i + 1, p))
         for i, a in enumerate(alts):
-            if len(a) > 500:
-                problems.append('panel%d alt %d' % (i + 1, len(a)))
+            # post.py truncates at 480 before Buffer ever sees it, so 480 is the real
+            # limit, not 500. create-your-own-island-legend-20261124 went out at 483 on
+            # 24 Nov and lost its last three characters silently.
+            if len(a) > 480:
+                problems.append('panel%d alt %d chars, truncated at 480' % (i + 1, len(a)))
         if s.get('collage'):
             check_image(m.STD(s['collage']), None, 'collage', problems)
         shown = 'COLLAGE x%d' % len(panels)
@@ -75,8 +78,8 @@ for s in m.S:
         if s['pid'] in _RETIRED:
             problems.append('hero points at a RETIRED path: %s' % s['pid'])
         shown = s['pid'].rsplit('/', 1)[-1]
-    if len(s['alt']) > 500:
-        problems.append('alt %d' % len(s['alt']))
+    if len(s['alt']) > 480:
+        problems.append('alt %d chars, truncated at 480' % len(s['alt']))
     for k in ('fb', 'ig', 'pin'):
         if m.GDSI not in s[k]:
             problems.append('no GDS-Images line in ' + k)
